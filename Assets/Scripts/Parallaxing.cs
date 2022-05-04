@@ -14,6 +14,7 @@ public class Parallaxing : MonoBehaviour
     {
         cameraTransform = Camera.main.transform;
         lastCameraPosition = cameraTransform.position;
+        this.transform.position = new Vector3(this.transform.position.x, this.transform.position.y, 1.0f);
     }
 
     // Update is called once per frame

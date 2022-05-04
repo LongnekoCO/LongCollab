@@ -424,7 +424,8 @@ MonoBehaviour:
   canDash: 0
   parachuteOn: 0
   extraJumpsVal: 0
-  parachute: {fileID: 0}
+  parachute: {fileID: 3173489358384557534}
+  enterPool: 1
 --- !u!114 &169077474
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -11,6 +11,17 @@ TagManager:
   - Wall
   - Whirlwind
   - Lightning
+  - PoisonPool
+  - Arrow
+  - Ice
+  - Boulder
+  - ShrinkingArrow
+  - WaterbendingDetectRange
+  - Bow
+  - Clone
+  - TestLevitate
+  - Stop
+  - NextLevelProto
   layers:
   - Default
   - TransparentFX
@@ -20,7 +31,7 @@ TagManager:
   - UI
   - Ground
   - Enemy
-  - 
+  - Arrow
   - 
   - 
   - 
