@@ -1,0 +1,284 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class PlayerMovementScript : MonoBehaviour
+{
+    float walkingSpeed = 0.02f;
+    public bool facingRight = true;
+    Animator anim;
+    public Rigidbody2D playerRigidbody;
+    public int health = 20; //testing only
+    public float jumpForce;
+    bool isGrounded;
+    public Transform groundCheck;
+    public LayerMask groundlayer;
+    public bool canMovee = true;
+    public GameObject log;
+    public GameObject smokeParticle;
+    //public GameObject bow;
+    //public Transform pos1, pos2;
+    public float speed;
+    public GameObject Boss;
+    //public Transform starPos;
+
+    float doubleTapTime;
+    KeyCode lastKeyCode;
+
+    public float dashSpeed;
+    private float dashCount;
+    public float startDashCount;
+    private int side;
+    public bool canDash;
+    public bool parachuteOn; 
+
+    private int extraJumps;
+    public int extraJumpsVal;
+
+    public Transform parachute;
+
+    public bool enterPool = true; 
+   
+    
+
+    // Start is called before the first frame update
+    void Start()
+    {
+        anim = this.GetComponent<Animator>();
+        canMovee = true;
+        //bow.SetActive(false);
+
+        dashCount = startDashCount;
+        canDash = true;
+
+        parachute.GetComponent<SpriteRenderer>().color = new Color(0,0,0,0);
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        Movement();
+       
+
+        //if (Input.GetKeyDown(KeyCode.Space))
+        //{
+        //    //checks if the player is on the ground to avoid double jump
+        //    if (isGrounded)
+        //    {
+        //        Jump();
+        //    }
+
+        //}
+
+        if(isGrounded)
+        {
+            extraJumps = extraJumpsVal;
+            if (Input.GetKeyDown(KeyCode.LeftShift) && parachuteOn == true)
+            {
+                parachuteOn = false;
+                parachute.GetComponent<SpriteRenderer>().color = new Color(0, 0, 0, 0);
+            }
+
+        }
+
+        if(Input.GetKeyDown(KeyCode.Space) && extraJumps > 0)
+        {
+            Jump();
+            extraJumps--;
+        }
+
+        else if (Input.GetKeyDown(KeyCode.Space) && extraJumps == 0 && isGrounded == true)
+        {
+            Jump();
+        }
+
+       
+        if(!isGrounded)
+        {
+            if(Input.GetKeyDown(KeyCode.LeftShift) && parachuteOn == false)
+            {
+                parachuteOn = true;
+            }
+
+            else if (Input.GetKeyDown(KeyCode.LeftShift) && parachuteOn == true)
+            {
+                parachuteOn = false;
+            }
+        }
+        
+        if(parachuteOn == true)
+        {
+            GetComponent<Rigidbody2D>().drag = 8;
+            parachute.GetComponent<SpriteRenderer>().color = new Color(1, 1, 1, 1);
+        }
+        else if (parachuteOn == false)
+        {
+            GetComponent<Rigidbody2D>().drag = 0;
+            parachute.GetComponent<SpriteRenderer>().color = new Color(0, 0, 0, 0);
+        }
+
+    }
+
+    void FixedUpdate()
+    {
+        //checks if the player is on the ground
+        isGrounded = Physics2D.OverlapCircle(groundCheck.position, 0.2f, groundlayer);
+    }
+
+    IEnumerator Dash()
+    {
+        //if (side == 1)
+        //{
+        //    Debug.Log("Dashing Right");
+        //    walkingSpeed = 1; 
+        //}
+
+        //else if (side == 2)
+        //{
+        //    Debug.Log("Dashing Left");
+        //    playerRigidbody.velocity = Vector2.left * dashSpeed;
+
+        //}
+
+        Debug.Log("Eurobeat Intensified");
+        canDash = false;
+        walkingSpeed = 0.1f;
+        yield return new WaitForSeconds(0.15f);
+        walkingSpeed = 0.02f;
+        canDash = true;
+    }
+
+
+    void Jump()
+    {
+        playerRigidbody.velocity = Vector2.up * jumpForce;
+    }
+
+    void Movement()
+    {
+        Vector3 playerPosition = this.transform.position;
+        playerPosition.z = 1;
+
+        if(canMovee == true)
+        {
+            if (Input.GetKey(KeyCode.D))
+            {
+                playerPosition.x = playerPosition.x + walkingSpeed;
+                this.transform.position = playerPosition;
+                anim.SetTrigger("isWalking");
+
+                if (facingRight == false)
+                {
+                    Flip();
+                    //bow1.Flip();
+                }
+                
+                if (Input.GetKeyDown(KeyCode.RightShift) && canDash == true)
+                {
+                    Vector3 temp = new Vector3(this.transform.position.x, this.transform.position.y, this.transform.position.z);
+                    Instantiate(smokeParticle, temp, Quaternion.identity);
+                    StartCoroutine(Dash());
+
+                }
+
+
+
+
+            }
+
+            else if (Input.GetKey(KeyCode.A))
+            {
+                playerPosition.x = playerPosition.x - walkingSpeed;
+                this.transform.position = playerPosition;
+                anim.SetTrigger("isWalking");
+
+                if (facingRight == true)
+                {
+                    Flip();
+                    //bow1.Flip();
+                }
+
+                if (Input.GetKeyDown(KeyCode.RightShift) && canDash == true)
+                {
+                    Vector3 temp = new Vector3(this.transform.position.x, this.transform.position.y, this.transform.position.z);
+                    Instantiate(smokeParticle, temp, Quaternion.identity);
+                    StartCoroutine(Dash());
+                }
+
+            }
+
+            else
+            {
+                anim.SetTrigger("isIdle");
+            }
+        }
+
+        if (Input.GetKeyDown(KeyCode.Q))
+        {
+            if (facingRight == true)
+            {
+                //int positionX = Random.Range(1,10);
+                Vector3 temp = new Vector3(this.transform.position.x, this.transform.position.y, this.transform.position.z);
+                Vector3 newPos = new Vector3(this.transform.position.x + 4, this.transform.position.y, this.transform.position.z);
+                this.transform.position = newPos;
+                Instantiate(log, temp, Quaternion.identity);
+                Instantiate(smokeParticle, temp, Quaternion.identity);
+                //Destroy(log, 2f);
+            }
+
+            else if (facingRight == false)
+            {
+                //int positionX = Random.Range(1,10);
+                Vector3 temp = new Vector3(this.transform.position.x, this.transform.position.y, this.transform.position.z);
+                Vector3 newPos = new Vector3(this.transform.position.x - 4, this.transform.position.y, this.transform.position.z);
+                this.transform.position = newPos;
+                Instantiate(log, temp, Quaternion.identity);
+                Instantiate(smokeParticle, temp, Quaternion.identity);
+                //Destroy(log, 2f);
+            }
+
+
+        }
+    }
+
+    void Flip()
+    {
+        facingRight = !facingRight;
+        Vector2 playerScale = this.transform.localScale;
+        playerScale.x = playerScale.x * -1;
+        this.transform.localScale = playerScale;
+    }
+
+
+    void OnTriggerEnter2D(Collider2D col)
+    {
+        if (col.gameObject.tag == "BossTrigger")
+        {
+            Boss.SetActive(true);
+        }
+
+        
+        else if (col.gameObject.tag == "PoisonPool")
+        {
+            if(enterPool == true)
+            {
+                StartCoroutine(PoisonPool());
+                health -= 1;
+            }
+
+        }
+
+
+
+    }
+
+    IEnumerator PoisonPool()
+    {
+        enterPool = false;
+        yield return new WaitForSecondsRealtime(1f);
+        enterPool = true;
+    }
+
+   
+
+}
