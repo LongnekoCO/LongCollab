@@ -44,6 +44,14 @@ public class TestSubjectScript : MonoBehaviour
         {
             TakeDamage(10);
         }
+
+        if (col.gameObject.tag == "AttackRock")
+        {
+            //this.GetComponent<Rigidbody2D>().isKinematic = false;
+            //TakeDamage(20);
+            StartCoroutine(AttackRockEffect());
+            //this.GetComponent<Rigidbody2D>().isKinematic = true;
+        } 
         
     }
 
@@ -92,6 +100,12 @@ public class TestSubjectScript : MonoBehaviour
         otherScript.mustPatrol = true;
     }
    
-
+    IEnumerator AttackRockEffect()
+    {
+        otherScript.mustPatrol = false;
+        TakeDamage(20);
+        yield return new WaitForSeconds(0.2f);
+        otherScript.mustPatrol = true;
+    }
 
 }

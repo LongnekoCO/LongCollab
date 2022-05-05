@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayerMovementScript : MonoBehaviour
 {
-    float walkingSpeed = 0.02f;
+    float walkingSpeed = 0.09f;
     public bool facingRight = true;
     Animator anim;
     public Rigidbody2D playerRigidbody;
@@ -142,9 +142,9 @@ public class PlayerMovementScript : MonoBehaviour
 
         Debug.Log("Eurobeat Intensified");
         canDash = false;
-        walkingSpeed = 0.1f;
+        walkingSpeed = 0.5f;
         yield return new WaitForSeconds(0.15f);
-        walkingSpeed = 0.02f;
+        walkingSpeed = 0.09f;
         canDash = true;
     }
 

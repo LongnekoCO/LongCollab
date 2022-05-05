@@ -7,12 +7,16 @@ public class AttackRock : MonoBehaviour
     Animator anim;
     private PlayerMovementScript playerScript;
     public Rigidbody2D rockRigidbody;
+    public float thrust;
+    public GameObject player; 
+
 
     // Start is called before the first frame update
     void Start()
     {
         anim = this.GetComponent<Animator>();
         playerScript = GameObject.Find("Dog").GetComponent<PlayerMovementScript>();
+        player = GameObject.Find("Dog");
         Destroy(this.gameObject, 5f);
     }
 
@@ -44,15 +48,21 @@ public class AttackRock : MonoBehaviour
     }
 
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    private void OnCollisionEnter2D(Collision2D collision)
     {
         if(collision.gameObject.tag == "Enemy")
         {
-            //rockRigidbody.velocity = Vector3.zero;
-            //rockRigidbody.angularVelocity = Vector3.zero;
+            Rigidbody2D meow = collision.gameObject.GetComponent<Rigidbody2D>();
+            //meow.isKinematic = false;
+            Vector2 difference = meow.transform.position - player.transform.position;
+            difference = difference.normalized * thrust;
+            meow.AddForce(difference, ForceMode2D.Impulse);
+
             anim.SetTrigger("destroy");
             StartCoroutine(AnotherWait());
-           // rockRigidbody.AddForce(transform.right * 0f, ForceMode2D.Impulse);
+           
+
+
         }
        
         
@@ -63,4 +73,6 @@ public class AttackRock : MonoBehaviour
         yield return new WaitForSeconds(0.3f);
         Destroy(gameObject);
     }
+
+   
 }
