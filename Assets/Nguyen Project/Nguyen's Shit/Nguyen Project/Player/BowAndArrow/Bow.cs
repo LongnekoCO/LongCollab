@@ -27,11 +27,16 @@ public class Bow : MonoBehaviour
     public SpringJoint2D springy; 
 
     public GameObject[] arrowsSelect;
-    public int selectedWeapon = 0; 
+    public int selectedWeapon = 0;
+
+    private BowAnimation bowAnim; 
 
     private void Start()
     {
+
+        bowAnim = GetComponent<BowAnimation>();
         points = new GameObject[numberOfPoints];
+
         for(int i = 0; i < numberOfPoints; i++)
         {
             points[i] = Instantiate(point, shotPoint.position, Quaternion.identity); 
@@ -61,6 +66,7 @@ public class Bow : MonoBehaviour
         if(Input.GetMouseButtonUp(0) && canShoot == true)
         {
             Shoot();
+            StartCoroutine(Rate());
         }
 
         for(int i = 0; i < numberOfPoints; i++)
@@ -105,51 +111,7 @@ public class Bow : MonoBehaviour
                 selectedWeapon--;
         }
 
-        if(Input.GetKeyDown(KeyCode.Alpha1))
-        {
-            selectedWeapon = 0;
-        }
-
-        if(Input.GetKeyDown(KeyCode.Alpha2) && arrowsSelect.Length >= 2)
-        {
-            selectedWeapon = 1; 
-        }
-
-        if (Input.GetKeyDown(KeyCode.Alpha3) && arrowsSelect.Length >= 3)
-        {
-            selectedWeapon = 2;
-        }
         
-        if (Input.GetKeyDown(KeyCode.Alpha4) && arrowsSelect.Length >= 4)
-        {
-            selectedWeapon = 3;
-        }
-        if (Input.GetKeyDown(KeyCode.Alpha5) && arrowsSelect.Length >= 4)
-        {
-            selectedWeapon = 4;
-        }
-        if (Input.GetKeyDown(KeyCode.Alpha6) && arrowsSelect.Length >= 4)
-        {
-            selectedWeapon = 5;
-        }
-        if (Input.GetKeyDown(KeyCode.Alpha7) && arrowsSelect.Length >= 4)
-        {
-            selectedWeapon = 6;
-        }
-        if (Input.GetKeyDown(KeyCode.Alpha8) && arrowsSelect.Length >= 4)
-        {
-            selectedWeapon = 7;
-        }
-        if (Input.GetKeyDown(KeyCode.Alpha9) && arrowsSelect.Length >= 4)
-        {
-            selectedWeapon = 8;
-        }
-        if (Input.GetKeyDown(KeyCode.Alpha0) && arrowsSelect.Length >= 4)
-        {
-            selectedWeapon = 9;
-        }
-
-
         if (previousSelectedWeapon != selectedWeapon)
         {
             SelectWeapon(); 
@@ -161,6 +123,15 @@ public class Bow : MonoBehaviour
             line.SetPosition(1, target.transform.position); 
         }
 
+    }
+
+    IEnumerator Rate()
+    {
+        canShoot = false;
+        //bowAnim.canAnim = false;
+        yield return new WaitForSeconds(0.5f);
+        canShoot = true;
+        //bowAnim.canAnim = true;
     }
 
     void SelectWeapon()
