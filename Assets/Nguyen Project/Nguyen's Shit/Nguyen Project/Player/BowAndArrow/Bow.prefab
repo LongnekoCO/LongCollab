@@ -54,6 +54,10 @@ MonoBehaviour:
   numberOfPoints: 40
   spaceBetweenPoints: 0.025
   facingRight: 1
+  line: {fileID: 0}
+  player: {fileID: 0}
+  canShoot: 0
+  springy: {fileID: 0}
   arrowsSelect: []
   selectedWeapon: 0
 --- !u!1 &1503897189770774557

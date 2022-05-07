@@ -5,17 +5,22 @@ using UnityEngine;
 public class BowAnimation : MonoBehaviour
 {
     Animator anim;
+    public bool canAnim; 
 
     // Start is called before the first frame update
     void Start()
     {
         anim = this.GetComponent<Animator>();
+        canAnim = true; 
     }
 
     // Update is called once per frame
     void Update()
     {
-        StretchAndShoot();
+        if(canAnim == true)
+        {
+            StretchAndShoot();
+        }        
     }
 
     void StretchAndShoot()
