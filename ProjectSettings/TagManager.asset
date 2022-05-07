@@ -23,6 +23,7 @@ TagManager:
   - Stop
   - NextLevelProto
   - AttackRock
+  - Attack
   layers:
   - Default
   - TransparentFX
