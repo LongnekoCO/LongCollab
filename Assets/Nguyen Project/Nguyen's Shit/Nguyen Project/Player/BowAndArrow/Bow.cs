@@ -26,7 +26,7 @@ public class Bow : MonoBehaviour
 
     public SpringJoint2D springy; 
 
-    public GameObject[] arrowsSelect;
+    public List<GameObject>arrowsSelect =  new List<GameObject>();
     public int selectedWeapon = 0;
 
     private BowAnimation bowAnim; 
@@ -97,7 +97,7 @@ public class Bow : MonoBehaviour
 
         if(Input.GetAxis("Mouse ScrollWheel") > 0f)
         {
-            if (selectedWeapon >= arrowsSelect.Length - 1)
+            if (selectedWeapon >= arrowsSelect.Count - 1)
                 selectedWeapon = 0;
             else
                 selectedWeapon++;
@@ -106,7 +106,7 @@ public class Bow : MonoBehaviour
         if(Input.GetAxis("Mouse ScrollWheel") < 0f)
         {
             if (selectedWeapon <= 0)
-                selectedWeapon = arrowsSelect.Length - 1;
+                selectedWeapon = arrowsSelect.Count - 1;
             else
                 selectedWeapon--;
         }
