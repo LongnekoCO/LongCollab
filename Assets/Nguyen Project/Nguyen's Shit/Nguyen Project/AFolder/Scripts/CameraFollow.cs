@@ -21,7 +21,7 @@ public class CameraFollow : MonoBehaviour
 
         cameraPos.x = playerPos.x;
         cameraPos.y = playerPos.y + yOffset;
-        cameraPos.z = 0;
+        cameraPos.z = -2;
 
         player.transform.position = playerPos;
         this.transform.position = cameraPos;
