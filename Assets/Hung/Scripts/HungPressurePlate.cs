@@ -4,14 +4,13 @@ using UnityEngine;
 
 public class HungPressurePlate : MonoBehaviour
 {
-    private Collider2D collider;
-    private HungPlayer player;
+    public GameObject testObject;
+    public GameObject explosion;
     
     // Start is called before the first frame update
     void Start()
     {
-        collider = this.GetComponent<BoxCollider2D>();
-        player = GameObject.Find("Player").GetComponent<HungPlayer>();
+
     }
 
     // Update is called once per frame
@@ -24,7 +23,8 @@ public class HungPressurePlate : MonoBehaviour
     {
         if (collision.gameObject.tag == "Player")
         {
-
+            Destroy(testObject);
+            Instantiate(explosion, testObject.transform.position, Quaternion.identity);
         }
     }
 }
