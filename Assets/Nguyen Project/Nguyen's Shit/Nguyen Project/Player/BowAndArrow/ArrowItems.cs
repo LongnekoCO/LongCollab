@@ -23,6 +23,8 @@ public class ArrowItems : MonoBehaviour
         //bowScript = GetComponent<Bow>();
         int i = Random.Range(0, arrowPrizes.Count);
         arrowPrize = arrowPrizes[i];
+        StartCoroutine(SelfDestruct());
+
     }
 
     // Update is called once per frame
@@ -62,5 +64,11 @@ public class ArrowItems : MonoBehaviour
 
 
         }
+    }
+
+    IEnumerator SelfDestruct()
+    {
+        yield return new WaitForSeconds(3f);
+        Destroy(gameObject);
     }
 }

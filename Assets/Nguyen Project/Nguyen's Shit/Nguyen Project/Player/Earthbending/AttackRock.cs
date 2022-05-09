@@ -64,6 +64,12 @@ public class AttackRock : MonoBehaviour
 
 
         }
+
+        else
+        {
+            anim.SetTrigger("destroy");
+            StartCoroutine(AnotherWait());
+        }
        
         
     }
