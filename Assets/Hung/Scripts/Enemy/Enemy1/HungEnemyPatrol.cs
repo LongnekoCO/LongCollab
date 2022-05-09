@@ -5,7 +5,7 @@ using UnityEngine;
 /*******************************************************
 Author Name: Le Hoang Hung
 Date: 20/10/2021
-Object holding the script: Enemy5
+Object holding the script: Enemy1
 Summary:
 Enemy movement, attack, animation
 
@@ -14,7 +14,7 @@ Change the movement of enemy
 
 *******************************************************/
 
-public class HungEnemy5Patrol : MonoBehaviour
+public class HungEnemyPatrol : MonoBehaviour
 {
     private Animator anim;
     private Rigidbody2D rb2d;
@@ -24,12 +24,11 @@ public class HungEnemy5Patrol : MonoBehaviour
     public HungHealthBar healthBar;
 
     public float enemyMoveSpeed;
-    public float enemyRealMoveSpeed;
     public Transform target;
     public Transform groundCheckPos;
     public LayerMask groundLayer;
     private bool isMoving;
-    public bool facingRight = true;
+    private bool facingRight = true;
 
     //Enemy attack
     public GameObject enemyAttackBox;
@@ -48,7 +47,6 @@ public class HungEnemy5Patrol : MonoBehaviour
         anim.SetTrigger("Walk");
         enemyHP = enemyMaxHP;
         healthBar.SetMaxHealth(enemyHP);
-        enemyMoveSpeed = enemyRealMoveSpeed;
         isMoving = true;
     }
 
@@ -66,14 +64,30 @@ public class HungEnemy5Patrol : MonoBehaviour
         }*/
     }
 
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag == "Player")
+        {
+            isMoving = false;
+            Attack();
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag == "Player")
+        {
+            isMoving = true;
+            anim.SetTrigger("Walk");
+        }
+    }
+
     //Enemy movement
     //Called in Update()
     public void Move()
     {
-        anim.SetTrigger("Walk");
         float enemyMove = enemyMoveSpeed * Time.deltaTime;
         this.transform.position = Vector3.MoveTowards(this.transform.position, target.position, enemyMove);
-        enemyMoveSpeed = enemyRealMoveSpeed;
     }
 
     //Enemy will turn around after hit the waypoint
@@ -89,11 +103,8 @@ public class HungEnemy5Patrol : MonoBehaviour
     //Called by EnemyAttackBox.OnTriggerEnter2D()
     public void Attack()
     {
-        anim.SetTrigger("Attack1");
-        enemyMoveSpeed = 0;
-
         //Enemy will attack with different animations
-        /*int attackRand = Random.Range(0, 3);
+        int attackRand = Random.Range(0, 3);
         if (attackRand == 0)
         {
             anim.SetTrigger("Attack1");
@@ -101,38 +112,10 @@ public class HungEnemy5Patrol : MonoBehaviour
         else if (attackRand == 1)
         {
             anim.SetTrigger("Attack2");
-        }*/
-    }
-
-    public void ArrowShoot1()
-    {
-        if (facingRight == true)
-        {
-            Rigidbody2D latesetArrow = Instantiate(enemyAttackBox.GetComponent<HungEnemy5AttackBox>().arrow, enemyAttackBox.GetComponent<HungEnemy5AttackBox>().gameObject.transform.position, Quaternion.identity);
-
-            latesetArrow.AddRelativeForce(new Vector2(500, 0) * enemyAttackBox.GetComponent<HungEnemy5AttackBox>().speed);
         }
-        else
+        else if (attackRand == 2)
         {
-            Rigidbody2D latesetArrow = Instantiate(enemyAttackBox.GetComponent<HungEnemy5AttackBox>().arrow, enemyAttackBox.GetComponent<HungEnemy5AttackBox>().gameObject.transform.position, Quaternion.identity);
-
-            latesetArrow.AddRelativeForce(new Vector2(-500, 0) * enemyAttackBox.GetComponent<HungEnemy5AttackBox>().speed);
-        }
-    }
-
-    public void ArrowShoot2()
-    {
-        if (facingRight == true)
-        {
-            Rigidbody2D latesetArrow = Instantiate(enemyAttackBox.GetComponent<HungEnemy5AttackBox>().arrow, enemyAttackBox.GetComponent<HungEnemy5AttackBox>().gameObject.transform.position, Quaternion.identity);
-
-            latesetArrow.AddRelativeForce(new Vector2(500, -500) * enemyAttackBox.GetComponent<HungEnemy5AttackBox>().speed);
-        }
-        else
-        {
-            Rigidbody2D latesetArrow = Instantiate(enemyAttackBox.GetComponent<HungEnemy5AttackBox>().arrow, enemyAttackBox.GetComponent<HungEnemy5AttackBox>().gameObject.transform.position, Quaternion.identity);
-
-            latesetArrow.AddRelativeForce(new Vector2(-500, -500) * enemyAttackBox.GetComponent<HungEnemy5AttackBox>().speed);
+            anim.SetTrigger("Attack3");
         }
     }
 
