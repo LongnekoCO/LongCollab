@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 1429595355261154295}
   - component: {fileID: 7789359098032885416}
   - component: {fileID: 7859388406255562069}
-  - component: {fileID: -531066625678455807}
+  - component: {fileID: 4146820453045608829}
   m_Layer: 7
   m_Name: Enemy4
   m_TagString: Enemy
@@ -155,7 +155,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!114 &-531066625678455807
+--- !u!114 &4146820453045608829
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -164,12 +164,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 738385188296863953}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2cf675db712c76d4a8c6f21d730e7780, type: 3}
+  m_Script: {fileID: 11500000, guid: ff3b2af2955017f459c35fba9c65b07b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 0}
   healthBar: {fileID: 1177431728969533781}
-  enemyMoveSpeed: 5
+  enemyMoveSpeed: 2
   target: {fileID: 0}
   groundCheckPos: {fileID: 5176658441541181856}
   groundLayer:
@@ -496,7 +496,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1507008251401472611}
   - component: {fileID: 2373534644321943856}
-  - component: {fileID: 7911245989915695599}
+  - component: {fileID: 8092134284063830863}
   m_Layer: 7
   m_Name: Enemy4AttackBox
   m_TagString: Untagged
@@ -544,7 +544,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.92163944, y: 0.32740736}
   m_EdgeRadius: 0
---- !u!114 &7911245989915695599
+--- !u!114 &8092134284063830863
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -553,7 +553,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 5769655041844632938}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3fa58525a9e1f6846b2bb0e7f5451903, type: 3}
+  m_Script: {fileID: 11500000, guid: 13e5f9547873d034780ccbd8f44faf39, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &8638659361068960106

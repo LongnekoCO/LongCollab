@@ -50,7 +50,7 @@ public class AttackRock : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if(collision.gameObject.tag == "Enemy")
+        if(collision.gameObject.tag == "Enemy" || collision.gameObject.tag == "ArrowBox")
         {
             Rigidbody2D meow = collision.gameObject.GetComponent<Rigidbody2D>();
             //meow.isKinematic = false;
@@ -63,6 +63,12 @@ public class AttackRock : MonoBehaviour
            
 
 
+        }
+
+        else
+        {
+            anim.SetTrigger("destroy");
+            StartCoroutine(AnotherWait());
         }
        
         

@@ -4,9 +4,10 @@ using UnityEngine;
 
 public class TestSubjectScript : MonoBehaviour
 {
-    public float health = 300;
+   // public float health = 300;
     public bool enterGas = true;
     public ShrinkingArrowEffect otherScript;
+    public EnemyHealth otherScript1; 
     int temp;
     Coroutine lol; 
     
@@ -14,35 +15,25 @@ public class TestSubjectScript : MonoBehaviour
     void Start()
     {
         otherScript = this.GetComponent<ShrinkingArrowEffect>();
+        otherScript1 = this.GetComponent<EnemyHealth>();
         temp = otherScript.patrolSpeed; 
     }
 
     // Update is called once per frame
     void Update()
     {
-        if(health <= 0)
-        {
-            Die();
-        }
+        
 
         //CheckGas();
     }
 
-    public void TakeDamage(float dam)
-    {
-        health -= dam; 
-    }
-
-    public void Die()
-    {
-        Destroy(gameObject);
-    }
+   
 
     void OnCollisionEnter2D(Collision2D col)
     {
         if(col.gameObject.tag == "Arrow")
         {
-            TakeDamage(10);
+            otherScript1.TakeDamage(10);
         }
 
         if (col.gameObject.tag == "AttackRock")
@@ -62,7 +53,7 @@ public class TestSubjectScript : MonoBehaviour
         {
             StartCoroutine(SpeedDown());
             StartCoroutine(Gas());
-            health -= 10;
+            otherScript1.health -= 10;
         }
         
         
@@ -103,7 +94,7 @@ public class TestSubjectScript : MonoBehaviour
     IEnumerator AttackRockEffect()
     {
         otherScript.mustPatrol = false;
-        TakeDamage(20);
+        otherScript1.TakeDamage(20);
         yield return new WaitForSeconds(0.2f);
         otherScript.mustPatrol = true;
     }

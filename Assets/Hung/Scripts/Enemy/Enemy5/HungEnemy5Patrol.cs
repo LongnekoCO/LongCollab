@@ -24,11 +24,12 @@ public class HungEnemy5Patrol : MonoBehaviour
     public HungHealthBar healthBar;
 
     public float enemyMoveSpeed;
+    public float enemyRealMoveSpeed;
     public Transform target;
     public Transform groundCheckPos;
     public LayerMask groundLayer;
     private bool isMoving;
-    private bool facingRight = true;
+    public bool facingRight = true;
 
     //Enemy attack
     public GameObject enemyAttackBox;
@@ -44,9 +45,10 @@ public class HungEnemy5Patrol : MonoBehaviour
         anim = this.GetComponent<Animator>(); //get access to the animation
         rb2d = this.GetComponent<Rigidbody2D>(); //get access to the Rigidbody2D
         collide2D = this.GetComponent<BoxCollider2D>(); //get access to the BoxCollider2D
-        anim.SetTrigger("Attack1");
+        anim.SetTrigger("Walk");
         enemyHP = enemyMaxHP;
         healthBar.SetMaxHealth(enemyHP);
+        enemyMoveSpeed = enemyRealMoveSpeed;
         isMoving = true;
     }
 
@@ -64,30 +66,14 @@ public class HungEnemy5Patrol : MonoBehaviour
         }*/
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (collision.gameObject.tag == "Player")
-        {
-            isMoving = false;
-            Attack();
-        }
-    }
-
-    private void OnTriggerExit2D(Collider2D collision)
-    {
-        if (collision.gameObject.tag == "Player")
-        {
-            isMoving = true;
-            anim.SetTrigger("Walk");
-        }
-    }
-
     //Enemy movement
     //Called in Update()
     public void Move()
     {
+        anim.SetTrigger("Walk");
         float enemyMove = enemyMoveSpeed * Time.deltaTime;
         this.transform.position = Vector3.MoveTowards(this.transform.position, target.position, enemyMove);
+        enemyMoveSpeed = enemyRealMoveSpeed;
     }
 
     //Enemy will turn around after hit the waypoint
@@ -104,6 +90,7 @@ public class HungEnemy5Patrol : MonoBehaviour
     public void Attack()
     {
         anim.SetTrigger("Attack1");
+        enemyMoveSpeed = 0;
 
         //Enemy will attack with different animations
         /*int attackRand = Random.Range(0, 3);
