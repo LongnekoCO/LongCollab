@@ -35,21 +35,32 @@ public class ArrowItems : MonoBehaviour
     {
         if(col.gameObject.tag == "Player")
         {
-            for (int i = 0; i < playerBow.GetComponent<Bow>().arrowsSelect.Count; i++)
-            {
-                if (playerBow.GetComponent<Bow>().arrowsSelect[i] != arrowPrize)
-                {
-                    playerBow.GetComponent<Bow>().arrowsSelect.Add(arrowPrize);
-                    Destroy(gameObject);
-                }
+            //for (int i = 0; i < playerBow.GetComponent<Bow>().arrowsSelect.Count; i++)
+            //{
+            //    if (playerBow.GetComponent<Bow>().arrowsSelect[i] != arrowPrize)
+            //    {
+            //        playerBow.GetComponent<Bow>().arrowsSelect.Add(arrowPrize);
+            //        Destroy(gameObject);
+            //    }
 
-                else
-                {
-                    Destroy(gameObject);
-                }
+            //    else
+            //    {
+            //        Destroy(gameObject);
+            //    }
+            //}
+
+            if(!playerBow.GetComponent<Bow>().arrowsSelect.Contains(arrowPrize))
+            {
+                playerBow.GetComponent<Bow>().arrowsSelect.Add(arrowPrize);
+                Destroy(gameObject);
             }
 
-            
+            else
+            {
+                Destroy(gameObject);
+            }
+
+
         }
     }
 }

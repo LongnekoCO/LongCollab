@@ -38,6 +38,11 @@ public class ArrowChest : MonoBehaviour
         {
             StartCoroutine(Shrink());
         }
+
+        if(col.gameObject.tag == "AttackRock")
+        {
+            healthScript.TakeDamage(20);
+        }
     }
     IEnumerator Shrink()
     {

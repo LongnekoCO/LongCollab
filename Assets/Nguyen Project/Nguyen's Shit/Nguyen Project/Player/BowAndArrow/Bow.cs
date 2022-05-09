@@ -17,6 +17,7 @@ public class Bow : MonoBehaviour
     public bool facingRight = true;
     public LineRenderer line;
     GameObject target;
+    public GameObject crosshair;
 
     public GameObject player; 
 
@@ -37,11 +38,11 @@ public class Bow : MonoBehaviour
         bowAnim = GetComponent<BowAnimation>();
         points = new GameObject[numberOfPoints];
 
-        for(int i = 0; i < numberOfPoints; i++)
-        {
-            points[i] = Instantiate(point, shotPoint.position, Quaternion.identity); 
+        //for(int i = 0; i < numberOfPoints; i++)
+        //{
+        //    points[i] = Instantiate(point, shotPoint.position, Quaternion.identity); 
 
-        }
+        //}
 
         playerScript = this.GetComponentInParent<PlayerMovementScript>();
 
@@ -63,16 +64,20 @@ public class Bow : MonoBehaviour
         direction = mousePosition - bowPosition;
         transform.right = direction;
 
+        crosshair.transform.position = mousePosition;
+
         if(Input.GetMouseButtonUp(0) && canShoot == true)
         {
             Shoot();
             StartCoroutine(Rate());
         }
 
-        for(int i = 0; i < numberOfPoints; i++)
-        {
-            points[i].transform.position = PointPosition(i * spaceBetweenPoints); 
-        }
+        //for(int i = 0; i < numberOfPoints; i++)
+        //{
+        //    points[i].transform.position = PointPosition(i * spaceBetweenPoints); 
+        //}
+
+
 
         if(playerScript.facingRight == false)
         {
