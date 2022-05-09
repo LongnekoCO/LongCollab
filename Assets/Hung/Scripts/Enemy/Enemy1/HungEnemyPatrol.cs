@@ -5,7 +5,7 @@ using UnityEngine;
 /*******************************************************
 Author Name: Le Hoang Hung
 Date: 20/10/2021
-Object holding the script: Enemy1, Enemy2, Enemy3, Enemy4, Enemy5
+Object holding the script: Enemy1
 Summary:
 Enemy movement, attack, animation
 

@@ -261,6 +261,7 @@ GameObject:
   - component: {fileID: 4513784122620723808}
   - component: {fileID: 7964588656674572089}
   - component: {fileID: 2155023901555934875}
+  - component: {fileID: -8901866072773660322}
   m_Layer: 7
   m_Name: Enemy5
   m_TagString: Enemy
@@ -417,15 +418,34 @@ MonoBehaviour:
   player: {fileID: 0}
   healthBar: {fileID: 8384900078467854353}
   enemyMoveSpeed: 0
+  enemyRealMoveSpeed: 0
   target: {fileID: 0}
   groundCheckPos: {fileID: 8575497971466202660}
   groundLayer:
     serializedVersion: 2
     m_Bits: 64
+  facingRight: 1
   enemyAttackBox: {fileID: 2545418336531569322}
   enemyAttackDamage: 10
   enemyHP: 0
   enemyMaxHP: 100
+--- !u!114 &-8901866072773660322
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4100697631208959803}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f8e5594493f1ac4bb1516a538369e0b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mask:
+    serializedVersion: 2
+    m_Bits: 127
+  player: {fileID: 0}
+  sightRange: 0
 --- !u!1 &4349719078988177690
 GameObject:
   m_ObjectHideFlags: 0

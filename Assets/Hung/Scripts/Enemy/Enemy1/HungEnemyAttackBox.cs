@@ -5,7 +5,7 @@ using UnityEngine;
 /*******************************************************
 Author Name: Le Hoang Hung
 Date: 20/10/2021
-Object holding the script: Enemy1AttackBox, Enemy2AttackBox, Enemy3AttackBox, Enemy4AttackBox, Enemy5AttackBox
+Object holding the script: Enemy1AttackBox
 Summary:
 Enemy attack hit box
 
@@ -26,8 +26,6 @@ public class HungEnemyAttackBox : MonoBehaviour
         enemyPatrolScript = GameObject.Find("Enemy1 (1)").GetComponent<HungEnemyPatrol>();
         enemyPatrolScript = GameObject.Find("Enemy1 (2)").GetComponent<HungEnemyPatrol>();
         enemyPatrolScript = GameObject.Find("Enemy1 (3)").GetComponent<HungEnemyPatrol>();
-        //enemyPatrolScript = GameObject.Find("Enemy3").GetComponent<HungEnemyPatrol>();
-        //enemyPatrolScript = GameObject.Find("Enemy4").GetComponent<HungEnemyPatrol>();
         
         playerScript = GameObject.Find("Player").GetComponent<HungPlayer>();
     }
