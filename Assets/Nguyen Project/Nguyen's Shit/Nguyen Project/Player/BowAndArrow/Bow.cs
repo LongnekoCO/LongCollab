@@ -17,6 +17,7 @@ public class Bow : MonoBehaviour
     public bool facingRight = true;
     public LineRenderer line;
     GameObject target;
+    public GameObject crosshair;
 
     public GameObject player; 
 
@@ -26,7 +27,7 @@ public class Bow : MonoBehaviour
 
     public SpringJoint2D springy; 
 
-    public GameObject[] arrowsSelect;
+    public List<GameObject>arrowsSelect =  new List<GameObject>();
     public int selectedWeapon = 0;
 
     private BowAnimation bowAnim; 
@@ -37,11 +38,11 @@ public class Bow : MonoBehaviour
         bowAnim = GetComponent<BowAnimation>();
         points = new GameObject[numberOfPoints];
 
-        for(int i = 0; i < numberOfPoints; i++)
-        {
-            points[i] = Instantiate(point, shotPoint.position, Quaternion.identity); 
+        //for(int i = 0; i < numberOfPoints; i++)
+        //{
+        //    points[i] = Instantiate(point, shotPoint.position, Quaternion.identity); 
 
-        }
+        //}
 
         playerScript = this.GetComponentInParent<PlayerMovementScript>();
 
@@ -63,16 +64,20 @@ public class Bow : MonoBehaviour
         direction = mousePosition - bowPosition;
         transform.right = direction;
 
+        crosshair.transform.position = mousePosition;
+
         if(Input.GetMouseButtonUp(0) && canShoot == true)
         {
             Shoot();
             StartCoroutine(Rate());
         }
 
-        for(int i = 0; i < numberOfPoints; i++)
-        {
-            points[i].transform.position = PointPosition(i * spaceBetweenPoints); 
-        }
+        //for(int i = 0; i < numberOfPoints; i++)
+        //{
+        //    points[i].transform.position = PointPosition(i * spaceBetweenPoints); 
+        //}
+
+
 
         if(playerScript.facingRight == false)
         {
@@ -97,7 +102,7 @@ public class Bow : MonoBehaviour
 
         if(Input.GetAxis("Mouse ScrollWheel") > 0f)
         {
-            if (selectedWeapon >= arrowsSelect.Length - 1)
+            if (selectedWeapon >= arrowsSelect.Count - 1)
                 selectedWeapon = 0;
             else
                 selectedWeapon++;
@@ -106,7 +111,7 @@ public class Bow : MonoBehaviour
         if(Input.GetAxis("Mouse ScrollWheel") < 0f)
         {
             if (selectedWeapon <= 0)
-                selectedWeapon = arrowsSelect.Length - 1;
+                selectedWeapon = arrowsSelect.Count - 1;
             else
                 selectedWeapon--;
         }

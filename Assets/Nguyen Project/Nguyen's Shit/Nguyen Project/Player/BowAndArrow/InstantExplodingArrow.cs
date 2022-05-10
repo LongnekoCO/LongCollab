@@ -48,27 +48,12 @@ public class InstantExplodingArrow : MonoBehaviour
     void Explode()
     {
 
-        //Collider2D[] objects = Physics2D.OverlapCircleAll(transform.position, fieldofImpact, layerToHit);
-
-        //foreach (Collider2D obj in objects)
-        //{           
-        //    Vector2 direction = obj.transform.position - transform.position;           
-
-        //    obj.GetComponent<Rigidbody2D>().AddForce(direction * force);
-
-        //    if (obj.gameObject.tag == "Enemy")
-        //    {
-        //        var enemy = obj.GetComponent<TestSubjectScript>();
-
-        //        enemy.TakeDamage(50);
-        //    }
-        //}
-
+       
         var hitColliders = Physics2D.OverlapCircleAll(transform.position, fieldofImpact); 
 
         foreach(var hitCollider in hitColliders)
         {
-            var enemy = hitCollider.GetComponent<TestSubjectScript>();
+            var enemy = hitCollider.GetComponent<EnemyHealth>();
                        
             
             if (enemy)

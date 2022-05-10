@@ -28,10 +28,10 @@ public class HungWaypoint : MonoBehaviour
     void Start()
     {
         //bossPatrol = GameObject.Find("Boss1").GetComponent<HungBossPatrol>();
-        enemyPatrol1 = GameObject.Find("Enemy1").GetComponent<HungEnemyPatrol>();
-        enemyPatrol1 = GameObject.Find("Enemy1 (1)").GetComponent<HungEnemyPatrol>();
-        enemyPatrol1 = GameObject.Find("Enemy1 (2)").GetComponent<HungEnemyPatrol>();
-        enemyPatrol1 = GameObject.Find("Enemy1 (3)").GetComponent<HungEnemyPatrol>();
+        //enemyPatrol1 = GameObject.Find("Enemy1").GetComponent<HungEnemyPatrol>();
+        //enemyPatrol1 = GameObject.Find("Enemy1 (1)").GetComponent<HungEnemyPatrol>();
+        //enemyPatrol1 = GameObject.Find("Enemy1 (2)").GetComponent<HungEnemyPatrol>();
+        //enemyPatrol1 = GameObject.Find("Enemy1 (3)").GetComponent<HungEnemyPatrol>();
         //enemyPatrol2 = GameObject.Find("Enemy2").GetComponent<HungEnemy2Patrol>();
         //enemyPatrol3 = GameObject.Find("Enemy3").GetComponent<HungEnemyPatrol>();
         //enemyPatrol4 = GameObject.Find("Enemy4").GetComponent<HungEnemyPatrol>();
@@ -43,11 +43,11 @@ public class HungWaypoint : MonoBehaviour
         if (collision.gameObject.tag == "Enemy")
         {
             //Call the GetRandomTarget()
-            collision.gameObject.GetComponent<HungEnemyPatrol>().target = GetRandomTarget();
+            //collision.gameObject.GetComponent<HungEnemyPatrol>().target = GetRandomTarget();
             //collision.gameObject.GetComponent<HungEnemy2Patrol>().target = GetRandomTarget();
             //collision.gameObject.GetComponent<HungBossPatrol>().target = GetRandomTarget();
 
-            collision.gameObject.GetComponent<HungEnemyPatrol>().Flip();
+            //collision.gameObject.GetComponent<HungEnemyPatrol>().Flip();
             //collision.gameObject.GetComponent<HungEnemy2Patrol>().Flip();
             //collision.gameObject.GetComponent<HungBossPatrol>().Flip();
         }

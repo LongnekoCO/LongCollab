@@ -24,6 +24,8 @@ TagManager:
   - NextLevelProto
   - AttackRock
   - Attack
+  - ArrowBox
+  - TNT
   layers:
   - Default
   - TransparentFX

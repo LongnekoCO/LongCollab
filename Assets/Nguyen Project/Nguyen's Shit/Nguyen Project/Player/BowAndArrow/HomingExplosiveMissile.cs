@@ -86,7 +86,7 @@ public class HomingExplosiveMissile : MonoBehaviour
 
         foreach (var hitCollider in hitColliders)
         {
-            var enemy = hitCollider.GetComponent<TestSubjectScript>();
+            var enemy = hitCollider.GetComponent<EnemyHealth>();
 
 
             if (enemy)
