@@ -5,12 +5,12 @@ using UnityEngine;
 public class HungPressurePlate : MonoBehaviour
 {
     public GameObject testObject;
-    public GameObject explosion;
+    private Animator animator;
     
     // Start is called before the first frame update
     void Start()
     {
-
+        animator = this.GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -23,8 +23,16 @@ public class HungPressurePlate : MonoBehaviour
     {
         if (collision.gameObject.tag == "Player")
         {
+            animator.SetTrigger("Pressed");
             Destroy(testObject);
-            Instantiate(explosion, testObject.transform.position, Quaternion.identity);
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if(collision.gameObject.tag == "Player")
+        {
+            animator.SetTrigger("Unpressed");
         }
     }
 }

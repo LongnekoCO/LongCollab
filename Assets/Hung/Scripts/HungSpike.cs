@@ -4,13 +4,13 @@ using UnityEngine;
 
 public class HungSpike : MonoBehaviour
 {
-    private Collider2D collider;
+    //private Collider2D collider;
     private HungPlayer player;
 
     // Start is called before the first frame update
     void Start()
     {
-        collider = this.GetComponent<Collider2D>();
+        //collider = this.GetComponent<Collider2D>();
         player = GameObject.Find("Player").GetComponent<HungPlayer>();
     }
 
@@ -24,7 +24,8 @@ public class HungSpike : MonoBehaviour
     {
         if (collision.gameObject.tag == "Player")
         {
-            collision.gameObject.GetComponent<HungPlayer>().TakeDamage(10);
+            player.TakeDamage(10);
+            //InvokeRepeating("DamageLooping", 1f, 3f);
         }
     }
 }

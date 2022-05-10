@@ -9,12 +9,21 @@ public class HungLockedDoor : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        hasKey = false;
     }
 
     // Update is called once per frame
     void Update()
     {
         
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag == "Key")
+        {
+            hasKey = true;
+            Destroy(this.gameObject);
+        }
     }
 }
