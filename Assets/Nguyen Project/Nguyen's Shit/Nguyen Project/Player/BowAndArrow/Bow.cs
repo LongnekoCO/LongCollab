@@ -18,6 +18,7 @@ public class Bow : MonoBehaviour
     public LineRenderer line;
     GameObject target;
     public GameObject crosshair;
+    public float fireRate = 0.5f;
 
     public GameObject player; 
 
@@ -134,7 +135,7 @@ public class Bow : MonoBehaviour
     {
         canShoot = false;
         //bowAnim.canAnim = false;
-        yield return new WaitForSeconds(0.5f);
+        yield return new WaitForSeconds(fireRate);
         canShoot = true;
         //bowAnim.canAnim = true;
     }

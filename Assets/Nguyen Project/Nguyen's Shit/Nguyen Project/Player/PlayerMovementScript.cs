@@ -8,7 +8,12 @@ public class PlayerMovementScript : MonoBehaviour
     public bool facingRight = true;
     Animator anim;
     public Rigidbody2D playerRigidbody;
-    public int health = 20; //testing only
+    
+    public float health = 20; //testing only
+    public float currentHealth;
+    public HungHealthBar healthBar;
+
+
     public float jumpForce;
     bool isGrounded;
     public Transform groundCheck;
@@ -39,6 +44,8 @@ public class PlayerMovementScript : MonoBehaviour
 
     public bool enterPool = true; 
 
+
+
     // Start is called before the first frame update
     void Start()
     {
@@ -50,6 +57,10 @@ public class PlayerMovementScript : MonoBehaviour
         canDash = true;
 
         parachute.GetComponent<SpriteRenderer>().color = new Color(0,0,0,0);
+
+        currentHealth = health;
+        healthBar.SetMaxHealth(health);
+
     }
 
     // Update is called once per frame
@@ -109,6 +120,12 @@ public class PlayerMovementScript : MonoBehaviour
                 Jump();
             }
         }*/
+        //if (Input.GetKeyDown(KeyCode.P))
+        //{
+        //    TakeDamage(20);
+        //}
+
+
     }
 
     void FixedUpdate()
@@ -246,6 +263,18 @@ public class PlayerMovementScript : MonoBehaviour
             }
 
         }
+    }
+
+    public void TakeDamage(float damage)
+    {
+        currentHealth -= damage;
+        healthBar.SetHealth(currentHealth);
+    }
+
+    public void GetHealth(float health1)
+    {
+        currentHealth += health1;
+        healthBar.SetHealth(currentHealth);
     }
 
     IEnumerator PoisonPool()

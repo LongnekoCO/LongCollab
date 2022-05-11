@@ -27,6 +27,9 @@ TagManager:
   - ArrowBox
   - TNT
   - Key
+  - EnergyPill
+  - HealthPill
+  - ViagraPill
   layers:
   - Default
   - TransparentFX
