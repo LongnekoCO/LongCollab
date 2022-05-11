@@ -38,8 +38,6 @@ public class PlayerMovementScript : MonoBehaviour
     public Transform parachute;
 
     public bool enterPool = true; 
-   
-    
 
     // Start is called before the first frame update
     void Start()
@@ -58,18 +56,6 @@ public class PlayerMovementScript : MonoBehaviour
     void Update()
     {
         Movement();
-       
-
-        //if (Input.GetKeyDown(KeyCode.Space))
-        //{
-        //    //checks if the player is on the ground to avoid double jump
-        //    if (isGrounded)
-        //    {
-        //        Jump();
-        //    }
-
-        //}
-
         if(isGrounded)
         {
             extraJumps = extraJumpsVal;
@@ -86,13 +72,11 @@ public class PlayerMovementScript : MonoBehaviour
             Jump();
             extraJumps--;
         }
-
         else if (Input.GetKeyDown(KeyCode.Space) && extraJumps == 0 && isGrounded == true)
         {
             Jump();
         }
 
-       
         if(!isGrounded)
         {
             if(Input.GetKeyDown(KeyCode.LeftShift) && parachuteOn == false)
@@ -117,6 +101,14 @@ public class PlayerMovementScript : MonoBehaviour
             parachute.GetComponent<SpriteRenderer>().color = new Color(0, 0, 0, 0);
         }
 
+        /*if (Input.GetKeyDown(KeyCode.Space))
+        {
+            //checks if the player is on the ground to avoid double jump
+            if (isGrounded)
+            {
+                Jump();
+            }
+        }*/
     }
 
     void FixedUpdate()
@@ -148,7 +140,6 @@ public class PlayerMovementScript : MonoBehaviour
         canDash = true;
     }
 
-
     void Jump()
     {
         playerRigidbody.velocity = Vector2.up * jumpForce;
@@ -166,7 +157,6 @@ public class PlayerMovementScript : MonoBehaviour
                 playerPosition.x = playerPosition.x + walkingSpeed;
                 this.transform.position = playerPosition;
                 anim.SetTrigger("isWalking");
-
                 if (facingRight == false)
                 {
                     Flip();
@@ -180,10 +170,6 @@ public class PlayerMovementScript : MonoBehaviour
                     StartCoroutine(Dash());
 
                 }
-
-
-
-
             }
 
             else if (Input.GetKey(KeyCode.A))
@@ -204,9 +190,7 @@ public class PlayerMovementScript : MonoBehaviour
                     Instantiate(smokeParticle, temp, Quaternion.identity);
                     StartCoroutine(Dash());
                 }
-
             }
-
             else
             {
                 anim.SetTrigger("isIdle");
@@ -225,7 +209,6 @@ public class PlayerMovementScript : MonoBehaviour
                 Instantiate(smokeParticle, temp, Quaternion.identity);
                 //Destroy(log, 2f);
             }
-
             else if (facingRight == false)
             {
                 //int positionX = Random.Range(1,10);
@@ -236,8 +219,6 @@ public class PlayerMovementScript : MonoBehaviour
                 Instantiate(smokeParticle, temp, Quaternion.identity);
                 //Destroy(log, 2f);
             }
-
-
         }
     }
 
@@ -249,15 +230,13 @@ public class PlayerMovementScript : MonoBehaviour
         this.transform.localScale = playerScale;
     }
 
-
     void OnTriggerEnter2D(Collider2D col)
     {
         if (col.gameObject.tag == "BossTrigger")
         {
             Boss.SetActive(true);
         }
-
-        
+ 
         else if (col.gameObject.tag == "PoisonPool")
         {
             if(enterPool == true)
@@ -267,9 +246,6 @@ public class PlayerMovementScript : MonoBehaviour
             }
 
         }
-
-
-
     }
 
     IEnumerator PoisonPool()
@@ -278,7 +254,4 @@ public class PlayerMovementScript : MonoBehaviour
         yield return new WaitForSecondsRealtime(1f);
         enterPool = true;
     }
-
-   
-
 }
