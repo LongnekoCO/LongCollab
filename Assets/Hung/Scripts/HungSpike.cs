@@ -11,7 +11,7 @@ public class HungSpike : MonoBehaviour
     void Start()
     {
         //collider = this.GetComponent<Collider2D>();
-        player = GameObject.Find("Player").GetComponent<HungPlayer>();
+        player = GameObject.Find("Dog").GetComponent<HungPlayer>();
     }
 
     // Update is called once per frame
@@ -24,8 +24,12 @@ public class HungSpike : MonoBehaviour
     {
         if (collision.gameObject.tag == "Player")
         {
-            player.TakeDamage(10);
-            //InvokeRepeating("DamageLooping", 1f, 3f);
+            InvokeRepeating("DamageLooping", 1f, 3f);
         }
+    }
+
+    void DamageLooping()
+    {
+        player.TakeDamage(10);
     }
 }

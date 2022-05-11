@@ -19,15 +19,17 @@ public class HungPlayer : MonoBehaviour
     public int playerCurrentHealth;
     public float moveSpeed;
     public bool isMoving = true;
-    public HungWhirlwindHit whirlwindHit;
+    private HungWhirlwindHit whirlwindHit;
     public GameObject windPraticle;
     public GameObject lightningPraticle;
+    public HungHealthBar healthBar;
 
     // Start is called before the first frame update
     void Start()
     {
         //Player startup health
-        playerHealth = playerCurrentHealth;
+        playerCurrentHealth = playerHealth;
+        healthBar.SetMaxHealth(playerCurrentHealth);
     }
 
     // Update is called once per frame
@@ -58,7 +60,8 @@ public class HungPlayer : MonoBehaviour
     //Called by Glue.OnCollisionEnter2D() when take damage
     public void TakeDamage(int damage)
     {
-        playerHealth -= damage; 
+        playerCurrentHealth -= damage;
+        healthBar.SetHealth(playerCurrentHealth);
     }
 
     IEnumerator WindEffect()
