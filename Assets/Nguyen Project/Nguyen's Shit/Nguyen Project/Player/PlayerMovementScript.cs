@@ -187,7 +187,7 @@ public class PlayerMovementScript : MonoBehaviour
                 if (Input.GetKeyDown(KeyCode.RightShift) && canDash == true)
                 {
                     Vector3 temp = new Vector3(this.transform.position.x, this.transform.position.y, this.transform.position.z);
-                    powerScript.UseEnergy(20f);
+                    powerScript.UseEnergy(20);
                     Instantiate(smokeParticle, temp, Quaternion.identity);
                     StartCoroutine(Dash());
 
@@ -212,7 +212,7 @@ public class PlayerMovementScript : MonoBehaviour
                     {
                         Vector3 temp = new Vector3(this.transform.position.x, this.transform.position.y, this.transform.position.z);
                         Instantiate(smokeParticle, temp, Quaternion.identity);
-                        powerScript.UseEnergy(20f);
+                        powerScript.UseEnergy(20);
                         StartCoroutine(Dash());
                     }
                     
@@ -248,7 +248,7 @@ public class PlayerMovementScript : MonoBehaviour
                     Instantiate(smokeParticle, temp, Quaternion.identity);
                     //Destroy(log, 2f);
                 }
-                powerScript.UseEnergy(20f);
+                powerScript.UseEnergy(20);
             }
        }
     }

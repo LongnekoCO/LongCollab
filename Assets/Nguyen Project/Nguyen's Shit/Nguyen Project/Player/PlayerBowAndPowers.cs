@@ -19,8 +19,8 @@ public class PlayerBowAndPowers : MonoBehaviour
 
     private PlayerMovementScript playerMovementScript;
 
-    public float energy = 150; //testing only
-    public float currentEnergy;
+    public int energy = 150; //testing only
+    public int currentEnergy;
     public EnergyBar energyBar;
 
     private Coroutine regain;
@@ -79,7 +79,7 @@ public class PlayerBowAndPowers : MonoBehaviour
             {
 
                 //anim.SetTrigger("isIdle");
-                currentEnergy -= 30f;
+                currentEnergy -= 30;
                 boulderDefSpawn.SetActive(true);
                 Instantiate(boulderDef, boulderDefSpawn.transform.position, Quaternion.identity);
                 playerMovementScript.canMovee = false;
@@ -120,7 +120,7 @@ public class PlayerBowAndPowers : MonoBehaviour
         {
 
             //anim.SetTrigger("isIdle");
-            currentEnergy -= 30f;
+            currentEnergy -= 30;
             boulderAttackSpawn.SetActive(true);
             Instantiate(boulderAttack, boulderAttackSpawn.transform.position, Quaternion.identity);
             playerMovementScript.canMovee = false;
@@ -160,7 +160,7 @@ public class PlayerBowAndPowers : MonoBehaviour
             //anim.SetTrigger("isIdle");
             foreach (GameObject enemie in enemies)
             {
-                currentEnergy -= 30f;
+                currentEnergy -= 30;
                 Instantiate(iceAttack, enemie.transform.position, Quaternion.identity);
 
                 StartCoroutine(Ice());
@@ -194,7 +194,7 @@ public class PlayerBowAndPowers : MonoBehaviour
         }
     }
 
-    public void UseEnergy(float energy1)
+    public void UseEnergy(int energy1)
     {
         currentEnergy -= energy1; 
          if (regain != null)
