@@ -204,6 +204,12 @@ public class Bow : MonoBehaviour
             arrowImage.GetComponent<Image>().sprite = arrowImagee;
             arrowText.text = arrow.name;
         }
+        else if (arrow.name == "BurstArrow")
+        {
+            arrowImagee = Resources.Load<Sprite>("Arrow5");
+            arrowImage.GetComponent<Image>().sprite = arrowImagee;
+            arrowText.text = arrow.name;
+        }
     }
 
     public void TargetHit(GameObject hit)
@@ -223,6 +229,7 @@ public class Bow : MonoBehaviour
         line.enabled = true;
         springy.enabled = true;
         springy.connectedBody = target.GetComponent<Rigidbody2D>();
+        //player.transform.GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Static;
     }
 
     public void ReleaseGrappling()
@@ -231,6 +238,7 @@ public class Bow : MonoBehaviour
         springy.enabled = false;
         target = null;
         canShoot = true;
+        //player.transform.GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Dynamic;
     }
 
     public void Release()
