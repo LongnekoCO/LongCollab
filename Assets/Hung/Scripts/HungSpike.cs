@@ -5,13 +5,13 @@ using UnityEngine;
 public class HungSpike : MonoBehaviour
 {
     //private Collider2D collider;
-    private PlayerMovementScript player;
+    private HungPlayer player;
 
     // Start is called before the first frame update
     void Start()
     {
         //collider = this.GetComponent<Collider2D>();
-        player = GameObject.Find("Dog").GetComponent<PlayerMovementScript>();
+        player = GameObject.Find("Dog").GetComponent<HungPlayer>();
     }
 
     // Update is called once per frame

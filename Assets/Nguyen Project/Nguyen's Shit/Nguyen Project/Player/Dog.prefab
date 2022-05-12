@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1903033440472953655}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: Telepoint1
   m_TagString: Untagged
   m_Icon: {fileID: 3936346786652291628, guid: 0000000000000000d000000000000000, type: 0}
@@ -41,7 +41,7 @@ GameObject:
   - component: {fileID: 8583702490858450626}
   - component: {fileID: 2402870964327016528}
   - component: {fileID: 3576869731458831897}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: WaterbendingDetectRange
   m_TagString: WaterbendingDetectRange
   m_Icon: {fileID: 0}
@@ -958,7 +958,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3173489358384557534}
   - component: {fileID: 1061616101960213344}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: Parachute
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1343,7 +1343,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1415734033547002725}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: AttackRockSpawn
   m_TagString: Untagged
   m_Icon: {fileID: 419385456094870383, guid: 0000000000000000d000000000000000, type: 0}
@@ -1449,7 +1449,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 0
   m_Sprite: {fileID: 4723107735738678597, guid: 756f8298b28fab44dac390c7a8b5448b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -1561,17 +1561,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   facingRight: 1
   playerRigidbody: {fileID: 5206897003126350030}
-<<<<<<< HEAD
   health: 20
   currentHealth: 0
   healthBar: {fileID: 0}
   jumpForce: 4
-=======
-  health: 100
-  currentHealth: 0
-  healthBar: {fileID: 0}
-  jumpForce: 5
->>>>>>> 8bd5a2ad0ab222dc7d95665b03ba8b7000f0f9e3
   groundCheck: {fileID: 5206897003925339974}
   groundlayer:
     serializedVersion: 2
@@ -1585,7 +1578,7 @@ MonoBehaviour:
   startDashCount: 0
   canDash: 0
   parachuteOn: 0
-  extraJumpsVal: 1
+  extraJumpsVal: 0
   parachute: {fileID: 3173489358384557534}
   enterPool: 1
   powerScript: {fileID: 0}
@@ -1644,7 +1637,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5206897003925339974}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: groundCheck
   m_TagString: Untagged
   m_Icon: {fileID: 5721338939258241955, guid: 0000000000000000d000000000000000, type: 0}
@@ -2029,7 +2022,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3992069886041517641}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: BoulderDefense
   m_TagString: Untagged
   m_Icon: {fileID: 3936346786652291628, guid: 0000000000000000d000000000000000, type: 0}
@@ -2724,10 +2717,6 @@ PrefabInstance:
       value: Bow
       objectReference: {fileID: 0}
     - target: {fileID: 1503897189482503941, guid: a8b1eb82ffde7154b9c4273504e4bfb7, type: 3}
-      propertyPath: m_Layer
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 1503897189482503941, guid: a8b1eb82ffde7154b9c4273504e4bfb7, type: 3}
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
@@ -2851,22 +2840,6 @@ PrefabInstance:
       propertyPath: arrowsSelect.Array.data[10]
       value: 
       objectReference: {fileID: 871280249407744061, guid: 1f26e8aa467962e43b30c47f0ec75143, type: 3}
-    - target: {fileID: 1503897189770774557, guid: a8b1eb82ffde7154b9c4273504e4bfb7, type: 3}
-      propertyPath: m_Layer
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 1503897190249155138, guid: a8b1eb82ffde7154b9c4273504e4bfb7, type: 3}
-      propertyPath: m_Layer
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 2135225916511822903, guid: a8b1eb82ffde7154b9c4273504e4bfb7, type: 3}
-      propertyPath: m_Layer
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 5502409461528762474, guid: a8b1eb82ffde7154b9c4273504e4bfb7, type: 3}
-      propertyPath: m_Layer
-      value: 3
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a8b1eb82ffde7154b9c4273504e4bfb7, type: 3}
 --- !u!1 &6320490567615069324 stripped

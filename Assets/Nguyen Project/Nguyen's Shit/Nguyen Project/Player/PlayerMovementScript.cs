@@ -9,10 +9,10 @@ public class PlayerMovementScript : MonoBehaviour
     Animator anim;
     public Rigidbody2D playerRigidbody;
     
-    [Header("Health")]
-    public int health = 100; //testing only
-    public int currentHealth;
+    public float health = 20; //testing only
+    public float currentHealth;
     public HungHealthBar healthBar;
+
 
     public float jumpForce;
     bool isGrounded;
@@ -279,13 +279,13 @@ public class PlayerMovementScript : MonoBehaviour
         }
     }
 
-    public void TakeDamage(int damage)
+    public void TakeDamage(float damage)
     {
         currentHealth -= damage;
         healthBar.SetHealth(currentHealth);
     }
 
-    public void GetHealth(int health1)
+    public void GetHealth(float health1)
     {
         currentHealth += health1;
         healthBar.SetHealth(currentHealth);

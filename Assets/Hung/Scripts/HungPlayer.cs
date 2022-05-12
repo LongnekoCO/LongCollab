@@ -17,15 +17,12 @@ public class HungPlayer : MonoBehaviour
 {
     public int playerHealth = 100;
     public int playerCurrentHealth;
-    public int playerEnergy = 100;
-    public int playerCurrentEnergy;
     public float moveSpeed;
     public bool isMoving = true;
     private HungWhirlwindHit whirlwindHit;
     public GameObject windPraticle;
     public GameObject lightningPraticle;
     public HungHealthBar healthBar;
-    public HungEnergyBar energyBar;
 
     // Start is called before the first frame update
     void Start()
@@ -33,8 +30,6 @@ public class HungPlayer : MonoBehaviour
         //Player startup health
         playerCurrentHealth = playerHealth;
         healthBar.SetMaxHealth(playerCurrentHealth);
-        playerCurrentEnergy = playerEnergy;
-        energyBar.SetMaxEnergy(playerCurrentEnergy);
     }
 
     // Update is called once per frame
