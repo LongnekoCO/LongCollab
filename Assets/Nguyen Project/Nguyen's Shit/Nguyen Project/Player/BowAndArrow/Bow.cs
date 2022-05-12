@@ -31,7 +31,11 @@ public class Bow : MonoBehaviour
     public List<GameObject>arrowsSelect =  new List<GameObject>();
     public int selectedWeapon = 0;
 
-    private BowAnimation bowAnim; 
+    private BowAnimation bowAnim;
+
+    public GameObject arrowImage;
+
+    Sprite arrowImagee;
 
     private void Start()
     {
@@ -148,9 +152,57 @@ public class Bow : MonoBehaviour
             if (i == selectedWeapon)
             {
                 arrow = arrowsSelect[selectedWeapon];
-                StartCoroutine(ArrowTextChoose());
+                DisplayArrow();
+                //StartCoroutine(ArrowTextChoose());
             }                               
             i++; 
+        }
+    }
+
+    void DisplayArrow()
+    {
+        if(arrow.name == "Arrow")
+        {
+            arrowImagee = Resources.Load<Sprite>("Arrow");
+            arrowImage.GetComponent<Image>().sprite = arrowImagee;
+            arrowText.text = arrow.name;
+        }
+
+        else if(arrow.name == "GrapplingHook")
+        {
+            arrowImagee = Resources.Load<Sprite>("Arrow10");
+            arrowImage.GetComponent<Image>().sprite = arrowImagee;
+            arrowText.text = arrow.name;
+        }
+        else if (arrow.name == "InstantExplodingArrow")
+        {
+            arrowImagee = Resources.Load<Sprite>("Arrow8");
+            arrowImage.GetComponent<Image>().sprite = arrowImagee;
+            arrowText.text = arrow.name;
+        }
+        else if (arrow.name == "PoisonGasArrow")
+        {
+            arrowImagee = Resources.Load<Sprite>("Arrow9");
+            arrowImage.GetComponent<Image>().sprite = arrowImagee;
+            arrowText.text = arrow.name;
+        }
+        else if (arrow.name == "TripleArrow")
+        {
+            arrowImagee = Resources.Load<Sprite>("Arrow3");
+            arrowImage.GetComponent<Image>().sprite = arrowImagee;
+            arrowText.text = arrow.name;
+        }
+        else if (arrow.name == "TeleportArrow")
+        {
+            arrowImagee = Resources.Load<Sprite>("Arrow4");
+            arrowImage.GetComponent<Image>().sprite = arrowImagee;
+            arrowText.text = arrow.name;
+        }
+        else if (arrow.name == "BombingArrow")
+        {
+            arrowImagee = Resources.Load<Sprite>("Arrow7");
+            arrowImage.GetComponent<Image>().sprite = arrowImagee;
+            arrowText.text = arrow.name;
         }
     }
 
