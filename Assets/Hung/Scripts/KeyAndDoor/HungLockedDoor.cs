@@ -4,12 +4,12 @@ using UnityEngine;
 
 public class HungLockedDoor : MonoBehaviour
 {
-    public bool hasKey;
+    [SerializeField] private HungKey.KeyType keyType;
     
     // Start is called before the first frame update
     void Start()
     {
-        hasKey = false;
+        
     }
 
     // Update is called once per frame
@@ -18,12 +18,14 @@ public class HungLockedDoor : MonoBehaviour
         
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    public HungKey.KeyType GetKeyType()
     {
-        if (collision.gameObject.tag == "Key")
-        {
-            hasKey = true;
-            Destroy(this.gameObject);
-        }
+        return keyType;
+    }
+
+    public void OpenDoor()
+    {
+        Debug.Log("Door Open:" + keyType);
+        this.gameObject.SetActive(false);
     }
 }

@@ -4,13 +4,20 @@ using UnityEngine;
 
 public class HungKey : MonoBehaviour
 {
-    private Player player;
-    public GameObject door;
-    
+    [SerializeField] private KeyType keyType;
+
+    public enum KeyType
+    {
+        Red,
+        Yellow,
+        Green,
+        Blue
+    }
+
     // Start is called before the first frame update
     void Start()
     {
-        player = GameObject.Find("Dog").GetComponent<Player>();
+        
     }
 
     // Update is called once per frame
@@ -19,11 +26,8 @@ public class HungKey : MonoBehaviour
         
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    public KeyType GetKeyType()
     {
-        if (collision.gameObject.tag == "Player")
-        {
-            Destroy(door);
-        }
+        return keyType;
     }
 }

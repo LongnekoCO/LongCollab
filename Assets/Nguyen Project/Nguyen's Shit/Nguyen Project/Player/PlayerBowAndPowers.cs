@@ -14,7 +14,6 @@ public class PlayerBowAndPowers : MonoBehaviour
     public GameObject boulderAttack;
     public GameObject boulderAttackSpawn;
     
-
     public GameObject[] enemies;
 
     private PlayerMovementScript playerMovementScript;
@@ -25,7 +24,6 @@ public class PlayerBowAndPowers : MonoBehaviour
 
     private Coroutine regain;
     private WaitForSeconds regainTick = new WaitForSeconds(0.1f);
-
 
     public Image abilityImage1;
     public Image abilityImage2;
@@ -40,8 +38,6 @@ public class PlayerBowAndPowers : MonoBehaviour
     public bool isCooldown3 = false;
 
     public GameObject arrowDisplay;
-
-
 
     // Start is called before the first frame update
     void Start()
@@ -74,31 +70,25 @@ public class PlayerBowAndPowers : MonoBehaviour
 
     void Power()
     {
-        
-            if (Input.GetKeyDown(KeyCode.G) && isCooldown1 == false && currentEnergy - 30 >= 0)
+        if (Input.GetKeyDown(KeyCode.G) && isCooldown1 == false && currentEnergy - 30 >= 0)
+        {
+            //anim.SetTrigger("isIdle");
+            currentEnergy -= 30;
+            boulderDefSpawn.SetActive(true);
+            Instantiate(boulderDef, boulderDefSpawn.transform.position, Quaternion.identity);
+            playerMovementScript.canMovee = false;
+            isCooldown1 = true;
+            abilityImage1.fillAmount = 0; 
+
+            StartCoroutine(BoulderFall());
+
+            if (regain != null)
             {
-
-                //anim.SetTrigger("isIdle");
-                currentEnergy -= 30;
-                boulderDefSpawn.SetActive(true);
-                Instantiate(boulderDef, boulderDefSpawn.transform.position, Quaternion.identity);
-                playerMovementScript.canMovee = false;
-                isCooldown1 = true;
-                abilityImage1.fillAmount = 0; 
-
-                
-
-                StartCoroutine(BoulderFall());
-
-
-
-                if (regain != null)
-                {
-                    StopCoroutine(regain);
-                }
-
-                regain = StartCoroutine(RegainStamina());
+                StopCoroutine(regain);
             }
+
+            regain = StartCoroutine(RegainStamina());
+        }
 
         if (isCooldown1)
         {
@@ -107,11 +97,8 @@ public class PlayerBowAndPowers : MonoBehaviour
             {
                 //abilityImage1.fillAmount = 0;
                 isCooldown1 = false;
-
             }
         }
-
-
     }
 
     void Power2()
@@ -127,7 +114,6 @@ public class PlayerBowAndPowers : MonoBehaviour
             isCooldown2 = true;
             abilityImage2.fillAmount = 0;
 
-
             StartCoroutine(BoulderAttack());
 
             if (regain != null)
@@ -136,8 +122,6 @@ public class PlayerBowAndPowers : MonoBehaviour
             }
 
             regain = StartCoroutine(RegainStamina());
-
-
         }
 
         if (isCooldown2)
@@ -147,7 +131,6 @@ public class PlayerBowAndPowers : MonoBehaviour
             {
                 //abilityImage2.fillAmount = 0;
                 isCooldown2 = false;
-
             }
         }
     }
@@ -156,12 +139,10 @@ public class PlayerBowAndPowers : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.V) && inRange == true && canIce == true && currentEnergy - 30 >= 0 && isCooldown3 == false)
         {
-
             //anim.SetTrigger("isIdle");
             currentEnergy -= 30;
             foreach (GameObject enemie in enemies)
             {
-                
                 Instantiate(iceAttack, enemie.transform.position, Quaternion.identity);
 
                 StartCoroutine(Ice());
@@ -169,18 +150,12 @@ public class PlayerBowAndPowers : MonoBehaviour
             isCooldown3 = true;
             abilityImage3.fillAmount = 0;
 
-            
-
-
             if (regain != null)
             {
                 StopCoroutine(regain);
             }
 
             regain = StartCoroutine(RegainStamina());
-
-
-
         }
 
         if (isCooldown3)
@@ -190,7 +165,6 @@ public class PlayerBowAndPowers : MonoBehaviour
             {
                 //abilityImage3.fillAmount = 0;
                 isCooldown3 = false;
-
             }
         }
     }
@@ -198,7 +172,7 @@ public class PlayerBowAndPowers : MonoBehaviour
     public void UseEnergy(int energy1)
     {
         currentEnergy -= energy1; 
-         if (regain != null)
+        if (regain != null)
         {
             StopCoroutine(regain);
         }
@@ -222,7 +196,6 @@ public class PlayerBowAndPowers : MonoBehaviour
                 bow.SetActive(false);
                 arrowDisplay.SetActive(false);
             }
-
         }
     }
 
@@ -281,5 +254,4 @@ public class PlayerBowAndPowers : MonoBehaviour
         yield return new WaitForSeconds(5f);
         bow.GetComponent<Bow>().fireRate = 0.5f;
     }
-
 }
