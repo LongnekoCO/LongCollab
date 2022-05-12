@@ -25,4 +25,9 @@ public class HungKey : MonoBehaviour
     {
         
     }
+
+    public KeyType GetKeyType()
+    {
+        return keyType;
+    }
 }
