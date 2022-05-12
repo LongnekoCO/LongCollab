@@ -182,7 +182,7 @@ AnimatorController:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: NormalAnimator
+  m_Name: TitleAnim
   serializedVersion: 5
   m_AnimatorParameters:
   - m_Name: Run
@@ -282,7 +282,7 @@ AnimatorStateMachine:
   m_EntryPosition: {x: -210, y: 20, z: 0}
   m_ExitPosition: {x: 800, y: 120, z: 0}
   m_ParentStateMachinePosition: {x: 800, y: 20, z: 0}
-  m_DefaultState: {fileID: 5016202323645204772}
+  m_DefaultState: {fileID: -4373516680668085952}
 --- !u!206 &2405759333418323483
 BlendTree:
   m_ObjectHideFlags: 1
