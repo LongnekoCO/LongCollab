@@ -4,13 +4,13 @@ using UnityEngine;
 
 public class HungKey : MonoBehaviour
 {
-    private Player player;
+    private PlayerMovementScript player;
     public GameObject door;
     
     // Start is called before the first frame update
     void Start()
     {
-        player = GameObject.Find("Dog").GetComponent<Player>();
+        player = GameObject.Find("Dog").GetComponent<PlayerMovementScript>();
     }
 
     // Update is called once per frame
