@@ -152,12 +152,8 @@ MonoBehaviour:
   rb: {fileID: 7394943506373244928}
   arrowPrizes:
   - {fileID: 7175102174724468370, guid: e2f41b9f08cf7e64790e92337f7bf6c6, type: 3}
-  - {fileID: 2761996079342938438, guid: 739df06db12c7ca4da63e1e90006faf3, type: 3}
-  - {fileID: 8612968410240976852, guid: 4beb247981bdec743ac680b2341616ef, type: 3}
-  - {fileID: 2842215559014518612, guid: 0569c75272ed4c7458cc12dbbfcdfc47, type: 3}
   - {fileID: 871280249407744061, guid: 1f26e8aa467962e43b30c47f0ec75143, type: 3}
   - {fileID: 5254396045307219900, guid: c6cd42b3edc9c374bba8fb4afe9acbf9, type: 3}
   - {fileID: 1909743667049584778, guid: 9855bdeb38bfcaf458aad0f450d6b668, type: 3}
-  - {fileID: 2733849992009978625, guid: 2a08811c281479a4eb5862d99e338dcd, type: 3}
   - {fileID: 67934326247031278, guid: 5d03b2c847d75ee46a805be44ef13ed3, type: 3}
   - {fileID: 3133372223827789574, guid: 0d4e7c1e19fd88b438155430011e2a73, type: 3}

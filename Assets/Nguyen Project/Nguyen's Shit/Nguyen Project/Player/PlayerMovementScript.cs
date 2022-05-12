@@ -42,7 +42,9 @@ public class PlayerMovementScript : MonoBehaviour
 
     public Transform parachute;
 
-    public bool enterPool = true; 
+    public bool enterPool = true;
+
+    public PlayerBowAndPowers powerScript;
 
 
 
@@ -60,6 +62,8 @@ public class PlayerMovementScript : MonoBehaviour
 
         currentHealth = health;
         healthBar.SetMaxHealth(health);
+
+        powerScript = this.GetComponent<PlayerBowAndPowers>();
 
     }
 
@@ -183,6 +187,7 @@ public class PlayerMovementScript : MonoBehaviour
                 if (Input.GetKeyDown(KeyCode.RightShift) && canDash == true)
                 {
                     Vector3 temp = new Vector3(this.transform.position.x, this.transform.position.y, this.transform.position.z);
+                    powerScript.UseEnergy(20f);
                     Instantiate(smokeParticle, temp, Quaternion.identity);
                     StartCoroutine(Dash());
 
@@ -203,9 +208,14 @@ public class PlayerMovementScript : MonoBehaviour
 
                 if (Input.GetKeyDown(KeyCode.RightShift) && canDash == true)
                 {
-                    Vector3 temp = new Vector3(this.transform.position.x, this.transform.position.y, this.transform.position.z);
-                    Instantiate(smokeParticle, temp, Quaternion.identity);
-                    StartCoroutine(Dash());
+                    if (powerScript.currentEnergy - 20 >= 0)
+                    {
+                        Vector3 temp = new Vector3(this.transform.position.x, this.transform.position.y, this.transform.position.z);
+                        Instantiate(smokeParticle, temp, Quaternion.identity);
+                        powerScript.UseEnergy(20f);
+                        StartCoroutine(Dash());
+                    }
+                    
                 }
             }
             else
@@ -216,27 +226,31 @@ public class PlayerMovementScript : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Q))
         {
-            if (facingRight == true)
+            if(powerScript.currentEnergy - 20 >= 0)
             {
-                //int positionX = Random.Range(1,10);
-                Vector3 temp = new Vector3(this.transform.position.x, this.transform.position.y, this.transform.position.z);
-                Vector3 newPos = new Vector3(this.transform.position.x + 4, this.transform.position.y, this.transform.position.z);
-                this.transform.position = newPos;
-                Instantiate(log, temp, Quaternion.identity);
-                Instantiate(smokeParticle, temp, Quaternion.identity);
-                //Destroy(log, 2f);
+                if (facingRight == true)
+                {
+                    //int positionX = Random.Range(1,10);
+                    Vector3 temp = new Vector3(this.transform.position.x, this.transform.position.y, this.transform.position.z);
+                    Vector3 newPos = new Vector3(this.transform.position.x + 4, this.transform.position.y, this.transform.position.z);
+                    this.transform.position = newPos;
+                    Instantiate(log, temp, Quaternion.identity);
+                    Instantiate(smokeParticle, temp, Quaternion.identity);
+                    //Destroy(log, 2f);
+                }
+                else if (facingRight == false)
+                {
+                    //int positionX = Random.Range(1,10);
+                    Vector3 temp = new Vector3(this.transform.position.x, this.transform.position.y, this.transform.position.z);
+                    Vector3 newPos = new Vector3(this.transform.position.x - 4, this.transform.position.y, this.transform.position.z);
+                    this.transform.position = newPos;
+                    Instantiate(log, temp, Quaternion.identity);
+                    Instantiate(smokeParticle, temp, Quaternion.identity);
+                    //Destroy(log, 2f);
+                }
+                powerScript.UseEnergy(20f);
             }
-            else if (facingRight == false)
-            {
-                //int positionX = Random.Range(1,10);
-                Vector3 temp = new Vector3(this.transform.position.x, this.transform.position.y, this.transform.position.z);
-                Vector3 newPos = new Vector3(this.transform.position.x - 4, this.transform.position.y, this.transform.position.z);
-                this.transform.position = newPos;
-                Instantiate(log, temp, Quaternion.identity);
-                Instantiate(smokeParticle, temp, Quaternion.identity);
-                //Destroy(log, 2f);
-            }
-        }
+       }
     }
 
     void Flip()
