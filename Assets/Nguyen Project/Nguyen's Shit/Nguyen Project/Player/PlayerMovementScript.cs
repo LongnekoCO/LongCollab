@@ -8,7 +8,11 @@ public class PlayerMovementScript : MonoBehaviour
     public bool facingRight = true;
     Animator anim;
     public Rigidbody2D playerRigidbody;
-    public int health = 20; //testing only
+    
+    public int health = 100; //testing only
+    public int currentHealth;
+    public HungHealthBar healthBar;
+
     public float jumpForce;
     bool isGrounded;
     public Transform groundCheck;
@@ -37,9 +41,9 @@ public class PlayerMovementScript : MonoBehaviour
 
     public Transform parachute;
 
-    public bool enterPool = true; 
-   
-    
+    public bool enterPool = true;
+
+    public PlayerBowAndPowers powerScript;
 
     // Start is called before the first frame update
     void Start()
@@ -52,24 +56,17 @@ public class PlayerMovementScript : MonoBehaviour
         canDash = true;
 
         parachute.GetComponent<SpriteRenderer>().color = new Color(0,0,0,0);
+
+        currentHealth = health;
+        healthBar.SetMaxHealth(health);
+
+        powerScript = this.GetComponent<PlayerBowAndPowers>();
     }
 
     // Update is called once per frame
     void Update()
     {
         Movement();
-       
-
-        //if (Input.GetKeyDown(KeyCode.Space))
-        //{
-        //    //checks if the player is on the ground to avoid double jump
-        //    if (isGrounded)
-        //    {
-        //        Jump();
-        //    }
-
-        //}
-
         if(isGrounded)
         {
             extraJumps = extraJumpsVal;
@@ -78,7 +75,6 @@ public class PlayerMovementScript : MonoBehaviour
                 parachuteOn = false;
                 parachute.GetComponent<SpriteRenderer>().color = new Color(0, 0, 0, 0);
             }
-
         }
 
         if(Input.GetKeyDown(KeyCode.Space) && extraJumps > 0)
@@ -86,20 +82,17 @@ public class PlayerMovementScript : MonoBehaviour
             Jump();
             extraJumps--;
         }
-
         else if (Input.GetKeyDown(KeyCode.Space) && extraJumps == 0 && isGrounded == true)
         {
             Jump();
         }
 
-       
         if(!isGrounded)
         {
             if(Input.GetKeyDown(KeyCode.LeftShift) && parachuteOn == false)
             {
                 parachuteOn = true;
             }
-
             else if (Input.GetKeyDown(KeyCode.LeftShift) && parachuteOn == true)
             {
                 parachuteOn = false;
@@ -117,6 +110,20 @@ public class PlayerMovementScript : MonoBehaviour
             parachute.GetComponent<SpriteRenderer>().color = new Color(0, 0, 0, 0);
         }
 
+        /*if (Input.GetKeyDown(KeyCode.Space))
+        {
+            //checks if the player is on the ground to avoid double jump
+            if (isGrounded)
+            {
+                Jump();
+            }
+        }*/
+        //if (Input.GetKeyDown(KeyCode.P))
+        //{
+        //    TakeDamage(20);
+        //}
+
+
     }
 
     void FixedUpdate()
@@ -127,27 +134,24 @@ public class PlayerMovementScript : MonoBehaviour
 
     IEnumerator Dash()
     {
-        //if (side == 1)
-        //{
-        //    Debug.Log("Dashing Right");
-        //    walkingSpeed = 1; 
-        //}
-
-        //else if (side == 2)
-        //{
-        //    Debug.Log("Dashing Left");
-        //    playerRigidbody.velocity = Vector2.left * dashSpeed;
-
-        //}
-
         Debug.Log("Eurobeat Intensified");
         canDash = false;
         walkingSpeed = 0.5f;
         yield return new WaitForSeconds(0.15f);
         walkingSpeed = 0.09f;
         canDash = true;
-    }
 
+        /*if (side == 1)
+        {
+            Debug.Log("Dashing Right");
+            walkingSpeed = 1; 
+        }
+        else if (side == 2)
+        {
+            Debug.Log("Dashing Left");
+            playerRigidbody.velocity = Vector2.left * dashSpeed;
+        }*/
+    }
 
     void Jump()
     {
@@ -166,7 +170,6 @@ public class PlayerMovementScript : MonoBehaviour
                 playerPosition.x = playerPosition.x + walkingSpeed;
                 this.transform.position = playerPosition;
                 anim.SetTrigger("isWalking");
-
                 if (facingRight == false)
                 {
                     Flip();
@@ -176,14 +179,11 @@ public class PlayerMovementScript : MonoBehaviour
                 if (Input.GetKeyDown(KeyCode.RightShift) && canDash == true)
                 {
                     Vector3 temp = new Vector3(this.transform.position.x, this.transform.position.y, this.transform.position.z);
+                    powerScript.UseEnergy(20);
                     Instantiate(smokeParticle, temp, Quaternion.identity);
                     StartCoroutine(Dash());
 
                 }
-
-
-
-
             }
 
             else if (Input.GetKey(KeyCode.A))
@@ -200,13 +200,16 @@ public class PlayerMovementScript : MonoBehaviour
 
                 if (Input.GetKeyDown(KeyCode.RightShift) && canDash == true)
                 {
-                    Vector3 temp = new Vector3(this.transform.position.x, this.transform.position.y, this.transform.position.z);
-                    Instantiate(smokeParticle, temp, Quaternion.identity);
-                    StartCoroutine(Dash());
+                    if (powerScript.currentEnergy - 20 >= 0)
+                    {
+                        Vector3 temp = new Vector3(this.transform.position.x, this.transform.position.y, this.transform.position.z);
+                        Instantiate(smokeParticle, temp, Quaternion.identity);
+                        powerScript.UseEnergy(20);
+                        StartCoroutine(Dash());
+                    }
+                    
                 }
-
             }
-
             else
             {
                 anim.SetTrigger("isIdle");
@@ -215,30 +218,31 @@ public class PlayerMovementScript : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Q))
         {
-            if (facingRight == true)
+            if(powerScript.currentEnergy - 20 >= 0)
             {
-                //int positionX = Random.Range(1,10);
-                Vector3 temp = new Vector3(this.transform.position.x, this.transform.position.y, this.transform.position.z);
-                Vector3 newPos = new Vector3(this.transform.position.x + 4, this.transform.position.y, this.transform.position.z);
-                this.transform.position = newPos;
-                Instantiate(log, temp, Quaternion.identity);
-                Instantiate(smokeParticle, temp, Quaternion.identity);
-                //Destroy(log, 2f);
+                if (facingRight == true)
+                {
+                    //int positionX = Random.Range(1,10);
+                    Vector3 temp = new Vector3(this.transform.position.x, this.transform.position.y, this.transform.position.z);
+                    Vector3 newPos = new Vector3(this.transform.position.x + 4, this.transform.position.y, this.transform.position.z);
+                    this.transform.position = newPos;
+                    Instantiate(log, temp, Quaternion.identity);
+                    Instantiate(smokeParticle, temp, Quaternion.identity);
+                    //Destroy(log, 2f);
+                }
+                else if (facingRight == false)
+                {
+                    //int positionX = Random.Range(1,10);
+                    Vector3 temp = new Vector3(this.transform.position.x, this.transform.position.y, this.transform.position.z);
+                    Vector3 newPos = new Vector3(this.transform.position.x - 4, this.transform.position.y, this.transform.position.z);
+                    this.transform.position = newPos;
+                    Instantiate(log, temp, Quaternion.identity);
+                    Instantiate(smokeParticle, temp, Quaternion.identity);
+                    //Destroy(log, 2f);
+                }
+                powerScript.UseEnergy(20);
             }
-
-            else if (facingRight == false)
-            {
-                //int positionX = Random.Range(1,10);
-                Vector3 temp = new Vector3(this.transform.position.x, this.transform.position.y, this.transform.position.z);
-                Vector3 newPos = new Vector3(this.transform.position.x - 4, this.transform.position.y, this.transform.position.z);
-                this.transform.position = newPos;
-                Instantiate(log, temp, Quaternion.identity);
-                Instantiate(smokeParticle, temp, Quaternion.identity);
-                //Destroy(log, 2f);
-            }
-
-
-        }
+       }
     }
 
     void Flip()
@@ -249,15 +253,13 @@ public class PlayerMovementScript : MonoBehaviour
         this.transform.localScale = playerScale;
     }
 
-
     void OnTriggerEnter2D(Collider2D col)
     {
         if (col.gameObject.tag == "BossTrigger")
         {
             Boss.SetActive(true);
         }
-
-        
+ 
         else if (col.gameObject.tag == "PoisonPool")
         {
             if(enterPool == true)
@@ -267,9 +269,18 @@ public class PlayerMovementScript : MonoBehaviour
             }
 
         }
+    }
 
+    public void TakeDamage(int damage)
+    {
+        currentHealth -= damage;
+        healthBar.SetHealth(currentHealth);
+    }
 
-
+    public void GetHealth(int health1)
+    {
+        currentHealth += health1;
+        healthBar.SetHealth(currentHealth);
     }
 
     IEnumerator PoisonPool()
@@ -278,7 +289,4 @@ public class PlayerMovementScript : MonoBehaviour
         yield return new WaitForSecondsRealtime(1f);
         enterPool = true;
     }
-
-   
-
 }

@@ -10,7 +10,7 @@ public class HungTrapArrow : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        InvokeRepeating("ArrowShoot", 1f, 6f);
+        InvokeRepeating("ArrowShoot", 1f, 5f);
     }
 
     // Update is called once per frame

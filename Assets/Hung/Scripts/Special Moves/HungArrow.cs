@@ -9,7 +9,7 @@ public class HungArrow : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        player = GameObject.Find("Player").GetComponent<HungPlayer>();
+        //player = GameObject.Find("Player").GetComponent<HungPlayer>();
 
         Destroy(this.gameObject, 2f);
     }
@@ -24,7 +24,7 @@ public class HungArrow : MonoBehaviour
     {
         if (collision.gameObject.tag == "Player")
         {
-            player.TakeDamage(10);
+            //player.TakeDamage(10);
             Destroy(this.gameObject);
         }
     }
