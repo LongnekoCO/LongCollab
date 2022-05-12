@@ -13,7 +13,6 @@ public class PlayerMovementScript : MonoBehaviour
     public int currentHealth;
     public HungHealthBar healthBar;
 
-
     public float jumpForce;
     bool isGrounded;
     public Transform groundCheck;
@@ -46,8 +45,6 @@ public class PlayerMovementScript : MonoBehaviour
 
     public PlayerBowAndPowers powerScript;
 
-
-
     // Start is called before the first frame update
     void Start()
     {
@@ -64,7 +61,6 @@ public class PlayerMovementScript : MonoBehaviour
         healthBar.SetMaxHealth(health);
 
         powerScript = this.GetComponent<PlayerBowAndPowers>();
-
     }
 
     // Update is called once per frame
@@ -79,7 +75,6 @@ public class PlayerMovementScript : MonoBehaviour
                 parachuteOn = false;
                 parachute.GetComponent<SpriteRenderer>().color = new Color(0, 0, 0, 0);
             }
-
         }
 
         if(Input.GetKeyDown(KeyCode.Space) && extraJumps > 0)
@@ -98,7 +93,6 @@ public class PlayerMovementScript : MonoBehaviour
             {
                 parachuteOn = true;
             }
-
             else if (Input.GetKeyDown(KeyCode.LeftShift) && parachuteOn == true)
             {
                 parachuteOn = false;
@@ -140,25 +134,23 @@ public class PlayerMovementScript : MonoBehaviour
 
     IEnumerator Dash()
     {
-        //if (side == 1)
-        //{
-        //    Debug.Log("Dashing Right");
-        //    walkingSpeed = 1; 
-        //}
-
-        //else if (side == 2)
-        //{
-        //    Debug.Log("Dashing Left");
-        //    playerRigidbody.velocity = Vector2.left * dashSpeed;
-
-        //}
-
         Debug.Log("Eurobeat Intensified");
         canDash = false;
         walkingSpeed = 0.5f;
         yield return new WaitForSeconds(0.15f);
         walkingSpeed = 0.09f;
         canDash = true;
+
+        /*if (side == 1)
+        {
+            Debug.Log("Dashing Right");
+            walkingSpeed = 1; 
+        }
+        else if (side == 2)
+        {
+            Debug.Log("Dashing Left");
+            playerRigidbody.velocity = Vector2.left * dashSpeed;
+        }*/
     }
 
     void Jump()
