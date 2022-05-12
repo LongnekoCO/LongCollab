@@ -25,6 +25,6 @@ public class HungLockedDoor : MonoBehaviour
 
     public void OpenDoor()
     {
-
+        this.gameObject.SetActive(false);
     }
 }
