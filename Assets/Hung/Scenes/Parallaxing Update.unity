@@ -4465,11 +4465,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3631168730784894454, guid: 7f298e70bf6778345b1beef872f52fe2, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -108.68203
+      value: -124.43
       objectReference: {fileID: 0}
     - target: {fileID: 3631168730784894454, guid: 7f298e70bf6778345b1beef872f52fe2, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -5.094281
+      value: -5.19
       objectReference: {fileID: 0}
     - target: {fileID: 3631168730784894454, guid: 7f298e70bf6778345b1beef872f52fe2, type: 3}
       propertyPath: m_LocalPosition.z
@@ -5225,25 +5225,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 5206897003126350033, guid: 4acddba6119ee2340b5712fa03ce934c, type: 3}
   m_PrefabInstance: {fileID: 2033518195}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1214259692
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1214259691}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7c1420f8a9d02254b91dd316aacfe584, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  playerHealth: 100
-  playerCurrentHealth: 0
-  moveSpeed: 0
-  isMoving: 1
-  windPraticle: {fileID: 0}
-  lightningPraticle: {fileID: 0}
-  healthBar: {fileID: 0}
 --- !u!4 &1310555569 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7617041541730755306, guid: 00298d08a31f913498ab82b293ca0647, type: 3}
@@ -8250,6 +8231,7 @@ GameObject:
   - component: {fileID: 1882485420}
   - component: {fileID: 1882485422}
   - component: {fileID: 1882485421}
+  - component: {fileID: 1882485423}
   m_Layer: 5
   m_Name: Energy Bar
   m_TagString: Untagged
@@ -8285,7 +8267,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1882485419}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f03b1cd021eed774da93c8b75550adb0, type: 3}
   m_Name: 
@@ -8372,6 +8354,49 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &1882485423
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1882485419}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c03d5cf108aef734ea01e232b263fed4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  slider: {fileID: 1882485422}
+  gradient:
+    serializedVersion: 2
+    key0: {r: 1, g: 1, b: 1, a: 1}
+    key1: {r: 1, g: 1, b: 1, a: 1}
+    key2: {r: 0, g: 0, b: 0, a: 0}
+    key3: {r: 0, g: 0, b: 0, a: 0}
+    key4: {r: 0, g: 0, b: 0, a: 0}
+    key5: {r: 0, g: 0, b: 0, a: 0}
+    key6: {r: 0, g: 0, b: 0, a: 0}
+    key7: {r: 0, g: 0, b: 0, a: 0}
+    ctime0: 0
+    ctime1: 65535
+    ctime2: 0
+    ctime3: 0
+    ctime4: 0
+    ctime5: 0
+    ctime6: 0
+    ctime7: 0
+    atime0: 0
+    atime1: 65535
+    atime2: 0
+    atime3: 0
+    atime4: 0
+    atime5: 0
+    atime6: 0
+    atime7: 0
+    m_Mode: 0
+    m_NumColorKeys: 2
+    m_NumAlphaKeys: 2
+  fill: {fileID: 310276828}
 --- !u!1001 &1896253674
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8953,6 +8978,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 169077469, guid: 4acddba6119ee2340b5712fa03ce934c, type: 3}
+      propertyPath: healthBar
+      value: 
+      objectReference: {fileID: 371406617}
+    - target: {fileID: 169077476, guid: 4acddba6119ee2340b5712fa03ce934c, type: 3}
+      propertyPath: energyBar
+      value: 
+      objectReference: {fileID: 1882485423}
     - target: {fileID: 5206897003126350027, guid: 4acddba6119ee2340b5712fa03ce934c, type: 3}
       propertyPath: m_RootOrder
       value: 18

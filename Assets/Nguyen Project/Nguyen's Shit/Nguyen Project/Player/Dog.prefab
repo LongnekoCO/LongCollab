@@ -408,7 +408,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   facingRight: 1
   playerRigidbody: {fileID: 5206897003126350030}
-  health: 20
+  health: 100
   currentHealth: 0
   healthBar: {fileID: 0}
   jumpForce: 5
