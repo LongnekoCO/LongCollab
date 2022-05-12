@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 3680582716913506992}
   - component: {fileID: 1237513819626263224}
   m_Layer: 0
-  m_Name: Key
+  m_Name: RedKey
   m_TagString: Key
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -122,3 +122,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 633f5e9e992969649a9b632d55f0abac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  door: {fileID: 0}
+  keyType: 0

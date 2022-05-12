@@ -6,7 +6,17 @@ public class HungKey : MonoBehaviour
 {
     private PlayerMovementScript player;
     public GameObject door;
-    
+
+    [SerializeField] private KeyType keyType;
+
+    public enum KeyType
+    {
+        Red,
+        Yellow,
+        Green,
+        Blue
+    }
+
     // Start is called before the first frame update
     void Start()
     {
