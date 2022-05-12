@@ -25,6 +25,7 @@ public class HungLockedDoor : MonoBehaviour
 
     public void OpenDoor()
     {
+        Debug.Log("Door Open:" + keyType);
         this.gameObject.SetActive(false);
     }
 }
