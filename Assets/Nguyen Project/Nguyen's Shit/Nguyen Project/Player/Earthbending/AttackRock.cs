@@ -15,8 +15,8 @@ public class AttackRock : MonoBehaviour
     void Start()
     {
         anim = this.GetComponent<Animator>();
-        playerScript = GameObject.Find("Dog").GetComponent<PlayerMovementScript>();
-        player = GameObject.Find("Dog");
+        playerScript = GameObject.Find("Player").GetComponent<PlayerMovementScript>();
+        player = GameObject.Find("Player");
         Destroy(this.gameObject, 5f);
     }
 

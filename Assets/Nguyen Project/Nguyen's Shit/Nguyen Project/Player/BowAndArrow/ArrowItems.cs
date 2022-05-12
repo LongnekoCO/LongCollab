@@ -18,7 +18,7 @@ public class ArrowItems : MonoBehaviour
     {
         //playerBow = GameObject.FindWithTag("Bow");
         rb.velocity = transform.up * speed;
-        player = GameObject.Find("Dog");
+        player = GameObject.Find("Player");
         playerBow = player.transform.Find("Bow");
         //bowScript = GetComponent<Bow>();
         int i = Random.Range(0, arrowPrizes.Count);

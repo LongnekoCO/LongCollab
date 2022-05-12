@@ -5,13 +5,14 @@ using UnityEngine;
 public class HungSpike : MonoBehaviour
 {
     //private Collider2D collider;
-    private HungPlayer player;
+    private PlayerMovementScript player;
+    public float timeRepeat;
 
     // Start is called before the first frame update
     void Start()
     {
         //collider = this.GetComponent<Collider2D>();
-        player = GameObject.Find("Dog").GetComponent<HungPlayer>();
+        player = GameObject.Find("Dog").GetComponent<PlayerMovementScript>();
     }
 
     // Update is called once per frame
@@ -24,7 +25,7 @@ public class HungSpike : MonoBehaviour
     {
         if (collision.gameObject.tag == "Player")
         {
-            InvokeRepeating("DamageLooping", 1f, 3f);
+            InvokeRepeating("DamageLooping", 1f, timeRepeat);
         }
     }
 
