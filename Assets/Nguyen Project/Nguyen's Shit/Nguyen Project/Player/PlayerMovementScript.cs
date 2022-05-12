@@ -6,11 +6,11 @@ public class PlayerMovementScript : MonoBehaviour
 {
     float walkingSpeed = 0.09f;
     public bool facingRight = true;
-    Animator anim;
+    //Animator anim;
     public Rigidbody2D playerRigidbody;
     
-    public float health = 20; //testing only
-    public float currentHealth;
+    public int health = 20; //testing only
+    public int currentHealth;
     public HungHealthBar healthBar;
 
 
@@ -51,7 +51,7 @@ public class PlayerMovementScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        anim = this.GetComponent<Animator>();
+        //anim = this.GetComponent<Animator>();
         canMovee = true;
         //bow.SetActive(false);
 
@@ -177,7 +177,7 @@ public class PlayerMovementScript : MonoBehaviour
             {
                 playerPosition.x = playerPosition.x + walkingSpeed;
                 this.transform.position = playerPosition;
-                anim.SetTrigger("isWalking");
+                //anim.SetTrigger("isWalking");
                 if (facingRight == false)
                 {
                     Flip();
@@ -198,7 +198,7 @@ public class PlayerMovementScript : MonoBehaviour
             {
                 playerPosition.x = playerPosition.x - walkingSpeed;
                 this.transform.position = playerPosition;
-                anim.SetTrigger("isWalking");
+               // anim.SetTrigger("isWalking");
 
                 if (facingRight == true)
                 {
@@ -220,7 +220,7 @@ public class PlayerMovementScript : MonoBehaviour
             }
             else
             {
-                anim.SetTrigger("isIdle");
+                //anim.SetTrigger("isIdle");
             }
         }
 
@@ -279,13 +279,13 @@ public class PlayerMovementScript : MonoBehaviour
         }
     }
 
-    public void TakeDamage(float damage)
+    public void TakeDamage(int damage)
     {
         currentHealth -= damage;
         healthBar.SetHealth(currentHealth);
     }
 
-    public void GetHealth(float health1)
+    public void GetHealth(int health1)
     {
         currentHealth += health1;
         healthBar.SetHealth(currentHealth);

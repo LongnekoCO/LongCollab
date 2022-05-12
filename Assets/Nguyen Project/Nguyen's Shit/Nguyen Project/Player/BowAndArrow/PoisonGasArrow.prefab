@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 3617034263742822165}
   - component: {fileID: 2456252783924044409}
   - component: {fileID: -6698804664583952135}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: PoisonGasArrow
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -21,14 +21,14 @@ public class HungHealthBar : MonoBehaviour
         
     }
 
-    public void SetMaxHealth(float health)
+    public void SetMaxHealth(int health)
     {
         slider.maxValue = health;
         slider.value = health;
         fill.color = gradient.Evaluate(1f);
     }
 
-    public void SetHealth(float health)
+    public void SetHealth(int health)
     {
         slider.value = health;
 
