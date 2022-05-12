@@ -154,13 +154,14 @@ public class PlayerBowAndPowers : MonoBehaviour
 
     void Power3()
     {
-        if (Input.GetKeyDown(KeyCode.V) && inRange == true && canIce == true && currentEnergy - 30 >= 0 && isCooldown3 == true)
+        if (Input.GetKeyDown(KeyCode.V) && inRange == true && canIce == true && currentEnergy - 30 >= 0 && isCooldown3 == false)
         {
 
             //anim.SetTrigger("isIdle");
+            currentEnergy -= 30;
             foreach (GameObject enemie in enemies)
             {
-                currentEnergy -= 30;
+                
                 Instantiate(iceAttack, enemie.transform.position, Quaternion.identity);
 
                 StartCoroutine(Ice());
