@@ -12,14 +12,13 @@ public class PlayerBowAndPowers : MonoBehaviour
     public GameObject iceAttack;
     public GameObject boulderAttack;
     public GameObject boulderAttackSpawn;
-    
 
     public GameObject[] enemies;
 
     private PlayerMovementScript playerMovementScript;
 
-    public float energy = 150; //testing only
-    public float currentEnergy;
+    public int energy = 150; //testing only
+    public int currentEnergy;
     public EnergyBar energyBar;
 
     private Coroutine regain;
@@ -54,7 +53,7 @@ public class PlayerBowAndPowers : MonoBehaviour
             {
 
                 //anim.SetTrigger("isIdle");
-                currentEnergy -= 30f;
+                currentEnergy -= 30;
                 boulderDefSpawn.SetActive(true);
                 Instantiate(boulderDef, boulderDefSpawn.transform.position, Quaternion.identity);
                 playerMovementScript.canMovee = false;
@@ -69,15 +68,11 @@ public class PlayerBowAndPowers : MonoBehaviour
                 regain = StartCoroutine(RegainStamina());
             }
 
-
-
-
-
             else if (Input.GetKeyDown(KeyCode.C))
             {
 
                 //anim.SetTrigger("isIdle");
-                currentEnergy -= 30f;
+                currentEnergy -= 30;
                 boulderAttackSpawn.SetActive(true);
                 Instantiate(boulderAttack, boulderAttackSpawn.transform.position, Quaternion.identity);
                 playerMovementScript.canMovee = false;
@@ -90,10 +85,6 @@ public class PlayerBowAndPowers : MonoBehaviour
                 }
 
                 regain = StartCoroutine(RegainStamina());
-
-
-
-
             }
 
             else if (Input.GetKeyDown(KeyCode.V) && inRange == true && canIce == true)
@@ -102,7 +93,7 @@ public class PlayerBowAndPowers : MonoBehaviour
                 //anim.SetTrigger("isIdle");
                 foreach (GameObject enemie in enemies)
                 {
-                    currentEnergy -= 30f;
+                    currentEnergy -= 30;
                     Instantiate(iceAttack, enemie.transform.position, Quaternion.identity);
 
                     StartCoroutine(Ice());
@@ -114,9 +105,6 @@ public class PlayerBowAndPowers : MonoBehaviour
                 }
 
                 regain = StartCoroutine(RegainStamina());
-
-
-
             }
         }
 
@@ -124,9 +112,6 @@ public class PlayerBowAndPowers : MonoBehaviour
         {
             Debug.Log("Not enough juice");
         }
-            
-    
-        
     }
 
     void Bow()
@@ -142,7 +127,6 @@ public class PlayerBowAndPowers : MonoBehaviour
             {
                 bow.SetActive(false);
             }
-
         }
     }
 
@@ -176,7 +160,6 @@ public class PlayerBowAndPowers : MonoBehaviour
             currentEnergy += energy / 100;
             energyBar.SetEnergy(currentEnergy);
             yield return regainTick;
-
         }
         regain = null;
     }

@@ -21,14 +21,14 @@ public class EnergyBar : MonoBehaviour
 
     }
 
-    public void SetMaxEnergy(float energy)
+    public void SetMaxEnergy(int energy)
     {
         slider.maxValue = energy;
         slider.value = energy;
         fill.color = gradient.Evaluate(1f);
     }
 
-    public void SetEnergy(float energy)
+    public void SetEnergy(int energy)
     {
         slider.value = energy;
 
