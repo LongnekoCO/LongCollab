@@ -1959,6 +1959,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1ac39992690d1394fafb94a332807ea3, type: 3}
+--- !u!1 &359660711 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6320490567931915156, guid: 4acddba6119ee2340b5712fa03ce934c, type: 3}
+  m_PrefabInstance: {fileID: 2033518195}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &371406615
 GameObject:
   m_ObjectHideFlags: 0
@@ -8985,11 +8990,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3098830081989251954, guid: b4229718d79869b49aa0a0cd8ab55df3, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -119.15
+      value: -106.54
       objectReference: {fileID: 0}
     - target: {fileID: 3098830081989251954, guid: b4229718d79869b49aa0a0cd8ab55df3, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.27
+      value: -3.65
       objectReference: {fileID: 0}
     - target: {fileID: 3098830081989251954, guid: b4229718d79869b49aa0a0cd8ab55df3, type: 3}
       propertyPath: m_LocalPosition.z
@@ -9165,6 +9170,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 169077469, guid: 4acddba6119ee2340b5712fa03ce934c, type: 3}
+      propertyPath: speed
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 169077469, guid: 4acddba6119ee2340b5712fa03ce934c, type: 3}
       propertyPath: healthBar
       value: 
       objectReference: {fileID: 1077183561}
@@ -9172,6 +9181,10 @@ PrefabInstance:
       propertyPath: energyBar
       value: 
       objectReference: {fileID: 1480311987}
+    - target: {fileID: 169077476, guid: 4acddba6119ee2340b5712fa03ce934c, type: 3}
+      propertyPath: arrowDisplay
+      value: 
+      objectReference: {fileID: 359660711}
     - target: {fileID: 169077476, guid: 4acddba6119ee2340b5712fa03ce934c, type: 3}
       propertyPath: abilityImage1
       value: 
@@ -9780,6 +9793,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: TestSubject (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 850564348118214903, guid: 0c8fd9cf7ab71bf4ba063b7d8ebe8af6, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 850564348118214904, guid: 0c8fd9cf7ab71bf4ba063b7d8ebe8af6, type: 3}
       propertyPath: patrolSpeed
       value: 0
@@ -9794,7 +9811,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 850564348118214907, guid: 0c8fd9cf7ab71bf4ba063b7d8ebe8af6, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -3.4279833
+      value: -3.18
       objectReference: {fileID: 0}
     - target: {fileID: 850564348118214907, guid: 0c8fd9cf7ab71bf4ba063b7d8ebe8af6, type: 3}
       propertyPath: m_LocalPosition.z
