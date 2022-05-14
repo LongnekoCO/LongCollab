@@ -30,6 +30,7 @@ TagManager:
   - EnergyPill
   - HealthPill
   - ViagraPill
+  - MovingPlatform
   layers:
   - Default
   - TransparentFX

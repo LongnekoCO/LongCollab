@@ -17,21 +17,22 @@ Change log:
 public class HungWaypoint : MonoBehaviour
 {
     public List<Transform> target = new List<Transform>(); //list of waypoints
-    private HungBossPatrol bossPatrol; //a reference to BossPatrol script
-    private HungEnemyPatrol enemyPatrol1;
-    private HungEnemy2Patrol enemyPatrol2;
-    private HungEnemyPatrol enemyPatrol3;
-    private HungEnemyPatrol enemyPatrol4;
-    private HungEnemy5Patrol enemyPatrol5;
+
+    public HungMovingPlatform movingPlatform;
+    //private HungBossPatrol bossPatrol; //a reference to BossPatrol script
+    //private HungEnemyPatrol enemyPatrol1;
+    //private HungEnemy2Patrol enemyPatrol2;
+    //private HungEnemyPatrol enemyPatrol3;
+    //private HungEnemyPatrol enemyPatrol4;
+    //private HungEnemy5Patrol enemyPatrol5;
 
     // Start is called before the first frame update
     void Start()
     {
+        movingPlatform = GameObject.Find("MovingPlatform").GetComponent<HungMovingPlatform>();
+        
         //bossPatrol = GameObject.Find("Boss1").GetComponent<HungBossPatrol>();
         //enemyPatrol1 = GameObject.Find("Enemy1").GetComponent<HungEnemyPatrol>();
-        //enemyPatrol1 = GameObject.Find("Enemy1 (1)").GetComponent<HungEnemyPatrol>();
-        //enemyPatrol1 = GameObject.Find("Enemy1 (2)").GetComponent<HungEnemyPatrol>();
-        //enemyPatrol1 = GameObject.Find("Enemy1 (3)").GetComponent<HungEnemyPatrol>();
         //enemyPatrol2 = GameObject.Find("Enemy2").GetComponent<HungEnemy2Patrol>();
         //enemyPatrol3 = GameObject.Find("Enemy3").GetComponent<HungEnemyPatrol>();
         //enemyPatrol4 = GameObject.Find("Enemy4").GetComponent<HungEnemyPatrol>();
@@ -50,6 +51,13 @@ public class HungWaypoint : MonoBehaviour
             //collision.gameObject.GetComponent<HungEnemyPatrol>().Flip();
             //collision.gameObject.GetComponent<HungEnemy2Patrol>().Flip();
             //collision.gameObject.GetComponent<HungBossPatrol>().Flip();
+        }
+
+        if (collision.gameObject.tag == "MovingPlatform")
+        {
+            collision.gameObject.GetComponent<HungMovingPlatform>().target = GetRandomTarget();
+
+            collision.gameObject.GetComponent<HungMovingPlatform>().Flip();
         }
     }
 
