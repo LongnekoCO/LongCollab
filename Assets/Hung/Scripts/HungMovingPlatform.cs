@@ -11,14 +11,14 @@ public class HungMovingPlatform : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        float move = moveSpeed * Time.deltaTime;
-        this.transform.position = Vector3.MoveTowards(this.transform.position, target.position, move);
+        
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        float move = moveSpeed * Time.deltaTime;
+        this.transform.position = Vector3.MoveTowards(this.transform.position, target.position, move);
     }
 
     public void Flip()
