@@ -122,3 +122,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 15251d9798fac414098d956447c0f334, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  laser: {fileID: 6585663987675350812, guid: 63c4f610666bdb542b470e55cc1557ea, type: 3}
+  speed: 2

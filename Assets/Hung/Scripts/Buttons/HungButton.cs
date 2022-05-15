@@ -20,6 +20,11 @@ public class HungButton : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        
+        if (collision.gameObject.tag == "Player")
+        {
+            Debug.Log("key press");
+            Destroy(this.gameObject);
+            Destroy(testObject);
+        }
     }
 }

@@ -12,6 +12,7 @@ public class HungLaser : MonoBehaviour
     {
         rb2D = this.GetComponent<Rigidbody2D>();
         player = GameObject.Find("Dog").GetComponent<PlayerMovementScript>();
+        Destroy(this.gameObject, 2f);
     }
 
     // Update is called once per frame
