@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 2017656792907921719}
   - component: {fileID: -6598817469631602195}
   m_Layer: 0
-  m_Name: LazerTrap
+  m_Name: LaserTrap
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

@@ -18,7 +18,7 @@ public class HungWaypoint : MonoBehaviour
 {
     public List<Transform> target = new List<Transform>(); //list of waypoints
 
-    public HungMovingPlatform movingPlatform;
+    private HungMovingPlatform movingPlatform;
     //private HungBossPatrol bossPatrol; //a reference to BossPatrol script
     //private HungEnemyPatrol enemyPatrol1;
     //private HungEnemy2Patrol enemyPatrol2;

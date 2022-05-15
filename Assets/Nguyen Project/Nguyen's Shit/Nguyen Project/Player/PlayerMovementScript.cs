@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayerMovementScript : MonoBehaviour
 {
-    float walkingSpeed = 0.09f;
+    public float walkingSpeed = 0.09f;
     public bool facingRight = true;
     //Animator anim;
     public Rigidbody2D playerRigidbody;
