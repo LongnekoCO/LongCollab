@@ -86,8 +86,8 @@ public class HungEnemyPatrol : MonoBehaviour
     //Called in Update()
     public void Move()
     {
-        float enemyMove = enemyMoveSpeed * Time.deltaTime;
-        this.transform.position = Vector3.MoveTowards(this.transform.position, target.position, enemyMove);
+        float step = enemyMoveSpeed * Time.deltaTime;
+        this.transform.position = Vector3.MoveTowards(this.transform.position, target.position, step);
     }
 
     //Enemy will turn around after hit the waypoint
