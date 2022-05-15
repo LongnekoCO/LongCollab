@@ -65,8 +65,14 @@ TagManager:
   - 
   - 
   m_SortingLayers:
-  - name: FarBackground
+  - name: DeepBackground
     uniqueID: 546614723
+    locked: 0
+  - name: NotTooDeepB
+    uniqueID: 2665386663
+    locked: 0
+  - name: AlmostBackground
+    uniqueID: 3999610085
     locked: 0
   - name: Background
     uniqueID: 2354252043
