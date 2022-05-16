@@ -5,11 +5,13 @@ using UnityEngine;
 public class HungButton : MonoBehaviour
 {
     public GameObject testObject;
+
+    private Animator animator;
     
     // Start is called before the first frame update
     void Start()
     {
-        
+        animator = testObject.GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -24,7 +26,12 @@ public class HungButton : MonoBehaviour
         {
             Debug.Log("key press");
             Destroy(this.gameObject);
-            Destroy(testObject);
+            OpenDoor();
         }
+    }
+
+    public void OpenDoor()
+    {
+        animator.SetTrigger("Open");
     }
 }

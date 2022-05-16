@@ -13,7 +13,7 @@ public class HungMovingSaw : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        player = GameObject.Find("Dog").GetComponent<PlayerMovementScript>();
+        player = GameObject.Find("Player").GetComponent<PlayerMovementScript>();
     }
 
     // Update is called once per frame
