@@ -55,9 +55,9 @@ public class HungWaypoint : MonoBehaviour
 
         if (collision.gameObject.tag == "MovingPlatform")
         {
-            collision.gameObject.GetComponent<HungMovingPlatform>().target = GetRandomTarget();
+            //collision.gameObject.GetComponent<HungMovingPlatform>().target = GetRandomTarget();
 
-            collision.gameObject.GetComponent<HungMovingPlatform>().Flip();
+            //collision.gameObject.GetComponent<HungMovingPlatform>().Flip();
         }
     }
 
