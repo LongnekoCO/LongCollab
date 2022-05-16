@@ -122,4 +122,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 02b3f9146eaaee446be9735c3869f30c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeRepeat: 3
+  timeRepeat: 1

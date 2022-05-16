@@ -8,7 +8,7 @@ public class HungMovingSaw : MonoBehaviour
     public List<Transform> target = new List<Transform>();
     public bool isMovingForward;
     public bool isMovingBackward;
-    public PlayerMovementScript player;
+    private PlayerMovementScript player;
 
     // Start is called before the first frame update
     void Start()
@@ -44,8 +44,14 @@ public class HungMovingSaw : MonoBehaviour
             isMovingBackward = true;
         }
 
-        if (collision.gameObject.tag == "Player" && this.gameObject.tag == "Saw")
+        
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag == "Player")
         {
+            Debug.Log("collide");
             player.TakeDamage(10);
         }
     }
