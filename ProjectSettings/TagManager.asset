@@ -34,6 +34,7 @@ TagManager:
   - Waypoint
   - WaypointBack
   - Saw
+  - MovableObject
   layers:
   - Default
   - TransparentFX

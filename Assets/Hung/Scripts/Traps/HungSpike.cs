@@ -12,7 +12,7 @@ public class HungSpike : MonoBehaviour
     void Start()
     {
         //collider = this.GetComponent<Collider2D>();
-        player = GameObject.Find("Dog").GetComponent<PlayerMovementScript>();
+        player = GameObject.Find("Player").GetComponent<PlayerMovementScript>();
     }
 
     // Update is called once per frame
