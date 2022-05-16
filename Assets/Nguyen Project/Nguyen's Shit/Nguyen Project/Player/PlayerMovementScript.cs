@@ -49,6 +49,8 @@ public class PlayerMovementScript : MonoBehaviour
 
     public PlayerBowAndPowers powerScript;
 
+    private float moveInput;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -70,8 +72,9 @@ public class PlayerMovementScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Movement();
-        if(isGrounded)
+        //Movement();
+        DashandTeleport();
+        if (isGrounded)
         {
             extraJumps = extraJumpsVal;
             if (Input.GetKeyDown(KeyCode.LeftShift) && parachuteOn == true)
@@ -105,7 +108,7 @@ public class PlayerMovementScript : MonoBehaviour
         
         if(parachuteOn == true)
         {
-            GetComponent<Rigidbody2D>().drag = 8;
+            GetComponent<Rigidbody2D>().drag = 10;
             parachute.GetComponent<SpriteRenderer>().color = new Color(1, 1, 1, 1);
         }
         else if (parachuteOn == false)
@@ -134,27 +137,42 @@ public class PlayerMovementScript : MonoBehaviour
     {
         //checks if the player is on the ground
         isGrounded = Physics2D.OverlapCircle(groundCheck.position, 0.2f, groundlayer);
+
+        Movement2();
+        
+    }
+
+    void Movement2()
+    {
+        if (canMovee == true)
+        {
+            moveInput = Input.GetAxis("Horizontal");
+            playerRigidbody.velocity = new Vector2(moveInput * walkingSpeed, playerRigidbody.velocity.y);
+
+            if (facingRight == false && moveInput > 0)
+            {
+                Flip();
+            }
+
+            else if (facingRight == true && moveInput < 0)
+            {
+                Flip();
+            }
+        }
+
+           
     }
 
     IEnumerator Dash()
     {
         Debug.Log("Eurobeat Intensified");
         canDash = false;
-        walkingSpeed = 0.5f;
+        walkingSpeed = walkingSpeed * 3;
         yield return new WaitForSeconds(0.15f);
-        walkingSpeed = 0.09f;
+        walkingSpeed = walkingSpeed/3;
         canDash = true;
 
-        /*if (side == 1)
-        {
-            Debug.Log("Dashing Right");
-            walkingSpeed = 1; 
-        }
-        else if (side == 2)
-        {
-            Debug.Log("Dashing Left");
-            playerRigidbody.velocity = Vector2.left * dashSpeed;
-        }*/
+       
     }
 
     void Jump()
@@ -162,25 +180,13 @@ public class PlayerMovementScript : MonoBehaviour
         playerRigidbody.velocity = Vector2.up * jumpForce;
     }
 
-    void Movement()
+    void DashandTeleport()
     {
-        Vector3 playerPosition = this.transform.position;
-        playerPosition.z = 1;
-
-        if(canMovee == true)
+        if (canMovee == true)
         {
-            if (Input.GetKey(KeyCode.D))
+            if (Input.GetKeyDown(KeyCode.RightShift) && canDash == true)
             {
-                playerPosition.x = playerPosition.x + walkingSpeed;
-                this.transform.position = playerPosition;
-                //anim.SetTrigger("isWalking");
-                if (facingRight == false)
-                {
-                    Flip();
-                    //bow1.Flip();
-                }
-                
-                if (Input.GetKeyDown(KeyCode.RightShift) && canDash == true)
+                if(powerScript.currentEnergy - 20 >= 0)
                 {
                     Vector3 temp = new Vector3(this.transform.position.x, this.transform.position.y, this.transform.position.z);
                     powerScript.UseEnergy(20);
@@ -188,66 +194,126 @@ public class PlayerMovementScript : MonoBehaviour
                     StartCoroutine(Dash());
 
                 }
+
             }
 
-            else if (Input.GetKey(KeyCode.A))
+            if (Input.GetKeyDown(KeyCode.Q))
             {
-                playerPosition.x = playerPosition.x - walkingSpeed;
-                this.transform.position = playerPosition;
-               // anim.SetTrigger("isWalking");
-
-                if (facingRight == true)
+                if (powerScript.currentEnergy - 20 >= 0)
                 {
-                    Flip();
-                    //bow1.Flip();
-                }
-
-                if (Input.GetKeyDown(KeyCode.RightShift) && canDash == true)
-                {
-                    if (powerScript.currentEnergy - 20 >= 0)
+                    if (facingRight == true)
                     {
+                        //int positionX = Random.Range(1,10);
                         Vector3 temp = new Vector3(this.transform.position.x, this.transform.position.y, this.transform.position.z);
+                        Vector3 newPos = new Vector3(this.transform.position.x + 4, this.transform.position.y, this.transform.position.z);
+                        this.transform.position = newPos;
+                        Instantiate(log, temp, Quaternion.identity);
                         Instantiate(smokeParticle, temp, Quaternion.identity);
-                        powerScript.UseEnergy(20);
-                        StartCoroutine(Dash());
+                        //Destroy(log, 2f);
                     }
-                    
+                    else if (facingRight == false)
+                    {
+                        //int positionX = Random.Range(1,10);
+                        Vector3 temp = new Vector3(this.transform.position.x, this.transform.position.y, this.transform.position.z);
+                        Vector3 newPos = new Vector3(this.transform.position.x - 4, this.transform.position.y, this.transform.position.z);
+                        this.transform.position = newPos;
+                        Instantiate(log, temp, Quaternion.identity);
+                        Instantiate(smokeParticle, temp, Quaternion.identity);
+                        //Destroy(log, 2f);
+                    }
+                    powerScript.UseEnergy(20);
                 }
-            }
-            else
-            {
-                //anim.SetTrigger("isIdle");
             }
         }
-
-        if (Input.GetKeyDown(KeyCode.Q))
-        {
-            if(powerScript.currentEnergy - 20 >= 0)
-            {
-                if (facingRight == true)
-                {
-                    //int positionX = Random.Range(1,10);
-                    Vector3 temp = new Vector3(this.transform.position.x, this.transform.position.y, this.transform.position.z);
-                    Vector3 newPos = new Vector3(this.transform.position.x + 4, this.transform.position.y, this.transform.position.z);
-                    this.transform.position = newPos;
-                    Instantiate(log, temp, Quaternion.identity);
-                    Instantiate(smokeParticle, temp, Quaternion.identity);
-                    //Destroy(log, 2f);
-                }
-                else if (facingRight == false)
-                {
-                    //int positionX = Random.Range(1,10);
-                    Vector3 temp = new Vector3(this.transform.position.x, this.transform.position.y, this.transform.position.z);
-                    Vector3 newPos = new Vector3(this.transform.position.x - 4, this.transform.position.y, this.transform.position.z);
-                    this.transform.position = newPos;
-                    Instantiate(log, temp, Quaternion.identity);
-                    Instantiate(smokeParticle, temp, Quaternion.identity);
-                    //Destroy(log, 2f);
-                }
-                powerScript.UseEnergy(20);
-            }
-       }
+            
     }
+
+    //void Movement()
+    //{
+    //    Vector3 playerPosition = this.transform.position;
+    //    playerPosition.z = 1;
+
+    //    if(canMovee == true)
+    //    {
+    //        if (Input.GetKey(KeyCode.D))
+    //        {
+    //            playerPosition.x = playerPosition.x + walkingSpeed;
+    //            this.transform.position = playerPosition;
+    //            //anim.SetTrigger("isWalking");
+    //            if (facingRight == false)
+    //            {
+    //                Flip();
+    //                //bow1.Flip();
+    //            }
+                
+    //            if (Input.GetKeyDown(KeyCode.RightShift) && canDash == true)
+    //            {
+    //                Vector3 temp = new Vector3(this.transform.position.x, this.transform.position.y, this.transform.position.z);
+    //                powerScript.UseEnergy(20);
+    //                Instantiate(smokeParticle, temp, Quaternion.identity);
+    //                StartCoroutine(Dash());
+
+    //            }
+    //        }
+
+    //        else if (Input.GetKey(KeyCode.A))
+    //        {
+    //            playerPosition.x = playerPosition.x - walkingSpeed;
+    //            this.transform.position = playerPosition;
+    //           // anim.SetTrigger("isWalking");
+
+    //            if (facingRight == true)
+    //            {
+    //                Flip();
+    //                //bow1.Flip();
+    //            }
+
+    //            if (Input.GetKeyDown(KeyCode.RightShift) && canDash == true)
+    //            {
+    //                if (powerScript.currentEnergy - 20 >= 0)
+    //                {
+    //                    Vector3 temp = new Vector3(this.transform.position.x, this.transform.position.y, this.transform.position.z);
+    //                    Instantiate(smokeParticle, temp, Quaternion.identity);
+    //                    powerScript.UseEnergy(20);
+    //                    StartCoroutine(Dash());
+    //                }
+                    
+    //            }
+    //        }
+    //        else
+    //        {
+    //            //anim.SetTrigger("isIdle");
+    //        }
+    //    }
+
+    //    if (Input.GetKeyDown(KeyCode.Q))
+    //    {
+    //        if(powerScript.currentEnergy - 20 >= 0)
+    //        {
+    //            if (facingRight == true)
+    //            {
+    //                //int positionX = Random.Range(1,10);
+    //                Vector3 temp = new Vector3(this.transform.position.x, this.transform.position.y, this.transform.position.z);
+    //                Vector3 newPos = new Vector3(this.transform.position.x + 4, this.transform.position.y, this.transform.position.z);
+    //                this.transform.position = newPos;
+    //                Instantiate(log, temp, Quaternion.identity);
+    //                Instantiate(smokeParticle, temp, Quaternion.identity);
+    //                //Destroy(log, 2f);
+    //            }
+    //            else if (facingRight == false)
+    //            {
+    //                //int positionX = Random.Range(1,10);
+    //                Vector3 temp = new Vector3(this.transform.position.x, this.transform.position.y, this.transform.position.z);
+    //                Vector3 newPos = new Vector3(this.transform.position.x - 4, this.transform.position.y, this.transform.position.z);
+    //                this.transform.position = newPos;
+    //                Instantiate(log, temp, Quaternion.identity);
+    //                Instantiate(smokeParticle, temp, Quaternion.identity);
+    //                //Destroy(log, 2f);
+    //            }
+    //            powerScript.UseEnergy(20);
+    //        }
+    //   }
+    //}
 
     void Flip()
     {
