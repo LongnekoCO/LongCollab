@@ -1559,11 +1559,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 821c26e1f7f11d84ba384e65039d078d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  walkingSpeed: 0.09
   facingRight: 1
   playerRigidbody: {fileID: 5206897003126350030}
   health: 100
   currentHealth: 0
-  healthBar: {fileID: 0}
+  healthBar: {fileID: 1290438363752160134}
   jumpForce: 5
   groundCheck: {fileID: 5206897003925339974}
   groundlayer:
@@ -1627,17 +1628,17 @@ MonoBehaviour:
   enemies: []
   energy: 150
   currentEnergy: 0
-  energyBar: {fileID: 0}
-  abilityImage1: {fileID: 0}
-  abilityImage2: {fileID: 0}
-  abilityImage3: {fileID: 0}
+  energyBar: {fileID: 8924441907149313240}
+  abilityImage1: {fileID: 3336418803683731112}
+  abilityImage2: {fileID: 4875631952215573396}
+  abilityImage3: {fileID: 791380498351999146}
   coolDown1: 3
   coolDown2: 5
   coolDown3: 4
   isCooldown1: 0
   isCooldown2: 0
   isCooldown3: 0
-  arrowDisplay: {fileID: 0}
+  arrowDisplay: {fileID: 3058154253032614348}
 --- !u!1 &5206897003925339975
 GameObject:
   m_ObjectHideFlags: 0

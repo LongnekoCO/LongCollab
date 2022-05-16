@@ -37,6 +37,8 @@ public class Bow : MonoBehaviour
 
     Sprite arrowImagee;
 
+    //public float launchSpeed;
+
     private void Start()
     {
 
@@ -229,6 +231,9 @@ public class Bow : MonoBehaviour
         line.enabled = true;
         springy.enabled = true;
         springy.connectedBody = target.GetComponent<Rigidbody2D>();
+
+        //Vector2 pull = target.transform.position - player.transform.position;
+        //player.transform.position = Vector2.Lerp(player.transform.position, pull, Time.deltaTime * launchSpeed);
         //player.transform.GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Static;
     }
 

@@ -11,7 +11,7 @@ public class HungLaser : MonoBehaviour
     void Start()
     {
         rb2D = this.GetComponent<Rigidbody2D>();
-        player = GameObject.Find("Dog").GetComponent<PlayerMovementScript>();
+        player = GameObject.Find("Player").GetComponent<PlayerMovementScript>();
         Destroy(this.gameObject, 2f);
     }
 

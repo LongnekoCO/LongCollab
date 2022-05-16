@@ -31,6 +31,10 @@ TagManager:
   - HealthPill
   - ViagraPill
   - MovingPlatform
+  - Waypoint
+  - WaypointBack
+  - Saw
+  - MovableObject
   layers:
   - Default
   - TransparentFX

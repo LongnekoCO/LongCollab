@@ -2,17 +2,18 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class HungMovingPlatform : MonoBehaviour
+public class HungMovingSaw : MonoBehaviour
 {
     public float moveSpeed;
     public List<Transform> target = new List<Transform>();
     public bool isMovingForward;
     public bool isMovingBackward;
+    private PlayerMovementScript player;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        player = GameObject.Find("Player").GetComponent<PlayerMovementScript>();
     }
 
     // Update is called once per frame
@@ -24,7 +25,7 @@ public class HungMovingPlatform : MonoBehaviour
         {
             this.transform.position = Vector3.MoveTowards(this.transform.position, target[1].position, move);
         }
-        else if(isMovingBackward == true)
+        else if (isMovingBackward == true)
         {
             this.transform.position = Vector3.MoveTowards(this.transform.position, target[0].position, move);
         }
@@ -41,6 +42,17 @@ public class HungMovingPlatform : MonoBehaviour
         {
             isMovingForward = false;
             isMovingBackward = true;
+        }
+
+        
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag == "Player")
+        {
+            Debug.Log("collide");
+            player.TakeDamage(10);
         }
     }
 }
