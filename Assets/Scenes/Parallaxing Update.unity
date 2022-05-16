@@ -1489,11 +1489,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0c8fd9cf7ab71bf4ba063b7d8ebe8af6, type: 3}
---- !u!1 &391050138 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6987801308082639578, guid: bbacf9bbfb61a68419ee70a7b9b161b9, type: 3}
-  m_PrefabInstance: {fileID: 570454010}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &415490651
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2951,6 +2946,11 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!1 &696821238 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5206897003126350033, guid: 4acddba6119ee2340b5712fa03ce934c, type: 3}
+  m_PrefabInstance: {fileID: 1350643273}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &753591103
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7996,6 +7996,6 @@ PrefabInstance:
     - target: {fileID: 8082651543860970422, guid: 5e4e7dc0e7157654e8b634d3ff55e514, type: 3}
       propertyPath: player
       value: 
-      objectReference: {fileID: 391050138}
+      objectReference: {fileID: 696821238}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5e4e7dc0e7157654e8b634d3ff55e514, type: 3}
