@@ -2124,7 +2124,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 124896312368337541, guid: bbacf9bbfb61a68419ee70a7b9b161b9, type: 3}
       propertyPath: m_Frequency
-      value: 0.125
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 124896312368337541, guid: bbacf9bbfb61a68419ee70a7b9b161b9, type: 3}
       propertyPath: m_DampingRatio
