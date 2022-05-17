@@ -11,14 +11,12 @@ The target that enemy and boss will change direction
 
 Change log:
 
-
 *******************************************************/
 
 public class HungWaypoint : MonoBehaviour
 {
     public List<Transform> target = new List<Transform>(); //list of waypoints
 
-    private HungMovingPlatform movingPlatform;
     //private HungBossPatrol bossPatrol; //a reference to BossPatrol script
     //private HungEnemyPatrol enemyPatrol1;
     //private HungEnemy2Patrol enemyPatrol2;
@@ -28,9 +26,7 @@ public class HungWaypoint : MonoBehaviour
 
     // Start is called before the first frame update
     void Start()
-    {
-        movingPlatform = GameObject.Find("MovingPlatform").GetComponent<HungMovingPlatform>();
-        
+    {     
         //bossPatrol = GameObject.Find("Boss1").GetComponent<HungBossPatrol>();
         //enemyPatrol1 = GameObject.Find("Enemy1").GetComponent<HungEnemyPatrol>();
         //enemyPatrol2 = GameObject.Find("Enemy2").GetComponent<HungEnemy2Patrol>();
@@ -51,13 +47,6 @@ public class HungWaypoint : MonoBehaviour
             //collision.gameObject.GetComponent<HungEnemyPatrol>().Flip();
             //collision.gameObject.GetComponent<HungEnemy2Patrol>().Flip();
             //collision.gameObject.GetComponent<HungBossPatrol>().Flip();
-        }
-
-        if (collision.gameObject.tag == "MovingPlatform")
-        {
-            //collision.gameObject.GetComponent<HungMovingPlatform>().target = GetRandomTarget();
-
-            //collision.gameObject.GetComponent<HungMovingPlatform>().Flip();
         }
     }
 

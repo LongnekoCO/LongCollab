@@ -43,8 +43,6 @@ public class HungMovingSaw : MonoBehaviour
             isMovingForward = false;
             isMovingBackward = true;
         }
-
-        
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
