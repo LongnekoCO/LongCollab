@@ -6181,7 +6181,7 @@ RectTransform:
   m_GameObject: {fileID: 5795456108818532703}
   m_LocalRotation: {x: -0, y: 0.008726557, z: -0, w: 0.9999619}
   m_LocalPosition: {x: 0, y: 0, z: 0.00015256465}
-  m_LocalScale: {x: 2, y: 2, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 7227113148453247315}
   - {fileID: 1113570508}
@@ -6321,6 +6321,9 @@ MonoBehaviour:
   isCooldown2: 0
   isCooldown3: 0
   arrowDisplay: {fileID: 107707996155345291}
+  shield: {fileID: 0}
+  capShield: {fileID: 0}
+  weaponImage: {fileID: 0}
 --- !u!114 &2741829262538846075
 MonoBehaviour:
   m_ObjectHideFlags: 0
