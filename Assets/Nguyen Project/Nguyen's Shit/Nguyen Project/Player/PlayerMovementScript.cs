@@ -184,7 +184,7 @@ public class PlayerMovementScript : MonoBehaviour
     {
         if (canMovee == true)
         {
-            if (Input.GetKeyDown(KeyCode.RightShift) && canDash == true)
+            if (Input.GetKeyDown(KeyCode.LeftControl) && canDash == true)
             {
                 if(powerScript.currentEnergy - 20 >= 0)
                 {

@@ -952,7 +952,7 @@ Animator:
   m_GameObject: {fileID: 2422605159653829516}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: c2fc0aafc4ba14749a6cc196ffeb52b8, type: 2}
+  m_Controller: {fileID: 0}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -4049,7 +4049,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 821c26e1f7f11d84ba384e65039d078d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  walkingSpeed: 0.09
+  walkingSpeed: 10
   facingRight: 1
   playerRigidbody: {fileID: 5198014674439827277}
   health: 100
@@ -5629,6 +5629,10 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: 9574c440983ca9b4c8e9fbd8ea43c63b, type: 3}
+    - target: {fileID: 2399845206673472166, guid: a8b1eb82ffde7154b9c4273504e4bfb7, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a8b1eb82ffde7154b9c4273504e4bfb7, type: 3}
 --- !u!120 &6096451876162345058 stripped
