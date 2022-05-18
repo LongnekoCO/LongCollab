@@ -32,8 +32,6 @@ public class HungMovingPlatform : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        
-
         if (collision.gameObject.tag == "Waypoint")
         {
             isMovingForward = true;
@@ -45,21 +43,20 @@ public class HungMovingPlatform : MonoBehaviour
             isMovingBackward = true;
         }
     }
+
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if(collision.gameObject.tag == "Player")
         {
             collision.transform.SetParent(transform);
-        }
-            
+        }    
     }
+
     private void OnCollisionExit2D(Collision2D collision)
     {
         if (collision.gameObject.tag == "Player")
         {
             collision.transform.SetParent(null);
         }
-
     }
-
 }
