@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+[ExecuteInEditMode]
 public class PlayerObj : MonoBehaviour
 {
     public SPUM_Prefabs _prefabs;
@@ -34,6 +35,8 @@ public class PlayerObj : MonoBehaviour
             DoMove();
             break;
         }
+
+
     }
 
     void DoMove()
