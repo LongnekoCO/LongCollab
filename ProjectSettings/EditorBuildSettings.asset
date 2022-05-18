@@ -6,9 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Resources/SPUM/SPUM_Units/Scenes/Parallaxing Update.unity
+    path: Assets/Resources old/SPUM/SPUM_Units/Scenes/Parallaxing Update.unity
     guid: 6d3c4edb248bb154eb3a0fd462d1c04e
   - enabled: 1
-    path: Assets/Resources/SPUM/SPUM_Units/Scenes/NextLevelProto.unity
+    path: Assets/Resources old/SPUM/SPUM_Units/Scenes/NextLevelProto.unity
     guid: 4d6d54aa5013d3142ace175b2fb2decf
   m_configObjects: {}
