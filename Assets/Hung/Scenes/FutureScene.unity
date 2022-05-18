@@ -1818,7 +1818,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8884154250046133642, guid: a926b11a9a5bfb941929c0ccb4e2c52c, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.47
+      value: -3.49
       objectReference: {fileID: 0}
     - target: {fileID: 8884154250046133642, guid: a926b11a9a5bfb941929c0ccb4e2c52c, type: 3}
       propertyPath: m_LocalPosition.z
@@ -6935,63 +6935,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.0173097, y: 1.0388331}
   m_EdgeRadius: 0
---- !u!1 &1324690565
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1324690567}
-  - component: {fileID: 1324690566}
-  m_Layer: 0
-  m_Name: Waypoint (4)
-  m_TagString: WaypointBack
-  m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!61 &1324690566
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1324690565}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1}
-  m_EdgeRadius: 0
---- !u!4 &1324690567
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1324690565}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 21.52, y: -3.44, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 18
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1342812900
 GameObject:
   m_ObjectHideFlags: 0
@@ -53221,63 +53164,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.0173097, y: 2.0512223}
   m_EdgeRadius: 0
---- !u!1 &1875652301
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1875652303}
-  - component: {fileID: 1875652302}
-  m_Layer: 0
-  m_Name: Waypoint (5)
-  m_TagString: WaypointBack
-  m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!61 &1875652302
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1875652301}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1}
-  m_EdgeRadius: 0
---- !u!4 &1875652303
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1875652301}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 29.65, y: -3.44, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 19
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1913832245
 GameObject:
   m_ObjectHideFlags: 0
@@ -54235,14 +54121,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1541586924923767267, guid: d3f1de9a55b738f41bc901825b24cd87, type: 3}
-      propertyPath: speed
-      value: 0.05
-      objectReference: {fileID: 0}
-    - target: {fileID: 1541586924923767267, guid: d3f1de9a55b738f41bc901825b24cd87, type: 3}
-      propertyPath: target
-      value: 
-      objectReference: {fileID: 1324690567}
     - target: {fileID: 1541586924923767268, guid: d3f1de9a55b738f41bc901825b24cd87, type: 3}
       propertyPath: m_RootOrder
       value: 16
@@ -54294,10 +54172,6 @@ PrefabInstance:
     - target: {fileID: 1541586924923767271, guid: d3f1de9a55b738f41bc901825b24cd87, type: 3}
       propertyPath: m_Name
       value: Transporter
-      objectReference: {fileID: 0}
-    - target: {fileID: 8517021603580098795, guid: d3f1de9a55b738f41bc901825b24cd87, type: 3}
-      propertyPath: m_UseContactForce
-      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d3f1de9a55b738f41bc901825b24cd87, type: 3}
@@ -54401,17 +54275,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 7090681980750293524, guid: f6d40cb9d2150eb4d935a189362bf167, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7090681980750293525, guid: f6d40cb9d2150eb4d935a189362bf167, type: 3}
       propertyPath: m_RootOrder
       value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 7090681980750293525, guid: f6d40cb9d2150eb4d935a189362bf167, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -8.52
       objectReference: {fileID: 0}
     - target: {fileID: 7090681980750293525, guid: f6d40cb9d2150eb4d935a189362bf167, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -2.41
       objectReference: {fileID: 0}
     - target: {fileID: 7090681980750293525, guid: f6d40cb9d2150eb4d935a189362bf167, type: 3}
       propertyPath: m_LocalPosition.z
