@@ -12,7 +12,6 @@ public class HungLaser : MonoBehaviour
     {
         rb2D = this.GetComponent<Rigidbody2D>();
         player = GameObject.Find("Player").GetComponent<PlayerMovementScript>();
-        Destroy(this.gameObject, 2f);
     }
 
     // Update is called once per frame
@@ -26,6 +25,12 @@ public class HungLaser : MonoBehaviour
         if (collision.gameObject.tag == "Player")
         {
             player.TakeDamage(20);
+            Destroy(this.gameObject);
+        }
+
+        else if (collision.gameObject.tag == "Ground")
+        {
+            Destroy(this.gameObject);
         }
     }
 }
