@@ -39,12 +39,19 @@ public class PlayerBowAndPowers : MonoBehaviour
 
     public GameObject arrowDisplay;
 
+    public Shield shield;
+    public GameObject capShield;
+
+    Sprite weaponImagee;
+    public GameObject weaponImage;
+
     // Start is called before the first frame update
     void Start()
     {
         boulderDefSpawn.SetActive(false);
         boulderAttackSpawn.SetActive(false);
         bow.SetActive(false);
+        capShield.SetActive(false);
         playerMovementScript = this.GetComponent<PlayerMovementScript>();
         enemies = GameObject.FindGameObjectsWithTag("Enemy");
          
@@ -66,6 +73,8 @@ public class PlayerBowAndPowers : MonoBehaviour
         Power();
         Power2();
         Power3();
+        ShieldThrown();
+        ActivateShield();
     }
 
     void Power()
@@ -183,12 +192,15 @@ public class PlayerBowAndPowers : MonoBehaviour
 
     void Bow()
     {
-        if (Input.GetKeyDown(KeyCode.Z))
+        if (Input.GetKeyDown(KeyCode.Alpha1))
         {
             if (!bow.activeSelf)
             {
+                capShield.SetActive(false);
                 bow.SetActive(true);
                 arrowDisplay.SetActive(true);
+                weaponImagee = Resources.Load<Sprite>("Bow_5");
+                weaponImage.GetComponent<Image>().sprite = weaponImagee;
             }
 
             else
@@ -197,6 +209,54 @@ public class PlayerBowAndPowers : MonoBehaviour
                 arrowDisplay.SetActive(false);
             }
         }
+    }
+
+    void ActivateShield()
+    {
+        if(Input.GetKeyDown(KeyCode.Alpha2))
+        {
+            if(!capShield.activeSelf)
+            {
+                weaponImagee = Resources.Load<Sprite>("ShieldImage");
+                weaponImage.GetComponent<Image>().sprite = weaponImagee;
+                capShield.SetActive(true);
+                bow.SetActive(false);
+                arrowDisplay.SetActive(false);
+            }
+            
+            
+
+            else if(capShield.activeSelf)
+            {
+                capShield.SetActive(false);
+            }
+
+
+        }
+
+       
+    }
+
+    void ShieldThrown()
+    {
+        if(capShield.activeSelf)
+        {
+            if (Input.GetMouseButtonDown(0))
+            {
+                if (shield.IsWithPlayer())
+                {
+                    Vector3 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+                    Vector3 throwDir = (mousePosition - GetPosition()).normalized;
+                    shield.ThrowShield(throwDir);
+                }
+
+                else
+                {
+                    shield.Recall();
+                }
+            }
+        }
+        
     }
 
     IEnumerator BoulderFall()
@@ -253,5 +313,10 @@ public class PlayerBowAndPowers : MonoBehaviour
         bow.GetComponent<Bow>().fireRate = 0f;
         yield return new WaitForSeconds(5f);
         bow.GetComponent<Bow>().fireRate = 0.5f;
+    }
+
+    public Vector3 GetPosition()
+    {
+        return transform.position;
     }
 }
