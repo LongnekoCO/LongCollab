@@ -39,15 +39,15 @@ TagManager:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - Player
+  - 
   - Water
   - UI
   - Ground
   - Enemy
   - Arrow
+  - Damageable
   - MovableObject
-  - 
-  - 
+  - Player
   - 
   - 
   - 
@@ -86,4 +86,7 @@ TagManager:
     locked: 0
   - name: Foreground
     uniqueID: 185663515
+    locked: 0
+  - name: Player
+    uniqueID: 3992542669
     locked: 0

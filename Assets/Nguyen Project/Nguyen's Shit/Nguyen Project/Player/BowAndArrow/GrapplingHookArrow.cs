@@ -37,7 +37,7 @@ public class GrapplingHookArrow : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D collision)
     {
-        this.GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Static;
+        //this.GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Static;
         bowScript.TargetHitGrappling(this.gameObject);
         hasHit = true;
         rb.velocity = Vector2.zero;
