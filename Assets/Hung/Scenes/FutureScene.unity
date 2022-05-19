@@ -1071,7 +1071,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 949c4115ede813f4dad1339b2db208af, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 1123090100}
+  player: {fileID: 564373190}
   yOffset: 0
 --- !u!1 &149850688
 GameObject:
@@ -2852,6 +2852,11 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 4.980606, y: 1.0253165}
   m_EdgeRadius: 0
+--- !u!1 &564373190 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 144371651367260903, guid: bbacf9bbfb61a68419ee70a7b9b161b9, type: 3}
+  m_PrefabInstance: {fileID: 1446955900}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &566024694
 GameObject:
   m_ObjectHideFlags: 0
@@ -6125,11 +6130,6 @@ Transform:
   m_Father: {fileID: 1599320905}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1123090100 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6987801308082639578, guid: bbacf9bbfb61a68419ee70a7b9b161b9, type: 3}
-  m_PrefabInstance: {fileID: 1446955900}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1142325371
 GameObject:
   m_ObjectHideFlags: 0
@@ -7510,6 +7510,22 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4552425837052272350, guid: bbacf9bbfb61a68419ee70a7b9b161b9, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4552425837052272350, guid: bbacf9bbfb61a68419ee70a7b9b161b9, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 124.39
+      objectReference: {fileID: 0}
+    - target: {fileID: 4552425837052272350, guid: bbacf9bbfb61a68419ee70a7b9b161b9, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -3.99
+      objectReference: {fileID: 0}
+    - target: {fileID: 5713372288933540212, guid: bbacf9bbfb61a68419ee70a7b9b161b9, type: 3}
+      propertyPath: capShield
+      value: 
+      objectReference: {fileID: 1914908706}
     - target: {fileID: 6370198594322150030, guid: bbacf9bbfb61a68419ee70a7b9b161b9, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
@@ -53446,6 +53462,11 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 6.0078144, y: 1.0217447}
   m_EdgeRadius: 0
+--- !u!1 &1914908706 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8769756517521658749, guid: bbacf9bbfb61a68419ee70a7b9b161b9, type: 3}
+  m_PrefabInstance: {fileID: 1446955900}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1927168151
 GameObject:
   m_ObjectHideFlags: 0
