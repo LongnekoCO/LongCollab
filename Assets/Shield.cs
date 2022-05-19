@@ -40,6 +40,8 @@ public class Shield : MonoBehaviour
                 Vector3 dirToPlayer = (player.GetPosition() - transform.position).normalized;
                 float recallSpeed = 50f;
                 rb.velocity = dirToPlayer * recallSpeed;
+                //var step = recallSpeed * Time.deltaTime;
+                //transform.position = Vector3.MoveTowards(transform.position, player.GetPosition(), step);
                 TryPlayerGrabShield();
                 break;
         }
