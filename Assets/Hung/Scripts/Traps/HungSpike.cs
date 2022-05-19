@@ -25,12 +25,7 @@ public class HungSpike : MonoBehaviour
     {
         if (collision.gameObject.tag == "Player")
         {
-            InvokeRepeating("DamageLooping", 1f, timeRepeat);
+            player.TakeDamage(20);
         }
-    }
-
-    void DamageLooping()
-    {
-        player.TakeDamage(20);
     }
 }

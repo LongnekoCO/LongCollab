@@ -22,11 +22,11 @@ public class HungMovingPlatform : MonoBehaviour
 
         if (isMovingForward == true)
         {
-            this.transform.position = Vector3.MoveTowards(this.transform.position, target[1].position, move);
+            this.transform.position = Vector3.MoveTowards(this.transform.position, target[0].position, move);
         }
         else if(isMovingBackward == true)
         {
-            this.transform.position = Vector3.MoveTowards(this.transform.position, target[0].position, move);
+            this.transform.position = Vector3.MoveTowards(this.transform.position, target[1].position, move);
         }
     }
 
