@@ -42,8 +42,15 @@ public class TestSubjectScript : MonoBehaviour
             //TakeDamage(20);
             StartCoroutine(AttackRockEffect());
             //this.GetComponent<Rigidbody2D>().isKinematic = true;
-        } 
+        }
         
+        if(col.gameObject.tag == "CapShield")
+        {
+            Vector2 direction = col.transform.position - this.transform.position;
+            this.GetComponent<Rigidbody2D>().AddForce(direction * 10000f);
+            otherScript1.TakeDamage(30);
+        }
+
     }
 
     void OnParticleCollision(GameObject other)
