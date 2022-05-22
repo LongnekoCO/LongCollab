@@ -51,12 +51,22 @@ public class PlayerMovementScript : MonoBehaviour
 
     private float moveInput;
 
+    public GameObject unitRoot;
+    Animator anim;
+
     // Start is called before the first frame update
     void Start()
     {
         //anim = this.GetComponent<Animator>();
         canMovee = true;
         //bow.SetActive(false);
+
+        unitRoot = this.transform.Find("UnitRoot").gameObject;
+        if(unitRoot != null)
+        {
+            anim = unitRoot.GetComponent<Animator>();
+        }
+
 
         dashCount = startDashCount;
         canDash = true;
@@ -129,7 +139,7 @@ public class PlayerMovementScript : MonoBehaviour
         //{
         //    TakeDamage(20);
         //}
-
+        
 
     }
 
@@ -140,27 +150,31 @@ public class PlayerMovementScript : MonoBehaviour
 
         Movement2();
         
+
+
     }
 
     void Movement2()
     {
         if (canMovee == true)
         {
-            moveInput = Input.GetAxis("Horizontal");
-            playerRigidbody.velocity = new Vector2(moveInput * walkingSpeed, playerRigidbody.velocity.y);
-
-            if (facingRight == false && moveInput > 0)
+            moveInput = Input.GetAxis("Horizontal") * walkingSpeed ;
+            playerRigidbody.velocity = new Vector2(moveInput , playerRigidbody.velocity.y);
+            anim.SetFloat("movement", Mathf.Abs(moveInput));
+            if (facingRight == true && moveInput < 0)
             {
                 Flip();
             }
 
-            else if (facingRight == true && moveInput < 0)
+            else if (facingRight == false && moveInput > 0)
             {
                 Flip();
             }
+            
+            
+
         }
-
-           
+      
     }
 
     IEnumerator Dash()
@@ -168,6 +182,7 @@ public class PlayerMovementScript : MonoBehaviour
         Debug.Log("Eurobeat Intensified");
         canDash = false;
         walkingSpeed = walkingSpeed * 3;
+        anim.SetTrigger("isRunning");
         yield return new WaitForSeconds(0.15f);
         walkingSpeed = walkingSpeed/3;
         canDash = true;
@@ -178,6 +193,7 @@ public class PlayerMovementScript : MonoBehaviour
     void Jump()
     {
         playerRigidbody.velocity = Vector2.up * jumpForce;
+        powerScript.AirMeleeAttack();
     }
 
     void Dashee()

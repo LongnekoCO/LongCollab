@@ -75,7 +75,7 @@ public class Shield : MonoBehaviour
     public void ThrowShield(Vector3 throwDir)
     {
         transform.position = player.GetPosition() + throwDir * (GRAB_DISTANCE + 1f);
-        float throwForce = 200f;
+        float throwForce = 250f;
         rb.isKinematic = false;
         rb.AddForce(throwDir * throwForce, ForceMode2D.Impulse);
         trail.enabled = true;

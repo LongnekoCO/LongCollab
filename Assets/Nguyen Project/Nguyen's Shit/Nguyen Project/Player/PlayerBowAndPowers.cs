@@ -45,6 +45,16 @@ public class PlayerBowAndPowers : MonoBehaviour
     Sprite weaponImagee;
     public GameObject weaponImage;
 
+    public GameObject unitRoot;
+    Animator anim;
+
+    public Transform attackPoint;
+    public float attackRange = 0.5f;
+    public LayerMask enemyLayers;
+    float nextAttackTime = 0f;
+    public float attackRate = 2f;
+    public bool canMelee;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -64,6 +74,17 @@ public class PlayerBowAndPowers : MonoBehaviour
 
         arrowDisplay.SetActive(false);
 
+        unitRoot = this.transform.Find("UnitRoot").gameObject;
+        if (unitRoot != null)
+        {
+            anim = unitRoot.GetComponent<Animator>();
+        }
+
+        canMelee = true;
+        weaponImagee = Resources.Load<Sprite>("Punch");
+        weaponImage.GetComponent<Image>().sprite = weaponImagee;
+
+
     }
 
     // Update is called once per frame
@@ -75,6 +96,84 @@ public class PlayerBowAndPowers : MonoBehaviour
         Power3();
         ShieldThrown();
         ActivateShield();
+        MeleeAttack();
+
+        if(!bow.activeSelf && !capShield.activeSelf)
+        {
+            weaponImagee = Resources.Load<Sprite>("Punch");
+            weaponImage.GetComponent<Image>().sprite = weaponImagee;
+        }
+        
+
+    }
+
+    public void MeleeAttack()
+    {
+        if(canMelee == true && !bow.activeSelf && !capShield.activeSelf)
+        {
+            if (Input.GetMouseButtonUp(0))
+            {
+                anim.SetTrigger("isAttackNormal");
+                
+
+                Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(attackPoint.position, attackRange, enemyLayers);
+
+                foreach (Collider2D enemy in hitEnemies)
+                {
+                    enemy.GetComponent<EnemyHealth>().TakeDamage(20);
+                    Debug.Log("we hit" + enemy.name);
+                }
+                StartCoroutine(MeleeCooldown());
+            }
+        }
+
+        else
+        {
+            anim.SetTrigger("isIdle");
+        }
+        
+    }
+
+    public void AirMeleeAttack()
+    {
+        if (canMelee == true && !bow.activeSelf && !capShield.activeSelf)
+        {
+            if (Input.GetMouseButtonUp(0))
+            {
+                anim.SetTrigger("isSkillNormal");
+
+
+                Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(attackPoint.position, attackRange, enemyLayers);
+
+                foreach (Collider2D enemy in hitEnemies)
+                {
+                    enemy.GetComponent<EnemyHealth>().TakeDamage(20);
+                    Debug.Log("we hit" + enemy.name);
+                }
+                StartCoroutine(MeleeCooldown());
+            }
+        }
+
+        else
+        {
+            anim.SetTrigger("isIdle");
+        }
+
+    }
+
+    IEnumerator MeleeCooldown()
+    {
+        canMelee = false;
+        yield return new WaitForSeconds(1f);
+        canMelee = true;
+    }
+
+    void OnDrawGizmosSelected()
+    {
+        if (attackPoint == null)
+            return;
+
+        Gizmos.DrawWireSphere(attackPoint.position, attackRange);
     }
 
     void Power()
