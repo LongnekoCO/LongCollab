@@ -8,7 +8,7 @@ public class PlayerMovementScript : MonoBehaviour
     public bool facingRight = true;
     //Animator anim;
     public Rigidbody2D playerRigidbody;
-    
+
 
     //public int health = 20; //testing only
 
@@ -38,7 +38,7 @@ public class PlayerMovementScript : MonoBehaviour
     public float startDashCount;
     private int side;
     public bool canDash;
-    public bool parachuteOn; 
+    public bool parachuteOn;
 
     private int extraJumps;
     public int extraJumpsVal;
@@ -54,6 +54,18 @@ public class PlayerMovementScript : MonoBehaviour
     public GameObject unitRoot;
     Animator anim;
 
+    public bool isTouchingFront;
+    public Transform frontCheck;
+    public bool wallSliding;
+    public float wallSlidingSpeed;
+
+    public bool wallJumping;
+    public float xWallForce;
+    public float yWallForce;
+    public float wallJumpTime;
+
+
+
     // Start is called before the first frame update
     void Start()
     {
@@ -62,7 +74,7 @@ public class PlayerMovementScript : MonoBehaviour
         //bow.SetActive(false);
 
         unitRoot = this.transform.Find("UnitRoot").gameObject;
-        if(unitRoot != null)
+        if (unitRoot != null)
         {
             anim = unitRoot.GetComponent<Animator>();
         }
@@ -71,7 +83,7 @@ public class PlayerMovementScript : MonoBehaviour
         dashCount = startDashCount;
         canDash = true;
 
-        parachute.GetComponent<SpriteRenderer>().color = new Color(0,0,0,0);
+        parachute.GetComponent<SpriteRenderer>().color = new Color(0, 0, 0, 0);
 
         currentHealth = health;
         healthBar.SetMaxHealth(health);
@@ -94,9 +106,9 @@ public class PlayerMovementScript : MonoBehaviour
             }
         }
 
-        if(Input.GetKeyDown(KeyCode.Space) && extraJumps > 0)
+        if (Input.GetKeyDown(KeyCode.Space) && extraJumps > 0)
         {
-            Jump();            
+            Jump();
             extraJumps--;
         }
         else if (Input.GetKeyDown(KeyCode.Space) && extraJumps == 0 && isGrounded == true)
@@ -104,19 +116,19 @@ public class PlayerMovementScript : MonoBehaviour
             Jump();
         }
 
-        if(!isGrounded)
+        if (!isGrounded)
         {
-            if(Input.GetKeyDown(KeyCode.LeftShift) && parachuteOn == false)
+            if (Input.GetKeyDown(KeyCode.LeftAlt) && parachuteOn == false)
             {
                 parachuteOn = true;
             }
-            else if (Input.GetKeyDown(KeyCode.LeftShift) && parachuteOn == true)
+            else if (Input.GetKeyDown(KeyCode.LeftAlt) && parachuteOn == true)
             {
                 parachuteOn = false;
             }
         }
-        
-        if(parachuteOn == true)
+
+        if (parachuteOn == true)
         {
             GetComponent<Rigidbody2D>().drag = 12;
             parachute.GetComponent<SpriteRenderer>().color = new Color(1, 1, 1, 1);
@@ -127,19 +139,23 @@ public class PlayerMovementScript : MonoBehaviour
             parachute.GetComponent<SpriteRenderer>().color = new Color(0, 0, 0, 0);
         }
 
-        /*if (Input.GetKeyDown(KeyCode.Space))
+        isTouchingFront = Physics2D.OverlapCircle(frontCheck.position, 0.2f, groundlayer);
+
+        if (isTouchingFront == true && isGrounded == false && moveInput == 0)
         {
-            //checks if the player is on the ground to avoid double jump
-            if (isGrounded)
-            {
-                Jump();
-            }
-        }*/
-        //if (Input.GetKeyDown(KeyCode.P))
-        //{
-        //    TakeDamage(20);
-        //}
-        
+            wallSliding = true;
+        }
+        else
+        {
+            wallSliding = false;
+        }
+
+
+
+        WallSliding();
+        WallJumping();
+
+           
 
     }
 
@@ -151,6 +167,38 @@ public class PlayerMovementScript : MonoBehaviour
         Movement2();
         
 
+
+    }
+
+    void WallSliding()
+    {
+        if (Input.GetKey(KeyCode.LeftShift))
+        {
+            if(wallSliding == true)
+            {
+                playerRigidbody.velocity = new Vector2(playerRigidbody.velocity.x, Mathf.Clamp(playerRigidbody.velocity.y, -wallSlidingSpeed, float.MaxValue));
+            }            
+        }
+       
+    }
+
+    void WallJumping()
+    {
+        if (Input.GetKey(KeyCode.Space) && wallSliding == true)
+        {
+            wallJumping = true;
+            Invoke("SetWallJumpingToFalse", wallJumpTime);
+        }
+
+        else if (Input.GetKeyUp(KeyCode.Space) || wallSliding == false)
+        {
+            wallJumping = false;
+        }
+        
+        if (wallJumping == true)
+        {
+            playerRigidbody.velocity = new Vector2(xWallForce * -moveInput, yWallForce);
+        }
 
     }
 
