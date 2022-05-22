@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Shield : MonoBehaviour
 {
-    private const float GRAB_DISTANCE = 5f;
+    private const float GRAB_DISTANCE = 2f;
     [SerializeField] private PlayerBowAndPowers player;
     [SerializeField] private Transform shieldHolder;
 
@@ -38,7 +38,7 @@ public class Shield : MonoBehaviour
                 TryPlayerGrabShield();
                 break;
             case State.Recalling: 
-                Vector3 dirToPlayer = (player.GetPosition() - transform.position).normalized;
+                Vector3 dirToPlayer =  (player.GetPosition() - transform.position).normalized;
                 float recallSpeed = 50f;
                 rb.velocity = dirToPlayer * recallSpeed;
                 this.transform.position = new Vector3(this.transform.position.x, this.transform.position.y, 1);
@@ -75,7 +75,7 @@ public class Shield : MonoBehaviour
     public void ThrowShield(Vector3 throwDir)
     {
         transform.position = player.GetPosition() + throwDir * (GRAB_DISTANCE + 1f);
-        float throwForce = 50f;
+        float throwForce = 200f;
         rb.isKinematic = false;
         rb.AddForce(throwDir * throwForce, ForceMode2D.Impulse);
         trail.enabled = true;
@@ -93,6 +93,8 @@ public class Shield : MonoBehaviour
         return state == State.WithPlayer;
     }
 
+   
 
-    
+
+
 }
