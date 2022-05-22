@@ -18,7 +18,7 @@ public class PlayerMovementScript : MonoBehaviour
     public HungHealthBar healthBar;
 
     public float jumpForce;
-    bool isGrounded;
+    public bool isGrounded;
     public Transform groundCheck;
     public LayerMask groundlayer;
     public bool canMovee = true;
@@ -96,7 +96,7 @@ public class PlayerMovementScript : MonoBehaviour
 
         if(Input.GetKeyDown(KeyCode.Space) && extraJumps > 0)
         {
-            Jump();
+            Jump();            
             extraJumps--;
         }
         else if (Input.GetKeyDown(KeyCode.Space) && extraJumps == 0 && isGrounded == true)
@@ -192,8 +192,8 @@ public class PlayerMovementScript : MonoBehaviour
 
     void Jump()
     {
-        playerRigidbody.velocity = Vector2.up * jumpForce;
-        powerScript.AirMeleeAttack();
+        playerRigidbody.velocity = Vector2.up * jumpForce;        
+
     }
 
     void Dashee()

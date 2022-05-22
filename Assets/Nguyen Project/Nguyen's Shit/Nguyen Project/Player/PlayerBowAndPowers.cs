@@ -97,6 +97,7 @@ public class PlayerBowAndPowers : MonoBehaviour
         ShieldThrown();
         ActivateShield();
         MeleeAttack();
+        AirMeleeAttack();
 
         if(!bow.activeSelf && !capShield.activeSelf)
         {
@@ -109,7 +110,7 @@ public class PlayerBowAndPowers : MonoBehaviour
 
     public void MeleeAttack()
     {
-        if(canMelee == true && !bow.activeSelf && !capShield.activeSelf)
+        if(playerMovementScript.isGrounded && canMelee == true && !bow.activeSelf && !capShield.activeSelf)
         {
             if (Input.GetMouseButtonUp(0))
             {
@@ -136,7 +137,7 @@ public class PlayerBowAndPowers : MonoBehaviour
 
     public void AirMeleeAttack()
     {
-        if (canMelee == true && !bow.activeSelf && !capShield.activeSelf)
+        if (!playerMovementScript.isGrounded && canMelee == true && !bow.activeSelf && !capShield.activeSelf)
         {
             if (Input.GetMouseButtonUp(0))
             {
