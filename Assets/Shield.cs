@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Shield : MonoBehaviour
 {
@@ -12,6 +13,14 @@ public class Shield : MonoBehaviour
     private Rigidbody2D rb;
     private State state;
     private TrailRenderer trail;
+
+    public int health = 100; //testing only
+
+    public int currentHealth;
+    public HungHealthBar shieldHealthBar;
+
+    Sprite shieldImagee;
+    public GameObject shieldImage;
     
 
     private enum State{
@@ -28,6 +37,11 @@ public class Shield : MonoBehaviour
         state = State.Recalling;
         trail = this.GetComponent<TrailRenderer>();
         this.transform.position = new Vector3(this.transform.position.x, this.transform.position.y, 1);
+        currentHealth = health;
+        shieldHealthBar.SetMaxHealth(health);
+
+        //shieldImagee = Resources.Load<Sprite>("CapShield");
+        //shieldImage.GetComponent<SpriteRenderer>().sprite = shieldImagee;
     }
 
     void FixedUpdate()
@@ -47,6 +61,8 @@ public class Shield : MonoBehaviour
                 TryPlayerGrabShield();
                 break;
         }
+
+        ShieldState();
 
     }
 
@@ -93,7 +109,35 @@ public class Shield : MonoBehaviour
         return state == State.WithPlayer;
     }
 
-   
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        currentHealth -= 5;
+        shieldHealthBar.SetHealth(currentHealth);
+    }
+
+    void ShieldState()
+    {
+        if (currentHealth <= (health/10))
+        {
+            shieldImagee = Resources.Load<Sprite>("BrokenShield3");
+            this.GetComponent<SpriteRenderer>().sprite = shieldImagee;
+            shieldImage.GetComponent<Image>().sprite = shieldImagee;
+        }
+
+        else if(currentHealth > (health/10) && currentHealth <= (health/2))
+        {
+            shieldImagee = Resources.Load<Sprite>("CapShield50");
+            this.GetComponent<SpriteRenderer>().sprite = shieldImagee;
+            shieldImage.GetComponent<Image>().sprite = shieldImagee;
+        }
+
+        else
+        {
+            shieldImagee = Resources.Load<Sprite>("CapShield");
+            this.GetComponent<SpriteRenderer>().sprite = shieldImagee;
+            shieldImage.GetComponent<Image>().sprite = shieldImagee;
+        }
+    }
 
 
 

@@ -52,8 +52,10 @@ public class PlayerBowAndPowers : MonoBehaviour
     public float attackRange = 0.5f;
     public LayerMask enemyLayers;
     float nextAttackTime = 0f;
-    public float attackRate = 2f;
+    public float attackRate = 1.5f;
     public bool canMelee;
+
+    public GameObject shieldHealthBar;
 
     // Start is called before the first frame update
     void Start()
@@ -84,6 +86,7 @@ public class PlayerBowAndPowers : MonoBehaviour
         weaponImagee = Resources.Load<Sprite>("Punch");
         weaponImage.GetComponent<Image>().sprite = weaponImagee;
 
+        shieldHealthBar.SetActive(false);
 
     }
 
@@ -121,7 +124,7 @@ public class PlayerBowAndPowers : MonoBehaviour
 
                 foreach (Collider2D enemy in hitEnemies)
                 {
-                    enemy.GetComponent<EnemyHealth>().TakeDamage(20);
+                    enemy.GetComponent<EnemyHealth>().TakeDamage(15);
                     Debug.Log("we hit" + enemy.name);
                 }
                 StartCoroutine(MeleeCooldown());
@@ -297,6 +300,7 @@ public class PlayerBowAndPowers : MonoBehaviour
             if (!bow.activeSelf)
             {
                 capShield.SetActive(false);
+                shieldHealthBar.SetActive(false);
                 bow.SetActive(true);
                 arrowDisplay.SetActive(true);
                 weaponImagee = Resources.Load<Sprite>("Bow_5");
@@ -320,6 +324,7 @@ public class PlayerBowAndPowers : MonoBehaviour
                 weaponImagee = Resources.Load<Sprite>("ShieldImage");
                 weaponImage.GetComponent<Image>().sprite = weaponImagee;
                 capShield.SetActive(true);
+                shieldHealthBar.SetActive(true);
                 bow.SetActive(false);
                 arrowDisplay.SetActive(false);
             }
@@ -329,6 +334,7 @@ public class PlayerBowAndPowers : MonoBehaviour
             else if(capShield.activeSelf)
             {
                 capShield.SetActive(false);
+                shieldHealthBar.SetActive(false);
             }
 
 
