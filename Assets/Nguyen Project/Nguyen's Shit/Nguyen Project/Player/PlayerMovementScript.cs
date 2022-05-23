@@ -175,7 +175,7 @@ public class PlayerMovementScript : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.LeftShift))
         {
-            if(canWallSLide == true)
+            if(canWallSlide == true)
             {
                 playerRigidbody.velocity = new Vector2(playerRigidbody.velocity.x, Mathf.Clamp(playerRigidbody.velocity.y, -wallSlidingSpeed, float.MaxValue));
                 wallSliding = true;
