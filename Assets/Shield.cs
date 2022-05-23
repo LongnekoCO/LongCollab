@@ -36,13 +36,14 @@ public class Shield : MonoBehaviour
         rb = this.GetComponent<Rigidbody2D>();
         state = State.Recalling;
         trail = this.GetComponent<TrailRenderer>();
-        this.transform.position = new Vector3(this.transform.position.x, this.transform.position.y, -1);
+        this.transform.position = new Vector3(shieldHolder.position.x, shieldHolder.transform.position.y, -1);
         currentHealth = health;
         shieldHealthBar.SetMaxHealth(health);
 
         //shieldImagee = Resources.Load<Sprite>("CapShield");
         //shieldImage.GetComponent<SpriteRenderer>().sprite = shieldImagee;
     }
+
 
     void FixedUpdate()
     {
@@ -72,7 +73,7 @@ public class Shield : MonoBehaviour
         {
             case State.WithPlayer:
                 transform.position = shieldHolder.position;
-                this.transform.position = new Vector3(this.transform.position.x, this.transform.position.y, -1);
+                this.transform.position = new Vector3(shieldHolder.position.x, shieldHolder.position.y, -1);
                 break;
         }
     }
