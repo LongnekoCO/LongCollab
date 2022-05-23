@@ -182,7 +182,7 @@ public class PlayerMovementScript : MonoBehaviour
             }            
         }
 
-        else if(Input.GetKeyUp(KeyCode.LeftShift))
+        else if(Input.GetKeyUp(KeyCode.LeftShift) || canWallSlide == false)
         {
             wallSliding = false;
         }
