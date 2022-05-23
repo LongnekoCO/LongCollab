@@ -113,6 +113,7 @@ public class Shield : MonoBehaviour
     {
         currentHealth -= 5;
         shieldHealthBar.SetHealth(currentHealth);
+        Debug.Log("We hit " + collision.gameObject.name);
     }
 
     void ShieldState()
