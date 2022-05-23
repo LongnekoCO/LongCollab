@@ -57,6 +57,7 @@ public class PlayerMovementScript : MonoBehaviour
     public bool isTouchingFront;
     public Transform frontCheck;
     public bool wallSliding;
+    public bool canWallSlide;
     public float wallSlidingSpeed;
 
     public bool wallJumping;
@@ -143,11 +144,11 @@ public class PlayerMovementScript : MonoBehaviour
 
         if (isTouchingFront == true && isGrounded == false && moveInput == 0)
         {
-            wallSliding = true;
+            canWallSlide = true;
         }
         else
         {
-            wallSliding = false;
+            canWallSlide = false;
         }
 
 
@@ -174,10 +175,16 @@ public class PlayerMovementScript : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.LeftShift))
         {
-            if(wallSliding == true)
+            if(canWallSLide == true)
             {
                 playerRigidbody.velocity = new Vector2(playerRigidbody.velocity.x, Mathf.Clamp(playerRigidbody.velocity.y, -wallSlidingSpeed, float.MaxValue));
+                wallSliding = true;
             }            
+        }
+
+        else if(Input.GetKeyUp(KeyCode.LeftShift))
+        {
+            wallSliding = false;
         }
        
     }
