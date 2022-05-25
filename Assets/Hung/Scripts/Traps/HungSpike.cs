@@ -6,7 +6,6 @@ public class HungSpike : MonoBehaviour
 {
     //private Collider2D collider;
     private PlayerMovementScript player;
-    public float timeRepeat;
 
     // Start is called before the first frame update
     void Start()
