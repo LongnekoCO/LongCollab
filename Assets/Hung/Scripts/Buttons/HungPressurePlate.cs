@@ -55,10 +55,12 @@ public class HungPressurePlate : MonoBehaviour
     public void OpenDoor()
     {
         testObjectAnim.SetTrigger("Open");
+        testObject.GetComponent<BoxCollider2D>().enabled = false;
     }
     
     public void CloseDoor()
     {
         testObjectAnim.SetTrigger("Close");
+        testObject.GetComponent<BoxCollider2D>().enabled = true;
     }
 }

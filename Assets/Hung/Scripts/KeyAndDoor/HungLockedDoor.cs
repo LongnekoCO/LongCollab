@@ -29,7 +29,14 @@ public class HungLockedDoor : MonoBehaviour
     {
         Debug.Log("Door Open:" + keyType);
         animator.SetTrigger("Open");
-        this.GetComponent<BoxCollider2D>().enabled = false;
+        StartCoroutine(OpenDoorRoutine());
+        
         //this.gameObject.SetActive(false);
+    }
+
+    private IEnumerator OpenDoorRoutine()
+    {
+        yield return new WaitForSeconds(1f);
+        this.GetComponent<BoxCollider2D>().enabled = false;
     }
 }

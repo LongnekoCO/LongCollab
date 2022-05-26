@@ -34,10 +34,13 @@ public class HungKeyHolder : MonoBehaviour
                 Destroy(key.gameObject);
             }
         }
+    }
 
-        else if (collision.gameObject.tag == "LockedDoor")
-        { 
-            HungLockedDoor lockedDoor = collision.GetComponent<HungLockedDoor>();
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag == "LockedDoor")
+        {
+            HungLockedDoor lockedDoor = collision.gameObject.GetComponent<HungLockedDoor>();
             if (lockedDoor != null)
             {
                 if (ContainsKey(lockedDoor.GetKeyType()))
@@ -47,7 +50,7 @@ public class HungKeyHolder : MonoBehaviour
                     lockedDoor.OpenDoor();
                 }
             }
-        } 
+        }
     }
 
     public void AddKey(HungKey.KeyType keyType)
