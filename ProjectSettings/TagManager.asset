@@ -36,7 +36,6 @@ TagManager:
   - Saw
   - MovableObject
   - CapShield
-  - LockedDoor
   layers:
   - Default
   - TransparentFX
