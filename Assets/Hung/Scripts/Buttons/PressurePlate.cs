@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class HungPressurePlate : MonoBehaviour
+public class PressurePlate : MonoBehaviour
 {
     public GameObject testObject;
     private Animator animator;

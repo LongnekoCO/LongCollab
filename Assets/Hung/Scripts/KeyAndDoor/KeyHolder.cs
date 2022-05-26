@@ -4,11 +4,11 @@ using UnityEngine;
 
 public class HungKeyHolder : MonoBehaviour
 {
-    private List<HungKey.KeyType> keyList;
+    private List<Key.KeyType> keyList;
 
     private void Awake()
     {
-        keyList = new List<HungKey.KeyType>();
+        keyList = new List<Key.KeyType>();
     }
 
     // Start is called before the first frame update
@@ -25,7 +25,7 @@ public class HungKeyHolder : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        HungKey key = collision.GetComponent<HungKey>();
+        Key key = collision.GetComponent<Key>();
         if (key != null)
         {
             AddKey(key.GetKeyType());
@@ -37,7 +37,7 @@ public class HungKeyHolder : MonoBehaviour
     {
         if (collision.gameObject.tag == "LockedDoor")
         {
-            HungLockedDoor lockedDoor = collision.gameObject.GetComponent<HungLockedDoor>();
+            LockedDoor lockedDoor = collision.gameObject.GetComponent<LockedDoor>();
             if (lockedDoor != null)
             {
                 if (ContainsKey(lockedDoor.GetKeyType()))
@@ -50,18 +50,18 @@ public class HungKeyHolder : MonoBehaviour
         }
     }
 
-    public void AddKey(HungKey.KeyType keyType)
+    public void AddKey(Key.KeyType keyType)
     {
         Debug.Log("Added Key: " + keyType);
         keyList.Add(keyType);
     }
 
-    public void RemoveKey(HungKey.KeyType keyType)
+    public void RemoveKey(Key.KeyType keyType)
     {
         keyList.Remove(keyType);
     }
 
-    public bool ContainsKey(HungKey.KeyType keyType)
+    public bool ContainsKey(Key.KeyType keyType)
     {
         return keyList.Contains(keyType);
     }

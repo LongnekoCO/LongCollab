@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class HungJumpPad : MonoBehaviour
+public class JumpPad : MonoBehaviour
 {
     public float bounce;
     

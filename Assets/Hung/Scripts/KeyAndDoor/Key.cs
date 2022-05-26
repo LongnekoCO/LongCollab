@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class HungKey : MonoBehaviour
+public class Key : MonoBehaviour
 {
     [SerializeField] private KeyType keyType;
 

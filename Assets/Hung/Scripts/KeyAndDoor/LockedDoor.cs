@@ -2,9 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class HungLockedDoor : MonoBehaviour
+public class LockedDoor : MonoBehaviour
 {
-    [SerializeField] private HungKey.KeyType keyType;
+    [SerializeField] private Key.KeyType keyType;
 
     private Animator animator;
     
@@ -20,7 +20,7 @@ public class HungLockedDoor : MonoBehaviour
         
     }
 
-    public HungKey.KeyType GetKeyType()
+    public Key.KeyType GetKeyType()
     {
         return keyType;
     }
