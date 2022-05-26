@@ -175,39 +175,76 @@ public class PlayerMovementScript : MonoBehaviour
 
     void WallSliding()
     {
-        if (Input.GetKey(KeyCode.LeftShift))
+        //if (Input.GetKey(KeyCode.LeftShift))
+        //{
+        //    if(canWallSlide == true)
+        //    {
+        //        playerRigidbody.velocity = new Vector2(playerRigidbody.velocity.x, Mathf.Clamp(playerRigidbody.velocity.y, -wallSlidingSpeed, float.MaxValue));
+        //        wallSliding = true;
+        //    }            
+        //}
+
+        //else if(Input.GetKeyUp(KeyCode.LeftShift) || canWallSlide == false)
+        //{
+        //    wallSliding = false;
+        //}
+       
+        if(canWallSlide == true)
         {
-            if(canWallSlide == true)
+            if(Input.GetKey(KeyCode.LeftShift))
             {
                 playerRigidbody.velocity = new Vector2(playerRigidbody.velocity.x, Mathf.Clamp(playerRigidbody.velocity.y, -wallSlidingSpeed, float.MaxValue));
                 wallSliding = true;
-            }            
+            }
+            else if(Input.GetKeyUp(KeyCode.LeftShift) || canWallSlide == false)
+            {
+                playerRigidbody.velocity = new Vector2(playerRigidbody.velocity.x, playerRigidbody.velocity.y);
+                wallSliding = false;
+            }
         }
-
-        else if(Input.GetKeyUp(KeyCode.LeftShift) || canWallSlide == false)
-        {
-            wallSliding = false;
-        }
-       
     }
 
     void WallJumping()
     {
-        if (Input.GetKey(KeyCode.Space) && wallSliding == true)
-        {
-            wallJumping = true;
-            Invoke("SetWallJumpingToFalse", wallJumpTime);
-        }
+        //if (Input.GetKey(KeyCode.Space) && wallSliding == true)
+        //{
+        //    wallJumping = true;
+        //    Invoke("SetWallJumpingToFalse", wallJumpTime);
+        //}
 
-        else if (Input.GetKeyUp(KeyCode.Space) || wallSliding == false)
+        //else if (Input.GetKeyUp(KeyCode.Space) || wallSliding == false)
+        //{
+        //    wallJumping = false;
+        //}
+        
+        //if (wallJumping == true)
+        //{
+        //    playerRigidbody.velocity = new Vector2(xWallForce * -moveInput, yWallForce);
+        //}
+
+        if(canWallSlide == true)
         {
-            wallJumping = false;
+            if (wallSliding == true)
+            {
+                if (Input.GetKey(KeyCode.Space))
+                {
+                    wallJumping = true;
+                    Invoke("SetWallJumpingToFalse", wallJumpTime);
+
+                    if (wallJumping == true)
+                    {
+                        playerRigidbody.velocity = new Vector2(xWallForce * -moveInput, yWallForce);
+                    }
+                }
+                else if (Input.GetKeyUp(KeyCode.Space))
+                {
+                    wallJumping = false;
+                }
+
+            }
         }
         
-        if (wallJumping == true)
-        {
-            playerRigidbody.velocity = new Vector2(xWallForce * -moveInput, yWallForce);
-        }
+        
 
     }
 
