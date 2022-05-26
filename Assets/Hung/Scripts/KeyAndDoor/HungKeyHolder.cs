@@ -25,23 +25,29 @@ public class HungKeyHolder : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        HungKey key = collision.GetComponent<HungKey>();
-        if (key != null)
+        if (collision.gameObject.tag == "Key")
         {
-            AddKey(key.GetKeyType());
-            Destroy(key.gameObject);
-        }
-
-        HungLockedDoor lockedDoor = collision.GetComponent<HungLockedDoor>();
-        if (lockedDoor != null)
-        {
-            if (ContainsKey(lockedDoor.GetKeyType()))
+            HungKey key = collision.GetComponent<HungKey>();
+            if (key != null)
             {
-                //Currently holding Key to open this door
-                RemoveKey(lockedDoor.GetKeyType());
-                lockedDoor.OpenDoor();
+                AddKey(key.GetKeyType());
+                Destroy(key.gameObject);
             }
         }
+
+        else if (collision.gameObject.tag == "LockedDoor")
+        { 
+            HungLockedDoor lockedDoor = collision.GetComponent<HungLockedDoor>();
+            if (lockedDoor != null)
+            {
+                if (ContainsKey(lockedDoor.GetKeyType()))
+                {
+                    //Currently holding Key to open this door
+                    RemoveKey(lockedDoor.GetKeyType());
+                    lockedDoor.OpenDoor();
+                }
+            }
+        } 
     }
 
     public void AddKey(HungKey.KeyType keyType)

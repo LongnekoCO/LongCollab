@@ -33,5 +33,6 @@ public class HungButton : MonoBehaviour
     public void OpenDoor()
     {
         animator.SetTrigger("Open");
+        testObject.GetComponent<BoxCollider2D>().enabled = false;
     }
 }
