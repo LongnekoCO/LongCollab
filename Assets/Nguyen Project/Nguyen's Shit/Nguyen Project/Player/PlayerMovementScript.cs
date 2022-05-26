@@ -74,6 +74,8 @@ public class PlayerMovementScript : MonoBehaviour
         canMovee = true;
         //bow.SetActive(false);
 
+        this.transform.position = new Vector3(this.transform.position.x, this.transform.position.y, -1);
+
         unitRoot = this.transform.Find("UnitRoot").gameObject;
         if (unitRoot != null)
         {

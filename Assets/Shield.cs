@@ -36,7 +36,8 @@ public class Shield : MonoBehaviour
         rb = this.GetComponent<Rigidbody2D>();
         state = State.Recalling;
         trail = this.GetComponent<TrailRenderer>();
-        this.transform.position = new Vector3(this.transform.position.x, this.transform.position.y, 1);
+        this.transform.position = new Vector3(this.transform.position.x, this.transform.position.y, -1);
+        this.transform.SetParent(player.transform);
         currentHealth = health;
         shieldHealthBar.SetMaxHealth(health);
 
@@ -55,7 +56,7 @@ public class Shield : MonoBehaviour
                 Vector3 dirToPlayer =  (player.GetPosition() - transform.position).normalized;
                 float recallSpeed = 50f;
                 rb.velocity = dirToPlayer * recallSpeed;
-                this.transform.position = new Vector3(this.transform.position.x, this.transform.position.y, 1);
+                this.transform.position = new Vector3(this.transform.position.x, this.transform.position.y, -1);
                 //var step = recallSpeed * Time.deltaTime;
                 //transform.position = Vector3.MoveTowards(transform.position, player.GetPosition(), step);
                 TryPlayerGrabShield();
@@ -72,7 +73,8 @@ public class Shield : MonoBehaviour
         {
             case State.WithPlayer:
                 transform.position = shieldHolder.position;
-                this.transform.position = new Vector3(this.transform.position.x, this.transform.position.y, 1);
+                this.transform.position = new Vector3(this.transform.position.x, this.transform.position.y, -1);
+                this.transform.SetParent(player.transform);
                 break;
         }
     }
@@ -96,7 +98,8 @@ public class Shield : MonoBehaviour
         rb.AddForce(throwDir * throwForce, ForceMode2D.Impulse);
         trail.enabled = true;
         state = State.Thrown;
-        this.transform.position = new Vector3(this.transform.position.x, this.transform.position.y, 1);
+        this.transform.position = new Vector3(this.transform.position.x, this.transform.position.y, -1);
+        this.transform.SetParent(null);
     }
 
     public void Recall()
@@ -122,6 +125,7 @@ public class Shield : MonoBehaviour
             shieldImagee = Resources.Load<Sprite>("BrokenShield3");
             this.GetComponent<SpriteRenderer>().sprite = shieldImagee;
             shieldImage.GetComponent<Image>().sprite = shieldImagee;
+            player.weaponImage.GetComponent<Image>().sprite = shieldImagee;
         }
 
         else if(currentHealth > (health/10) && currentHealth <= (health/2))
@@ -129,6 +133,7 @@ public class Shield : MonoBehaviour
             shieldImagee = Resources.Load<Sprite>("CapShield50");
             this.GetComponent<SpriteRenderer>().sprite = shieldImagee;
             shieldImage.GetComponent<Image>().sprite = shieldImagee;
+            player.weaponImage.GetComponent<Image>().sprite = shieldImagee;
         }
 
         else
@@ -136,6 +141,7 @@ public class Shield : MonoBehaviour
             shieldImagee = Resources.Load<Sprite>("CapShield");
             this.GetComponent<SpriteRenderer>().sprite = shieldImagee;
             shieldImage.GetComponent<Image>().sprite = shieldImagee;
+            player.weaponImage.GetComponent<Image>().sprite = shieldImagee;
         }
     }
 

@@ -31,7 +31,7 @@ public class HungLockedDoor : MonoBehaviour
         animator.SetTrigger("Open");
         StartCoroutine(OpenDoorRoutine());
         
-        //this.gameObject.SetActive(false);
+        this.gameObject.SetActive(false);
     }
 
     private IEnumerator OpenDoorRoutine()
