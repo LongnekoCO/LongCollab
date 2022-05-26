@@ -33,5 +33,12 @@ public class HungButton : MonoBehaviour
     public void OpenDoor()
     {
         animator.SetTrigger("Open");
+        StartCoroutine(OpenDoorRoutine());
+    }
+
+    private IEnumerator OpenDoorRoutine()
+    {
+        yield return new WaitForSeconds(1f);
+        this.GetComponent<BoxCollider2D>().enabled = false;
     }
 }

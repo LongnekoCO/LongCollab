@@ -39,12 +39,13 @@ public class HungKeyHolder : MonoBehaviour
         {
             HungLockedDoor lockedDoor = collision.gameObject.GetComponent<HungLockedDoor>();
             if (lockedDoor != null)
-
-            if (ContainsKey(lockedDoor.GetKeyType()))
             {
-                //Currently holding Key to open this door
-                RemoveKey(lockedDoor.GetKeyType());
-                lockedDoor.OpenDoor();
+                if (ContainsKey(lockedDoor.GetKeyType()))
+                {
+                    //Currently holding Key to open this door
+                    RemoveKey(lockedDoor.GetKeyType());
+                    lockedDoor.OpenDoor();
+                }
             }
         }
     }
