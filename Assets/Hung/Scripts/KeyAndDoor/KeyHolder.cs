@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class HungKeyHolder : MonoBehaviour
+public class KeyHolder : MonoBehaviour
 {
     private List<Key.KeyType> keyList;
 

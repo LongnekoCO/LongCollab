@@ -50,6 +50,12 @@ public class TestSubjectScript : MonoBehaviour
             this.GetComponent<Rigidbody2D>().AddForce(direction * 10000f);
             otherScript1.TakeDamage(30);
         }
+        if (col.gameObject.tag == "Thor'sHammer")
+        {
+            Vector2 direction = col.transform.position - this.transform.position;
+            this.GetComponent<Rigidbody2D>().AddForce(direction * 10000f);
+            otherScript1.TakeDamage(40);
+        }
 
     }
 
@@ -72,6 +78,11 @@ public class TestSubjectScript : MonoBehaviour
         if (col.gameObject.tag == "Ice")
         {
             StartCoroutine(IceAffect());
+        }
+
+        else if(col.gameObject.tag == "Lightning")
+        {
+            otherScript1.TakeDamage(50);
         }
     }
 
