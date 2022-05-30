@@ -118,6 +118,7 @@ public class PlayerBowAndPowers : MonoBehaviour
         ActivateMjolnir();
         //HammerSummonLightning();
         HammerThrown();
+        UltimateCap();
 
 
         if(!bow.activeSelf && !capShield.activeSelf && !mHammer.activeSelf)
@@ -389,6 +390,19 @@ public class PlayerBowAndPowers : MonoBehaviour
         }
 
 
+    }
+
+    void UltimateCap()
+    {
+        if(Input.GetKeyDown(KeyCode.Alpha4))
+        {
+            if (!mHammer.activeSelf || !capShield.activeSelf)
+            {
+                capShield.SetActive(true);
+                shieldHealthBar.SetActive(true);
+                mHammer.SetActive(true);
+            }
+        }
     }
 
     void HammerThrown()
