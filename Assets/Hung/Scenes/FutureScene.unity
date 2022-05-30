@@ -550,6 +550,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: MovingPlatform
       objectReference: {fileID: 0}
+    - target: {fileID: 2529607095066411970, guid: 876b0bd388a815146b7fb4b45f509ad3, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3983403633989373278, guid: 876b0bd388a815146b7fb4b45f509ad3, type: 3}
       propertyPath: m_RootOrder
       value: 12
