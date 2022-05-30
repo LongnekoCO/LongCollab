@@ -3568,6 +3568,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b649c34fe987ce641981d8245e966c54, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  enemiesInRange: []
 --- !u!1 &3284131690409339508
 GameObject:
   m_ObjectHideFlags: 0
@@ -6784,7 +6785,7 @@ Animator:
   m_GameObject: {fileID: 7064671510725928414}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: ab937231d0600440fb0d8757568d78d7, type: 2}
+  m_Controller: {fileID: 9100000, guid: 83c28104f7400e54f82fc2e4aa3eca20, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -8744,7 +8745,6 @@ GameObject:
   - component: {fileID: 4347213374392420207}
   - component: {fileID: 9050662662320063352}
   - component: {fileID: 5082884941260095839}
-  - component: {fileID: 2045088279}
   - component: {fileID: 2628744688686690066}
   m_Layer: 11
   m_Name: Player
@@ -8776,6 +8776,7 @@ RectTransform:
   - {fileID: 3312381158858266056}
   - {fileID: 5073097853506763512}
   - {fileID: 4034612247174855824}
+  - {fileID: 2980494777576440732}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
@@ -8881,6 +8882,8 @@ MonoBehaviour:
   arrowDisplay: {fileID: 5293800326590041717}
   shield: {fileID: 1436891080741621520}
   capShield: {fileID: 1436891080741621523}
+  hammer: {fileID: 2980494777576440705}
+  mHammer: {fileID: 2980494777576440706}
   weaponImage: {fileID: 7126838047456413868}
   unitRoot: {fileID: 0}
   attackPoint: {fileID: 3393417697337290816}
@@ -8891,6 +8894,11 @@ MonoBehaviour:
   attackRate: 1
   canMelee: 0
   shieldHealthBar: {fileID: 6983053962974392441}
+  thorLightning: {fileID: 4227150631141470527, guid: 3bb1ea8fa4349ef4f84e6ad2692ce823, type: 3}
+  canLightning: 1
+  canThrowHammer: 1
+  rangeScript: {fileID: 5593778282537405670}
+  iceDetect: {fileID: 0}
 --- !u!114 &5082884941260095839
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8938,18 +8946,6 @@ MonoBehaviour:
   xWallForce: 5
   yWallForce: 10
   wallJumpTime: 0.05
---- !u!114 &2045088279
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9050662662320063334}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 74420e01bd51254459dcadbd88e7dc88, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!70 &2628744688686690066
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -9203,5 +9199,91 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bc59b62d2622d754d9d5a468f911d2d4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1001 &8959592758051592465
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1290268351535255976}
+    m_Modifications:
+    - target: {fileID: 6127716916355799693, guid: 8d1240e08c14656498a9368dd9918689, type: 3}
+      propertyPath: m_RootOrder
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 6127716916355799693, guid: 8d1240e08c14656498a9368dd9918689, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.21
+      objectReference: {fileID: 0}
+    - target: {fileID: 6127716916355799693, guid: 8d1240e08c14656498a9368dd9918689, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.07
+      objectReference: {fileID: 0}
+    - target: {fileID: 6127716916355799693, guid: 8d1240e08c14656498a9368dd9918689, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.00015256465
+      objectReference: {fileID: 0}
+    - target: {fileID: 6127716916355799693, guid: 8d1240e08c14656498a9368dd9918689, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6127716916355799693, guid: 8d1240e08c14656498a9368dd9918689, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6127716916355799693, guid: 8d1240e08c14656498a9368dd9918689, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6127716916355799693, guid: 8d1240e08c14656498a9368dd9918689, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6127716916355799693, guid: 8d1240e08c14656498a9368dd9918689, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6127716916355799693, guid: 8d1240e08c14656498a9368dd9918689, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6127716916355799693, guid: 8d1240e08c14656498a9368dd9918689, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6127716916355799696, guid: 8d1240e08c14656498a9368dd9918689, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 9050662662320063352}
+    - target: {fileID: 6127716916355799696, guid: 8d1240e08c14656498a9368dd9918689, type: 3}
+      propertyPath: shieldHolder
+      value: 
+      objectReference: {fileID: 3312381158858266056}
+    - target: {fileID: 6127716916355799699, guid: 8d1240e08c14656498a9368dd9918689, type: 3}
+      propertyPath: m_Name
+      value: Thor'sHammer
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 8d1240e08c14656498a9368dd9918689, type: 3}
+--- !u!1 &2980494777576440706 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6127716916355799699, guid: 8d1240e08c14656498a9368dd9918689, type: 3}
+  m_PrefabInstance: {fileID: 8959592758051592465}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &2980494777576440732 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6127716916355799693, guid: 8d1240e08c14656498a9368dd9918689, type: 3}
+  m_PrefabInstance: {fileID: 8959592758051592465}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2980494777576440705 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6127716916355799696, guid: 8d1240e08c14656498a9368dd9918689, type: 3}
+  m_PrefabInstance: {fileID: 8959592758051592465}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2980494777576440706}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f361bd16ac1e0b4c944feeb70e675a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
