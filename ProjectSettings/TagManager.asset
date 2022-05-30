@@ -38,6 +38,8 @@ TagManager:
   - CapShield
   - LockedDoor
   - Thor'sHammer
+  - MetalSpikeDetection
+  - MetalSpike
   layers:
   - Default
   - TransparentFX

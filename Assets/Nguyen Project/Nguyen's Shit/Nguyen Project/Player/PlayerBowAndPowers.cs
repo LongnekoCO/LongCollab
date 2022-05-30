@@ -342,6 +342,7 @@ public class PlayerBowAndPowers : MonoBehaviour
                 weaponImagee = Resources.Load<Sprite>("ShieldImage");
                 weaponImage.GetComponent<Image>().sprite = weaponImagee;
                 capShield.SetActive(true);
+                mHammer.SetActive(false);
                 shieldHealthBar.SetActive(true);
                 bow.SetActive(false);
                 arrowDisplay.SetActive(false);
