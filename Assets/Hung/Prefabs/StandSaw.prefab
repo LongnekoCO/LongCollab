@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 3446575092618472997}
   - component: {fileID: 8142539824498164960}
   m_Layer: 0
-  m_Name: Saw1
+  m_Name: StandSaw
   m_TagString: Saw
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
