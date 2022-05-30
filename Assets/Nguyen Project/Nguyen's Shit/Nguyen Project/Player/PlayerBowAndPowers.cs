@@ -509,7 +509,7 @@ public class PlayerBowAndPowers : MonoBehaviour
     IEnumerator Lightning()
     {
         canLightning = false;
-        yield return new WaitForSeconds(2f);
+        yield return new WaitForSeconds(4f);
         canLightning = true;
     }
 
