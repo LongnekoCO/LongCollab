@@ -367,8 +367,8 @@ public class PlayerBowAndPowers : MonoBehaviour
         {
             if (!mHammer.activeSelf)
             {
-                //weaponImagee = Resources.Load<Sprite>("ShieldImage");
-                //weaponImage.GetComponent<Image>().sprite = weaponImagee;
+                weaponImagee = Resources.Load<Sprite>("Thor'sHammer");
+                weaponImage.GetComponent<Image>().sprite = weaponImagee;
                 capShield.SetActive(false);
                 shieldHealthBar.SetActive(false);
                 bow.SetActive(false);
