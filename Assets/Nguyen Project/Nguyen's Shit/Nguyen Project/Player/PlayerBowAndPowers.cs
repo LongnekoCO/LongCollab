@@ -42,6 +42,9 @@ public class PlayerBowAndPowers : MonoBehaviour
     public Shield shield;
     public GameObject capShield;
 
+    public Mjolnir hammer;
+    public GameObject mHammer;
+
     Sprite weaponImagee;
     public GameObject weaponImage;
 
@@ -57,14 +60,25 @@ public class PlayerBowAndPowers : MonoBehaviour
 
     public GameObject shieldHealthBar;
 
+    public GameObject thorLightning;
+    public bool canLightning = true;
+
+    public bool canThrowHammer = true;
+
+    public IceBendingTrigger rangeScript;
+    public Transform iceDetect;
+
     // Start is called before the first frame update
     void Start()
     {
+        iceDetect = this.gameObject.transform.GetChild(5);
         boulderDefSpawn.SetActive(false);
         boulderAttackSpawn.SetActive(false);
         bow.SetActive(false);
         capShield.SetActive(false);
+        mHammer.SetActive(false);
         playerMovementScript = this.GetComponent<PlayerMovementScript>();
+        rangeScript = iceDetect.GetComponent<IceBendingTrigger>();
         enemies = GameObject.FindGameObjectsWithTag("Enemy");
          
         currentEnergy = energy;
@@ -101,8 +115,12 @@ public class PlayerBowAndPowers : MonoBehaviour
         ActivateShield();
         MeleeAttack();
         AirMeleeAttack();
+        ActivateMjolnir();
+        //HammerSummonLightning();
+        HammerThrown();
 
-        if(!bow.activeSelf && !capShield.activeSelf)
+
+        if(!bow.activeSelf && !capShield.activeSelf && !mHammer.activeSelf)
         {
             weaponImagee = Resources.Load<Sprite>("Punch");
             weaponImage.GetComponent<Image>().sprite = weaponImagee;
@@ -113,7 +131,7 @@ public class PlayerBowAndPowers : MonoBehaviour
 
     public void MeleeAttack()
     {
-        if(playerMovementScript.isGrounded && canMelee == true && !bow.activeSelf && !capShield.activeSelf)
+        if(playerMovementScript.isGrounded && canMelee == true && !bow.activeSelf && !capShield.activeSelf && !mHammer.activeSelf)
         {
             if (Input.GetMouseButtonUp(0))
             {
@@ -140,7 +158,7 @@ public class PlayerBowAndPowers : MonoBehaviour
 
     public void AirMeleeAttack()
     {
-        if (!playerMovementScript.isGrounded && canMelee == true && !bow.activeSelf && !capShield.activeSelf)
+        if (!playerMovementScript.isGrounded && canMelee == true && !bow.activeSelf && !capShield.activeSelf && !mHammer.activeSelf)
         {
             if (Input.GetMouseButtonUp(0))
             {
@@ -253,7 +271,7 @@ public class PlayerBowAndPowers : MonoBehaviour
         {
             //anim.SetTrigger("isIdle");
             currentEnergy -= 30;
-            foreach (GameObject enemie in enemies)
+            foreach (GameObject enemie in rangeScript.enemiesInRange)
             {
                 Instantiate(iceAttack, enemie.transform.position, Quaternion.identity);
 
@@ -343,6 +361,108 @@ public class PlayerBowAndPowers : MonoBehaviour
        
     }
 
+    void ActivateMjolnir()
+    {
+        if (Input.GetKeyDown(KeyCode.Alpha3))
+        {
+            if (!mHammer.activeSelf)
+            {
+                weaponImagee = Resources.Load<Sprite>("Thor'sHammer");
+                weaponImage.GetComponent<Image>().sprite = weaponImagee;
+                capShield.SetActive(false);
+                shieldHealthBar.SetActive(false);
+                bow.SetActive(false);
+                arrowDisplay.SetActive(false);
+                mHammer.SetActive(true);
+            }
+
+
+
+            else if (mHammer.activeSelf)
+            {
+                mHammer.SetActive(false);
+                //shieldHealthBar.SetActive(false);
+            }
+
+
+        }
+
+
+    }
+
+    void HammerThrown()
+    {
+        if(mHammer.activeSelf)
+        {
+            if (Input.GetMouseButtonDown(0) && canThrowHammer)
+            {
+                if(hammer.IsWithPlayer())
+                {
+                    Vector3 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+                    Vector3 throwDir = (mousePosition - GetPosition()).normalized;
+                    hammer.ThrowHammer(throwDir);
+                }
+
+                else
+                {
+                    hammer.Recall();
+                }
+            }
+            if (Input.GetKey(KeyCode.R))
+            {
+                if (hammer.IsWithPlayer())
+                {
+                    hammer.Lightning();
+                    canThrowHammer = false;
+                    if(Input.GetMouseButton(1) && inRange && canLightning)
+                    {
+                        
+                        foreach (GameObject enemie in rangeScript.enemiesInRange)
+                        {
+                                if(enemie != null)
+                                {
+                                    Vector2 lightningHit = new Vector2(enemie.transform.position.x, enemie.transform.position.y + 2.2f);
+                                    Instantiate(thorLightning, lightningHit, Quaternion.identity);
+
+                                    StartCoroutine(Lightning());
+                                }
+                                
+                            
+                            
+                        }
+                    }
+                    
+                    //Debug.Log("Summon");
+                }
+            }
+            else if (Input.GetKeyUp(KeyCode.R))
+            {
+                canThrowHammer = true;
+                hammer.lightning.SetActive(false);
+                //Debug.Log("Not Summon");
+            }
+
+        }
+    }
+
+    //void HammerSummonLightning()
+    //{
+    //    if(mHammer.activeSelf)
+    //    {
+    //        if(Input.GetKey(KeyCode.R))
+    //        {
+    //            if(hammer.IsWithPlayer())
+    //            {
+    //                hammer.Lightning();
+    //            }
+    //        }
+    //        else if(Input.GetKeyUp(KeyCode.R))
+    //        {
+    //            hammer.IsWithPlayer();
+    //        }
+    //    }
+    //}
+
     void ShieldThrown()
     {
         if(capShield.activeSelf)
@@ -384,6 +504,13 @@ public class PlayerBowAndPowers : MonoBehaviour
         canIce = false;
         yield return new WaitForSeconds(2f);
         canIce = true;
+    }
+
+    IEnumerator Lightning()
+    {
+        canLightning = false;
+        yield return new WaitForSeconds(2f);
+        canLightning = true;
     }
 
     private IEnumerator RegainStamina()

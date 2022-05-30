@@ -37,6 +37,7 @@ TagManager:
   - MovableObject
   - CapShield
   - LockedDoor
+  - Thor'sHammer
   layers:
   - Default
   - TransparentFX
