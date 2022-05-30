@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 6127716916355799697}
   - component: {fileID: 6127716916355799696}
   m_Layer: 11
-  m_Name: Thor'sHammer
+  m_Name: Thor'sHammerLightning
   m_TagString: Thor'sHammer
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

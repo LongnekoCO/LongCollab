@@ -18,7 +18,7 @@ public class ThorLightning : MonoBehaviour
 
     IEnumerator LightningEnd()
     {
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(0.6f);
         Destroy(gameObject);
     }
 }
