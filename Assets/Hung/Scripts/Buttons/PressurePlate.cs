@@ -21,7 +21,7 @@ public class PressurePlate : MonoBehaviour
         
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.tag == "Player")
         {
@@ -37,7 +37,7 @@ public class PressurePlate : MonoBehaviour
 
     }
 
-    private void OnTriggerExit2D(Collider2D collision)
+    private void OnCollisionExit2D(Collision2D collision)
     {
         if (collision.gameObject.tag == "Player")
         {
@@ -67,12 +67,12 @@ public class PressurePlate : MonoBehaviour
     private IEnumerator OpenDoorRoutine()
     {
         yield return new WaitForSeconds(1f);
-        this.GetComponent<BoxCollider2D>().enabled = false;
+        testObject.GetComponent<BoxCollider2D>().enabled = false;
     }
 
     private IEnumerator CloseDoorRoutine()
     {
         yield return new WaitForSeconds(1f);
-        this.GetComponent<BoxCollider2D>().enabled = true;
+        testObject.GetComponent<BoxCollider2D>().enabled = true;
     }
 }
