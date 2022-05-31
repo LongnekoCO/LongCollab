@@ -319,6 +319,7 @@ public class PlayerBowAndPowers : MonoBehaviour
             if (!bow.activeSelf)
             {
                 capShield.SetActive(false);
+                mHammer.SetActive(false);
                 shieldHealthBar.SetActive(false);
                 bow.SetActive(true);
                 arrowDisplay.SetActive(true);
