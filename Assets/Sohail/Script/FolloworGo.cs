@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [RequireComponent(typeof(Rigidbody2D))]
-public class BulletFollow : MonoBehaviour
+public class FolloworGo : MonoBehaviour
 {
     public Transform target;
     public GameObject explosion;
