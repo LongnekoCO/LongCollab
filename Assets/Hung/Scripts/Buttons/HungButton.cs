@@ -39,6 +39,6 @@ public class HungButton : MonoBehaviour
     private IEnumerator OpenDoorRoutine()
     {
         yield return new WaitForSeconds(1f);
-        this.GetComponent<BoxCollider2D>().enabled = false;
+        testObject.GetComponent<BoxCollider2D>().enabled = false;
     }
 }
