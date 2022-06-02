@@ -6,7 +6,7 @@ public class HungRootHealth : MonoBehaviour
 {
     public int health;
     private int maxHealth = 50;
-    private HungPlayer player;
+    private PlayerMovementScript player;
     public HungHealthBar healthBar;
     private HungRootSpawner rootSpawner1;
     private HungRootSpawner rootSpawner2;
@@ -25,6 +25,8 @@ public class HungRootHealth : MonoBehaviour
         rootSpawner4 = GameObject.Find("RootSpawner (3)").GetComponent<HungRootSpawner>();
         rootSpawner5 = GameObject.Find("RootSpawner (4)").GetComponent<HungRootSpawner>();
         rootSpawner6 = GameObject.Find("RootSpawner (5)").GetComponent<HungRootSpawner>();
+
+        player = GameObject.Find("Player").GetComponent<PlayerMovementScript>();
         
         health = maxHealth;
         healthBar.SetMaxHealth(health);
