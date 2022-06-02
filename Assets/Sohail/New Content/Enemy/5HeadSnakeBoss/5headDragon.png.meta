@@ -1,0 +1,1320 @@
+fileFormatVersion: 2
+guid: 30af779d2798627489cd3baba4e2782f
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -6938330444763438992
+    second: 5headDragon_0
+  - first:
+      213: 1413031657725136631
+    second: 5headDragon_1
+  - first:
+      213: 8096274006950241349
+    second: 5headDragon_2
+  - first:
+      213: -5471681777920351772
+    second: 5headDragon_3
+  - first:
+      213: -6149045717881024891
+    second: 5headDragon_4
+  - first:
+      213: 6172911195012858510
+    second: 5headDragon_5
+  - first:
+      213: 6337236503457771474
+    second: 5headDragon_6
+  - first:
+      213: -3216119561372607826
+    second: 5headDragon_7
+  - first:
+      213: -189903011274445498
+    second: 5headDragon_8
+  - first:
+      213: 5651152860677829529
+    second: 5headDragon_9
+  - first:
+      213: -1818607294928915453
+    second: 5headDragon_10
+  - first:
+      213: -6442438089313482851
+    second: 5headDragon_11
+  - first:
+      213: -2651578004526400952
+    second: 5headDragon_12
+  - first:
+      213: 2120901203829596814
+    second: 5headDragon_13
+  - first:
+      213: -1061710742802472044
+    second: 5headDragon_14
+  - first:
+      213: 2412617487114459566
+    second: 5headDragon_15
+  - first:
+      213: 2721498691820712257
+    second: 5headDragon_16
+  - first:
+      213: 852279278837625784
+    second: 5headDragon_17
+  - first:
+      213: -6897333250631959285
+    second: 5headDragon_18
+  - first:
+      213: 294511674628709037
+    second: 5headDragon_19
+  - first:
+      213: 3882756800446031933
+    second: 5headDragon_20
+  - first:
+      213: -9157275963080365798
+    second: 5headDragon_21
+  - first:
+      213: -1252706243581219366
+    second: 5headDragon_22
+  - first:
+      213: -7003980968267082557
+    second: 5headDragon_23
+  - first:
+      213: 3275843830074979867
+    second: 5headDragon_24
+  - first:
+      213: 3513293039218854831
+    second: 5headDragon_25
+  - first:
+      213: -4982111964310835459
+    second: 5headDragon_26
+  - first:
+      213: -3016213672101957442
+    second: 5headDragon_27
+  - first:
+      213: 3944592632978808655
+    second: 5headDragon_28
+  - first:
+      213: 3869600174932359465
+    second: 5headDragon_29
+  - first:
+      213: -4241709203198732981
+    second: 5headDragon_30
+  - first:
+      213: 8857496975506054086
+    second: 5headDragon_31
+  - first:
+      213: -6076633433508886509
+    second: 5headDragon_32
+  - first:
+      213: -8055183114619142092
+    second: 5headDragon_33
+  - first:
+      213: 1938861197259964307
+    second: 5headDragon_34
+  - first:
+      213: -5831235391069603541
+    second: 5headDragon_35
+  - first:
+      213: 1897010176022700661
+    second: 5headDragon_36
+  - first:
+      213: 3641503535912604868
+    second: 5headDragon_37
+  - first:
+      213: -4283200612701102838
+    second: 5headDragon_38
+  - first:
+      213: 1096437335729595860
+    second: 5headDragon_39
+  - first:
+      213: 2011562400409088473
+    second: 5headDragon_40
+  - first:
+      213: 273665371356263865
+    second: 5headDragon_41
+  - first:
+      213: -7096371516160303069
+    second: 5headDragon_42
+  - first:
+      213: 9037725212443963979
+    second: 5headDragon_43
+  - first:
+      213: -390147851596930886
+    second: 5headDragon_44
+  - first:
+      213: 6805876498252963326
+    second: 5headDragon_45
+  - first:
+      213: -4546746798787356899
+    second: 5headDragon_46
+  - first:
+      213: -8140055108653350790
+    second: 5headDragon_47
+  - first:
+      213: -8273850307180934120
+    second: 5headDragon_48
+  - first:
+      213: 3120551568194056506
+    second: 5headDragon_49
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: 5headDragon_0
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 613
+        width: 70
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 070e899a83916bf90800000000000000
+      internalID: -6938330444763438992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 5headDragon_1
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 613
+        width: 73
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7fe861f5ec81c9310800000000000000
+      internalID: 1413031657725136631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 5headDragon_2
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 613
+        width: 70
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5446f7c305ebb5070800000000000000
+      internalID: 8096274006950241349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 5headDragon_3
+      rect:
+        serializedVersion: 2
+        x: 411
+        y: 613
+        width: 74
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e16417c96ea014b0800000000000000
+      internalID: -5471681777920351772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 5headDragon_4
+      rect:
+        serializedVersion: 2
+        x: 548
+        y: 613
+        width: 72
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58e8016af733aaaa0800000000000000
+      internalID: -6149045717881024891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 5headDragon_5
+      rect:
+        serializedVersion: 2
+        x: 687
+        y: 613
+        width: 69
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8206c0c6069aa550800000000000000
+      internalID: 6172911195012858510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 5headDragon_6
+      rect:
+        serializedVersion: 2
+        x: 819
+        y: 613
+        width: 76
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2df2d36160362f750800000000000000
+      internalID: 6337236503457771474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 5headDragon_7
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 513
+        width: 72
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eaa53357c4c0e53d0800000000000000
+      internalID: -3216119561372607826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 5headDragon_8
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 513
+        width: 74
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64da537a7345d5df0800000000000000
+      internalID: -189903011274445498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 5headDragon_9
+      rect:
+        serializedVersion: 2
+        x: 278
+        y: 513
+        width: 70
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9937220f59dec6e40800000000000000
+      internalID: 5651152860677829529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 5headDragon_10
+      rect:
+        serializedVersion: 2
+        x: 411
+        y: 513
+        width: 73
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 304f3d7fc4203c6e0800000000000000
+      internalID: -1818607294928915453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 5headDragon_11
+      rect:
+        serializedVersion: 2
+        x: 547
+        y: 513
+        width: 73
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d970607f0bcd796a0800000000000000
+      internalID: -6442438089313482851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 5headDragon_12
+      rect:
+        serializedVersion: 2
+        x: 686
+        y: 513
+        width: 70
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84af6f18ad3b33bd0800000000000000
+      internalID: -2651578004526400952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 5headDragon_13
+      rect:
+        serializedVersion: 2
+        x: 818
+        y: 513
+        width: 75
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8226f96864fe6d10800000000000000
+      internalID: 2120901203829596814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 5headDragon_14
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 414
+        width: 71
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 493ea0164bb0441f0800000000000000
+      internalID: -1061710742802472044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 5headDragon_15
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 414
+        width: 75
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea95a5a62d65b7120800000000000000
+      internalID: 2412617487114459566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 5headDragon_16
+      rect:
+        serializedVersion: 2
+        x: 490
+        y: 467
+        width: 50
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 141f9ae14a4b4c520800000000000000
+      internalID: 2721498691820712257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 5headDragon_17
+      rect:
+        serializedVersion: 2
+        x: 613
+        y: 467
+        width: 51
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b3fa801d77e3db00800000000000000
+      internalID: 852279278837625784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 5headDragon_18
+      rect:
+        serializedVersion: 2
+        x: 736
+        y: 467
+        width: 50
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0d7792c3ffb740a0800000000000000
+      internalID: -6897333250631959285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 5headDragon_19
+      rect:
+        serializedVersion: 2
+        x: 858
+        y: 467
+        width: 52
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: daa1374cec0561400800000000000000
+      internalID: 294511674628709037
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 5headDragon_20
+      rect:
+        serializedVersion: 2
+        x: 489
+        y: 421
+        width: 55
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3861dffcb252e530800000000000000
+      internalID: 3882756800446031933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 5headDragon_21
+      rect:
+        serializedVersion: 2
+        x: 613
+        y: 421
+        width: 57
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a192f566702dae080800000000000000
+      internalID: -9157275963080365798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 5headDragon_22
+      rect:
+        serializedVersion: 2
+        x: 736
+        y: 421
+        width: 64
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: add6d6ffe4e7d9ee0800000000000000
+      internalID: -1252706243581219366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 5headDragon_23
+      rect:
+        serializedVersion: 2
+        x: 857
+        y: 421
+        width: 58
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c418d40b6cdcce90800000000000000
+      internalID: -7003980968267082557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 5headDragon_24
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 312
+        width: 72
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1636477b92267d20800000000000000
+      internalID: 3275843830074979867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 5headDragon_25
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 312
+        width: 71
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fab0e7aa769b1c030800000000000000
+      internalID: 3513293039218854831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 5headDragon_26
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 312
+        width: 66
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dfe6708909bfbdab0800000000000000
+      internalID: -4982111964310835459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 5headDragon_27
+      rect:
+        serializedVersion: 2
+        x: 431
+        y: 314
+        width: 71
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb0bfa355a14426d0800000000000000
+      internalID: -3016213672101957442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 5headDragon_28
+      rect:
+        serializedVersion: 2
+        x: 569
+        y: 313
+        width: 81
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4f1350b9120eb630800000000000000
+      internalID: 3944592632978808655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 5headDragon_29
+      rect:
+        serializedVersion: 2
+        x: 716
+        y: 313
+        width: 76
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 929f1a96bd493b530800000000000000
+      internalID: 3869600174932359465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 5headDragon_30
+      rect:
+        serializedVersion: 2
+        x: 853
+        y: 312
+        width: 76
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4595d604fb6225c0800000000000000
+      internalID: -4241709203198732981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 5headDragon_31
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 204
+        width: 73
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6cb9228f1962cea70800000000000000
+      internalID: 8857496975506054086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 5headDragon_32
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 195
+        width: 87
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 318c07d66167baba0800000000000000
+      internalID: -6076633433508886509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 5headDragon_33
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 184
+        width: 125
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 430c66ca2ad363090800000000000000
+      internalID: -8055183114619142092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 5headDragon_34
+      rect:
+        serializedVersion: 2
+        x: 407
+        y: 179
+        width: 123
+        height: 111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39ff7738cf738ea10800000000000000
+      internalID: 1938861197259964307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 5headDragon_35
+      rect:
+        serializedVersion: 2
+        x: 556
+        y: 199
+        width: 101
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b293c999e4a431fa0800000000000000
+      internalID: -5831235391069603541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 5headDragon_36
+      rect:
+        serializedVersion: 2
+        x: 696
+        y: 203
+        width: 85
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 572622d44b8835a10800000000000000
+      internalID: 1897010176022700661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 5headDragon_37
+      rect:
+        serializedVersion: 2
+        x: 829
+        y: 205
+        width: 79
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c456622c28398230800000000000000
+      internalID: 3641503535912604868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 5headDragon_38
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 99
+        width: 69
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0d17327cb30f84c0800000000000000
+      internalID: -4283200612701102838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 5headDragon_39
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 99
+        width: 62
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d563aa92f3573f00800000000000000
+      internalID: 1096437335729595860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 5headDragon_40
+      rect:
+        serializedVersion: 2
+        x: 283
+        y: 99
+        width: 60
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d17aef68518aeb10800000000000000
+      internalID: 2011562400409088473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 5headDragon_41
+      rect:
+        serializedVersion: 2
+        x: 419
+        y: 99
+        width: 55
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b5f30f84314cc300800000000000000
+      internalID: 273665371356263865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 5headDragon_42
+      rect:
+        serializedVersion: 2
+        x: 555
+        y: 99
+        width: 56
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 320a01944bf948d90800000000000000
+      internalID: -7096371516160303069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 5headDragon_43
+      rect:
+        serializedVersion: 2
+        x: 691
+        y: 99
+        width: 59
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b42705162337c6d70800000000000000
+      internalID: 9037725212443963979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 5headDragon_44
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 2
+        width: 54
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab0eea7989ae59af0800000000000000
+      internalID: -390147851596930886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 5headDragon_45
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 4
+        width: 62
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: efd1c87bd94537e50800000000000000
+      internalID: 6805876498252963326
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 5headDragon_46
+      rect:
+        serializedVersion: 2
+        x: 282
+        y: 6
+        width: 70
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1792ae40e5b6e0c0800000000000000
+      internalID: -4546746798787356899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 5headDragon_47
+      rect:
+        serializedVersion: 2
+        x: 417
+        y: 7
+        width: 75
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a700d9ca107b80f80800000000000000
+      internalID: -8140055108653350790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 5headDragon_48
+      rect:
+        serializedVersion: 2
+        x: 549
+        y: 8
+        width: 79
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81c49bb7bf06d2d80800000000000000
+      internalID: -8273850307180934120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 5headDragon_49
+      rect:
+        serializedVersion: 2
+        x: 683
+        y: 8
+        width: 80
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a31be7d2e1d6e4b20800000000000000
+      internalID: 3120551568194056506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

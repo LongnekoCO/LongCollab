@@ -1,0 +1,792 @@
+fileFormatVersion: 2
+guid: fa3f16cd66806904fa778a8050c82b0c
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 5907423454749313775
+    second: IceGolem2_0
+  - first:
+      213: -2042485988829640409
+    second: IceGolem2_1
+  - first:
+      213: 8259769061509321623
+    second: IceGolem2_2
+  - first:
+      213: 2608830327351502474
+    second: IceGolem2_3
+  - first:
+      213: 6395020778752729314
+    second: IceGolem2_4
+  - first:
+      213: 5921964469438469917
+    second: IceGolem2_5
+  - first:
+      213: 8865451664885640411
+    second: IceGolem2_6
+  - first:
+      213: 8915419904982362181
+    second: IceGolem2_7
+  - first:
+      213: 3646160746870756428
+    second: IceGolem2_8
+  - first:
+      213: -7817874307545678559
+    second: IceGolem2_9
+  - first:
+      213: 3293104917074992394
+    second: IceGolem2_10
+  - first:
+      213: 1175869919982834694
+    second: IceGolem2_11
+  - first:
+      213: 4957073152661080787
+    second: IceGolem2_12
+  - first:
+      213: 7269275445519046477
+    second: IceGolem2_13
+  - first:
+      213: -2367154583794456499
+    second: IceGolem2_14
+  - first:
+      213: 4418780866237920784
+    second: IceGolem2_15
+  - first:
+      213: -3694723738763160103
+    second: IceGolem2_16
+  - first:
+      213: 3429908614106641109
+    second: IceGolem2_17
+  - first:
+      213: -5106272017810431243
+    second: IceGolem2_18
+  - first:
+      213: 4487503329026451603
+    second: IceGolem2_19
+  - first:
+      213: -4812879080675615814
+    second: IceGolem2_20
+  - first:
+      213: -8439132708274870393
+    second: IceGolem2_21
+  - first:
+      213: -635053098831835200
+    second: IceGolem2_22
+  - first:
+      213: -5788628949400917724
+    second: IceGolem2_23
+  - first:
+      213: 2618286909518516084
+    second: IceGolem2_24
+  - first:
+      213: -532776766176729677
+    second: IceGolem2_25
+  - first:
+      213: -8370638337018358705
+    second: IceGolem2_26
+  - first:
+      213: -3710305723317123787
+    second: IceGolem2_27
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: IceGolem2_0
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 555
+        width: 151
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: feac42e45526bf150800000000000000
+      internalID: 5907423454749313775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IceGolem2_1
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 555
+        width: 150
+        height: 123
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 729c81190d1a7a3e0800000000000000
+      internalID: -2042485988829640409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IceGolem2_2
+      rect:
+        serializedVersion: 2
+        x: 361
+        y: 554
+        width: 150
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7935606033890a270800000000000000
+      internalID: 8259769061509321623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IceGolem2_3
+      rect:
+        serializedVersion: 2
+        x: 537
+        y: 554
+        width: 150
+        height: 121
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a866d0d4c5d643420800000000000000
+      internalID: 2608830327351502474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IceGolem2_4
+      rect:
+        serializedVersion: 2
+        x: 721
+        y: 554
+        width: 150
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e06cc8148dafb850800000000000000
+      internalID: 6395020778752729314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IceGolem2_5
+      rect:
+        serializedVersion: 2
+        x: 902
+        y: 555
+        width: 151
+        height: 123
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d175d5d1f4b0f2250800000000000000
+      internalID: 5921964469438469917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IceGolem2_6
+      rect:
+        serializedVersion: 2
+        x: 1105
+        y: 335
+        width: 584
+        height: 475
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bdc67ea6159680b70800000000000000
+      internalID: 8865451664885640411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IceGolem2_7
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 405
+        width: 159
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 548abebea2fe9bb70800000000000000
+      internalID: 8915419904982362181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IceGolem2_8
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 406
+        width: 159
+        height: 115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c44543f81e3c99230800000000000000
+      internalID: 3646160746870756428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IceGolem2_9
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 406
+        width: 183
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12d3618fcb4518390800000000000000
+      internalID: -7817874307545678559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IceGolem2_10
+      rect:
+        serializedVersion: 2
+        x: 618
+        y: 406
+        width: 186
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0dd856797573bd20800000000000000
+      internalID: 3293104917074992394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IceGolem2_11
+      rect:
+        serializedVersion: 2
+        x: 829
+        y: 406
+        width: 186
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 604d4a25677815010800000000000000
+      internalID: 1175869919982834694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IceGolem2_12
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 206
+        width: 159
+        height: 126
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3da4df5c4cf0bc440800000000000000
+      internalID: 4957073152661080787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IceGolem2_13
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 207
+        width: 130
+        height: 147
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d47d1a0e087a1e460800000000000000
+      internalID: 7269275445519046477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IceGolem2_14
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 207
+        width: 152
+        height: 162
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d486e70a27d262fd0800000000000000
+      internalID: -2367154583794456499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IceGolem2_15
+      rect:
+        serializedVersion: 2
+        x: 592
+        y: 207
+        width: 115
+        height: 168
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 016776049c9a25d30800000000000000
+      internalID: 4418780866237920784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IceGolem2_16
+      rect:
+        serializedVersion: 2
+        x: 784
+        y: 207
+        width: 151
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d591d7c554b9bcc0800000000000000
+      internalID: -3694723738763160103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IceGolem2_17
+      rect:
+        serializedVersion: 2
+        x: 1010
+        y: 207
+        width: 160
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d2f0eb46bb799f20800000000000000
+      internalID: 3429908614106641109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IceGolem2_18
+      rect:
+        serializedVersion: 2
+        x: 1199
+        y: 200
+        width: 161
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f264eb67a0e229b0800000000000000
+      internalID: -5106272017810431243
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IceGolem2_19
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 29
+        width: 147
+        height: 126
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 398210f7080d64e30800000000000000
+      internalID: 4487503329026451603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IceGolem2_20
+      rect:
+        serializedVersion: 2
+        x: 188
+        y: 31
+        width: 138
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: abbdb61d9f7353db0800000000000000
+      internalID: -4812879080675615814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IceGolem2_21
+      rect:
+        serializedVersion: 2
+        x: 361
+        y: 29
+        width: 134
+        height: 126
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78765e6a38d22ea80800000000000000
+      internalID: -8439132708274870393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IceGolem2_22
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 30
+        width: 129
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0cf0e9e3296df27f0800000000000000
+      internalID: -635053098831835200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IceGolem2_23
+      rect:
+        serializedVersion: 2
+        x: 669
+        y: 27
+        width: 139
+        height: 127
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4296a66d3a8aaafa0800000000000000
+      internalID: -5788628949400917724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IceGolem2_24
+      rect:
+        serializedVersion: 2
+        x: 839
+        y: 30
+        width: 145
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47f08e96216065420800000000000000
+      internalID: 2618286909518516084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IceGolem2_25
+      rect:
+        serializedVersion: 2
+        x: 1014
+        y: 31
+        width: 147
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b5647b9a523b98f0800000000000000
+      internalID: -532776766176729677
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IceGolem2_26
+      rect:
+        serializedVersion: 2
+        x: 1182
+        y: 30
+        width: 150
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4411c238c485db80800000000000000
+      internalID: -8370638337018358705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IceGolem2_27
+      rect:
+        serializedVersion: 2
+        x: 1352
+        y: 30
+        width: 148
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53585994a98528cc0800000000000000
+      internalID: -3710305723317123787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
