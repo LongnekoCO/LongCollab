@@ -16,7 +16,7 @@ public class MyOwnIAEnemy : MonoBehaviour
     public float speed_walk;
     public float speed_run;
 
-    public Transform player;
+    public GameObject player;
 
     public bool isAttack;
 
@@ -47,7 +47,7 @@ public class MyOwnIAEnemy : MonoBehaviour
     void Start()
     {
         ani = GetComponent<Animator>();
-        player = transform.Find("Player");
+        player = GameObject.Find("Player");
     }
 
 
