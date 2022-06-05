@@ -2,17 +2,15 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class HungTrapLaser : MonoBehaviour
+public class Spike : MonoBehaviour
 {
-    public Rigidbody2D laser;
-    public float speed;
+    //private Collider2D collider;
     private PlayerMovementScript player;
-    
+
     // Start is called before the first frame update
     void Start()
     {
-        //InvokeRepeating("LaserShoot", 1f, 5f);
-
+        //collider = this.GetComponent<Collider2D>();
         player = GameObject.Find("Player").GetComponent<PlayerMovementScript>();
     }
 
@@ -22,18 +20,11 @@ public class HungTrapLaser : MonoBehaviour
         
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.tag == "Player")
         {
-            player.TakeDamage(50);
+            player.TakeDamage(20);
         }
-    }
-
-    void LaserShoot()
-    {
-        Rigidbody2D latestLaser = Instantiate(laser, this.transform.position, Quaternion.identity);
-
-        latestLaser.AddForce(new Vector2(500, 0) * speed);
     }
 }
