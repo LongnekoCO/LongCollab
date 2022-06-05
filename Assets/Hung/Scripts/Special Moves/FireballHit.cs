@@ -2,16 +2,16 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class HungFireballHit : MonoBehaviour
+public class FireballHit : MonoBehaviour
 {
-    private HungPlayer playerScript; //a reference to player script
+    private PlayerMovementScript playerScript; //a reference to player script
     public int damage; //a damage deal to the target
     public GameObject praticleHit;
 
     // Start is called before the first frame update
     void Start()
     {
-        playerScript = GameObject.Find("Player").GetComponent<HungPlayer>(); //access the player script
+        playerScript = GameObject.Find("Player").GetComponent<PlayerMovementScript>(); //access the player script
     }
 
     // Update is called once per frame

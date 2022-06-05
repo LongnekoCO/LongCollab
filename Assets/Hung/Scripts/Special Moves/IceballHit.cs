@@ -2,9 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class HungIceballHit : MonoBehaviour
+public class IceballHit : MonoBehaviour
 {
-    private HungPlayer playerScript; //a reference to player script
+    private PlayerMovementScript playerScript; //a reference to player script
     public int damage; //a damage deal to the target
     public float timeFreeze; //time to freeze the moving of the target
     public GameObject praticleHit;
@@ -12,7 +12,7 @@ public class HungIceballHit : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        playerScript = GameObject.Find("Player").GetComponent<HungPlayer>(); //access the player script
+        playerScript = GameObject.Find("Player").GetComponent<PlayerMovementScript>(); //access the player script
     }
 
     // Update is called once per frame
@@ -41,8 +41,8 @@ public class HungIceballHit : MonoBehaviour
     //Called by OnTriggerEnter2D() when it hits the target
     IEnumerator TimeFreeze()
     {
-        playerScript.isMoving = false;
+        //playerScript.isMoving = false;
         yield return new WaitForSeconds(timeFreeze);
-        playerScript.isMoving = true;
+        //playerScript.isMoving = true;
     }
 }
