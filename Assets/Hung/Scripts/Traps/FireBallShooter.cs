@@ -19,7 +19,7 @@ public class FireBallShooter : MonoBehaviour
         
     }
 
-    void IceBallShoot()
+    void FireBallShoot()
     {
         Rigidbody2D latestArrow = Instantiate(fireBall, this.transform.position, Quaternion.identity);
 
