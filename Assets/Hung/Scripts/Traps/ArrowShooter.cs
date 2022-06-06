@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class TrapArrow : MonoBehaviour
+public class ArrowShooter : MonoBehaviour
 {
     public Rigidbody2D arrow;
     public float arrowSpeed;
