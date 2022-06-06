@@ -4,12 +4,13 @@ using UnityEngine;
 
 public class HungArrow : MonoBehaviour
 {
-    private HungPlayer player;
+    private PlayerMovementScript player;
+    public int damage;
     
     // Start is called before the first frame update
     void Start()
     {
-        //player = GameObject.Find("Player").GetComponent<HungPlayer>();
+        player = GameObject.Find("Player").GetComponent<PlayerMovementScript>();
 
         Destroy(this.gameObject, 2f);
     }
@@ -24,7 +25,7 @@ public class HungArrow : MonoBehaviour
     {
         if (collision.gameObject.tag == "Player")
         {
-            //player.TakeDamage(10);
+            player.TakeDamage(damage);
             Destroy(this.gameObject);
         }
     }

@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 7433748803348586672}
   - component: {fileID: 2942241333773345153}
   - component: {fileID: 1689491009728718852}
+  - component: {fileID: 5113539853542929440}
   m_Layer: 0
   m_Name: Fireball
   m_TagString: Untagged
@@ -29,7 +30,7 @@ Transform:
   m_GameObject: {fileID: 7791199996297380268}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 0}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 0}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -146,3 +147,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damage: 15
   praticleHit: {fileID: 100006, guid: 37e4830237dbd504aa31f686b1fbc46d, type: 3}
+--- !u!114 &5113539853542929440
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7791199996297380268}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73930db31b00fc642a0b4d96376dc507, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timeToDestroy: 5

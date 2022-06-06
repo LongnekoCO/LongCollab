@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 5107753216667498602}
   - component: {fileID: 1288026272844078083}
   - component: {fileID: 6998856836857611744}
+  - component: {fileID: 1626455134430242678}
   m_Layer: 0
   m_Name: Iceball
   m_TagString: Untagged
@@ -29,7 +30,7 @@ Transform:
   m_GameObject: {fileID: 1388041243180982830}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 0}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 0}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -145,5 +146,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 10
-  timeFreeze: 0
+  timeFreeze: 5
   praticleHit: {fileID: 100006, guid: 253d571e516eb1947a31f3c0d4cf7cd9, type: 3}
+--- !u!114 &1626455134430242678
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1388041243180982830}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73930db31b00fc642a0b4d96376dc507, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timeToDestroy: 5
