@@ -23,6 +23,6 @@ public class ArrowShooter : MonoBehaviour
     {
         Rigidbody2D latestArrow = Instantiate(arrow, this.transform.position, Quaternion.identity);
 
-        latestArrow.AddForce(new Vector2(500, 0) * arrowSpeed);
+        latestArrow.AddForce(new Vector2(-750, 0) * arrowSpeed);
     }
 }

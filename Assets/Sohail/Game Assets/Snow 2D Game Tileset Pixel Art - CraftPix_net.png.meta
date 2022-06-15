@@ -1,0 +1,1548 @@
+fileFormatVersion: 2
+guid: 7180394acc4dba54aa5d4fa5f08f7dcf
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -954663408793382480
+    second: Snow 2D Game Tileset Pixel Art - CraftPix_net_0
+  - first:
+      213: 1564811035053113297
+    second: Snow 2D Game Tileset Pixel Art - CraftPix_net_1
+  - first:
+      213: 4927242664182419488
+    second: Snow 2D Game Tileset Pixel Art - CraftPix_net_2
+  - first:
+      213: 1195958821740506095
+    second: Snow 2D Game Tileset Pixel Art - CraftPix_net_3
+  - first:
+      213: 1062565534340875832
+    second: Snow 2D Game Tileset Pixel Art - CraftPix_net_4
+  - first:
+      213: -3009067173042372253
+    second: Snow 2D Game Tileset Pixel Art - CraftPix_net_5
+  - first:
+      213: -2195546960395057194
+    second: Snow 2D Game Tileset Pixel Art - CraftPix_net_6
+  - first:
+      213: -4380497205252773656
+    second: Snow 2D Game Tileset Pixel Art - CraftPix_net_7
+  - first:
+      213: 5301385568721572199
+    second: Snow 2D Game Tileset Pixel Art - CraftPix_net_8
+  - first:
+      213: 3907114672894965977
+    second: Snow 2D Game Tileset Pixel Art - CraftPix_net_9
+  - first:
+      213: -8603999510791511060
+    second: Snow 2D Game Tileset Pixel Art - CraftPix_net_10
+  - first:
+      213: 1965390858923123773
+    second: Snow 2D Game Tileset Pixel Art - CraftPix_net_11
+  - first:
+      213: -1009880941842377693
+    second: Snow 2D Game Tileset Pixel Art - CraftPix_net_12
+  - first:
+      213: 2436855961397898763
+    second: Snow 2D Game Tileset Pixel Art - CraftPix_net_13
+  - first:
+      213: 1241648788495133644
+    second: Snow 2D Game Tileset Pixel Art - CraftPix_net_14
+  - first:
+      213: 2482737241859164879
+    second: Snow 2D Game Tileset Pixel Art - CraftPix_net_15
+  - first:
+      213: -5256550036877302122
+    second: Snow 2D Game Tileset Pixel Art - CraftPix_net_16
+  - first:
+      213: -8629147579468369769
+    second: Snow 2D Game Tileset Pixel Art - CraftPix_net_17
+  - first:
+      213: 7470438369186144692
+    second: Snow 2D Game Tileset Pixel Art - CraftPix_net_18
+  - first:
+      213: -8989506728816672669
+    second: Snow 2D Game Tileset Pixel Art - CraftPix_net_19
+  - first:
+      213: -7484539686419960571
+    second: Snow 2D Game Tileset Pixel Art - CraftPix_net_20
+  - first:
+      213: 5874635894646325869
+    second: Snow 2D Game Tileset Pixel Art - CraftPix_net_21
+  - first:
+      213: -5042028363283964985
+    second: Snow 2D Game Tileset Pixel Art - CraftPix_net_22
+  - first:
+      213: -4191592923137946740
+    second: Snow 2D Game Tileset Pixel Art - CraftPix_net_23
+  - first:
+      213: -2204523392368211311
+    second: Snow 2D Game Tileset Pixel Art - CraftPix_net_24
+  - first:
+      213: 433612390828136516
+    second: Snow 2D Game Tileset Pixel Art - CraftPix_net_25
+  - first:
+      213: 2010013467178750252
+    second: Snow 2D Game Tileset Pixel Art - CraftPix_net_26
+  - first:
+      213: 5405007432973970805
+    second: Snow 2D Game Tileset Pixel Art - CraftPix_net_27
+  - first:
+      213: 6138169146026933867
+    second: Snow 2D Game Tileset Pixel Art - CraftPix_net_28
+  - first:
+      213: 4929302265779058010
+    second: Snow 2D Game Tileset Pixel Art - CraftPix_net_29
+  - first:
+      213: -8514427368171352480
+    second: Snow 2D Game Tileset Pixel Art - CraftPix_net_30
+  - first:
+      213: 8397470729832278179
+    second: Snow 2D Game Tileset Pixel Art - CraftPix_net_31
+  - first:
+      213: -1129749384797833598
+    second: Snow 2D Game Tileset Pixel Art - CraftPix_net_32
+  - first:
+      213: -5837224018760444381
+    second: Snow 2D Game Tileset Pixel Art - CraftPix_net_33
+  - first:
+      213: 6458323927575663827
+    second: Snow 2D Game Tileset Pixel Art - CraftPix_net_34
+  - first:
+      213: 6713872808635735234
+    second: Snow 2D Game Tileset Pixel Art - CraftPix_net_35
+  - first:
+      213: 4737118391355264346
+    second: Snow 2D Game Tileset Pixel Art - CraftPix_net_36
+  - first:
+      213: 4321754157803233182
+    second: Snow 2D Game Tileset Pixel Art - CraftPix_net_37
+  - first:
+      213: 6962411796234875109
+    second: Snow 2D Game Tileset Pixel Art - CraftPix_net_38
+  - first:
+      213: -7216152591630907573
+    second: Snow 2D Game Tileset Pixel Art - CraftPix_net_39
+  - first:
+      213: -2545708828252424814
+    second: Snow 2D Game Tileset Pixel Art - CraftPix_net_40
+  - first:
+      213: -3921694289404273987
+    second: Snow 2D Game Tileset Pixel Art - CraftPix_net_41
+  - first:
+      213: -954528460859255086
+    second: Snow 2D Game Tileset Pixel Art - CraftPix_net_42
+  - first:
+      213: -5221112056112114596
+    second: Snow 2D Game Tileset Pixel Art - CraftPix_net_43
+  - first:
+      213: -3785679021385826202
+    second: Snow 2D Game Tileset Pixel Art - CraftPix_net_44
+  - first:
+      213: 610685219970420054
+    second: Snow 2D Game Tileset Pixel Art - CraftPix_net_45
+  - first:
+      213: 8968531842513690824
+    second: Snow 2D Game Tileset Pixel Art - CraftPix_net_46
+  - first:
+      213: -8926049777205160129
+    second: Snow 2D Game Tileset Pixel Art - CraftPix_net_47
+  - first:
+      213: 3104515830050491440
+    second: Snow 2D Game Tileset Pixel Art - CraftPix_net_48
+  - first:
+      213: -4117903997173222416
+    second: Snow 2D Game Tileset Pixel Art - CraftPix_net_49
+  - first:
+      213: 1844860121354788930
+    second: Snow 2D Game Tileset Pixel Art - CraftPix_net_50
+  - first:
+      213: 2134110291484132623
+    second: Snow 2D Game Tileset Pixel Art - CraftPix_net_51
+  - first:
+      213: -5634634926011007007
+    second: Snow 2D Game Tileset Pixel Art - CraftPix_net_52
+  - first:
+      213: 8428073033587822325
+    second: Snow 2D Game Tileset Pixel Art - CraftPix_net_53
+  - first:
+      213: 4122763748740928288
+    second: Snow 2D Game Tileset Pixel Art - CraftPix_net_54
+  - first:
+      213: 9054429441319848087
+    second: Snow 2D Game Tileset Pixel Art - CraftPix_net_55
+  - first:
+      213: -3415585755393850919
+    second: Snow 2D Game Tileset Pixel Art - CraftPix_net_56
+  - first:
+      213: -2886373742553157652
+    second: Snow 2D Game Tileset Pixel Art - CraftPix_net_57
+  - first:
+      213: 2206516092876517005
+    second: Snow 2D Game Tileset Pixel Art - CraftPix_net_58
+  - first:
+      213: -5213860595394820443
+    second: Snow 2D Game Tileset Pixel Art - CraftPix_net_59
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Snow 2D Game Tileset Pixel Art - CraftPix_net_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 787.5
+        width: 144
+        height: 157.5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b19ece00ba50c2f0800000000000000
+      internalID: -954663408793382480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snow 2D Game Tileset Pixel Art - CraftPix_net_1
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 787.5
+        width: 144
+        height: 157.5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1dfb3fc785357b510800000000000000
+      internalID: 1564811035053113297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snow 2D Game Tileset Pixel Art - CraftPix_net_2
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 787.5
+        width: 144
+        height: 157.5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0201eb0f815116440800000000000000
+      internalID: 4927242664182419488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snow 2D Game Tileset Pixel Art - CraftPix_net_3
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 787.5
+        width: 144
+        height: 157.5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: feb66df3636e89010800000000000000
+      internalID: 1195958821740506095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snow 2D Game Tileset Pixel Art - CraftPix_net_4
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 787.5
+        width: 144
+        height: 157.5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83606f849bdfebe00800000000000000
+      internalID: 1062565534340875832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snow 2D Game Tileset Pixel Art - CraftPix_net_5
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 787.5
+        width: 144
+        height: 157.5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 361458d4955ad36d0800000000000000
+      internalID: -3009067173042372253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snow 2D Game Tileset Pixel Art - CraftPix_net_6
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 787.5
+        width: 144
+        height: 157.5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d7c6f90ca9d781e0800000000000000
+      internalID: -2195546960395057194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snow 2D Game Tileset Pixel Art - CraftPix_net_7
+      rect:
+        serializedVersion: 2
+        x: 1008
+        y: 787.5
+        width: 144
+        height: 157.5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e8215d20095533c0800000000000000
+      internalID: -4380497205252773656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snow 2D Game Tileset Pixel Art - CraftPix_net_8
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 787.5
+        width: 144
+        height: 157.5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7611809361e429940800000000000000
+      internalID: 5301385568721572199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snow 2D Game Tileset Pixel Art - CraftPix_net_9
+      rect:
+        serializedVersion: 2
+        x: 1296
+        y: 787.5
+        width: 144
+        height: 157.5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d8fe9e181cd83630800000000000000
+      internalID: 3907114672894965977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snow 2D Game Tileset Pixel Art - CraftPix_net_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 630.5
+        width: 144
+        height: 157.5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce323a7e704789880800000000000000
+      internalID: -8603999510791511060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snow 2D Game Tileset Pixel Art - CraftPix_net_11
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 630.5
+        width: 144
+        height: 157.5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d34a9e6b298764b10800000000000000
+      internalID: 1965390858923123773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snow 2D Game Tileset Pixel Art - CraftPix_net_12
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 630.5
+        width: 144
+        height: 157.5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3245c0c42ae2cf1f0800000000000000
+      internalID: -1009880941842377693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snow 2D Game Tileset Pixel Art - CraftPix_net_13
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 630.5
+        width: 144
+        height: 157.5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0e2aebf59371d120800000000000000
+      internalID: 2436855961397898763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snow 2D Game Tileset Pixel Art - CraftPix_net_14
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 630.5
+        width: 144
+        height: 157.5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ccbeb0e9ef83b3110800000000000000
+      internalID: 1241648788495133644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snow 2D Game Tileset Pixel Art - CraftPix_net_15
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 630.5
+        width: 144
+        height: 157.5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fca06ab0e54747220800000000000000
+      internalID: 2482737241859164879
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snow 2D Game Tileset Pixel Art - CraftPix_net_16
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 630.5
+        width: 144
+        height: 157.5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 696acd3879bfc07b0800000000000000
+      internalID: -5256550036877302122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snow 2D Game Tileset Pixel Art - CraftPix_net_17
+      rect:
+        serializedVersion: 2
+        x: 1008
+        y: 630.5
+        width: 144
+        height: 157.5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 790bd53eefb1f3880800000000000000
+      internalID: -8629147579468369769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snow 2D Game Tileset Pixel Art - CraftPix_net_18
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 630.5
+        width: 144
+        height: 157.5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b1e9cfdd145ca760800000000000000
+      internalID: 7470438369186144692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snow 2D Game Tileset Pixel Art - CraftPix_net_19
+      rect:
+        serializedVersion: 2
+        x: 1296
+        y: 630.5
+        width: 144
+        height: 157.5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36006e2324bde3380800000000000000
+      internalID: -8989506728816672669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snow 2D Game Tileset Pixel Art - CraftPix_net_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 473.5
+        width: 144
+        height: 157.5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50def9b5fc2912890800000000000000
+      internalID: -7484539686419960571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snow 2D Game Tileset Pixel Art - CraftPix_net_21
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 473.5
+        width: 144
+        height: 157.5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6247259836e68150800000000000000
+      internalID: 5874635894646325869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snow 2D Game Tileset Pixel Art - CraftPix_net_22
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 473.5
+        width: 144
+        height: 157.5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7cbd30bdaed170ab0800000000000000
+      internalID: -5042028363283964985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snow 2D Game Tileset Pixel Art - CraftPix_net_23
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 473.5
+        width: 144
+        height: 157.5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8b4255c17874d5c0800000000000000
+      internalID: -4191592923137946740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snow 2D Game Tileset Pixel Art - CraftPix_net_24
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 473.5
+        width: 144
+        height: 157.5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19a8ada97a5f761e0800000000000000
+      internalID: -2204523392368211311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snow 2D Game Tileset Pixel Art - CraftPix_net_25
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 473.5
+        width: 144
+        height: 157.5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 448d48d0c20840600800000000000000
+      internalID: 433612390828136516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snow 2D Game Tileset Pixel Art - CraftPix_net_26
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 473.5
+        width: 144
+        height: 157.5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c21d0f0599005eb10800000000000000
+      internalID: 2010013467178750252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snow 2D Game Tileset Pixel Art - CraftPix_net_27
+      rect:
+        serializedVersion: 2
+        x: 1008
+        y: 473.5
+        width: 144
+        height: 157.5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57d62c29f91720b40800000000000000
+      internalID: 5405007432973970805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snow 2D Game Tileset Pixel Art - CraftPix_net_28
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 473.5
+        width: 144
+        height: 157.5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6eb23021582f2550800000000000000
+      internalID: 6138169146026933867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snow 2D Game Tileset Pixel Art - CraftPix_net_29
+      rect:
+        serializedVersion: 2
+        x: 1296
+        y: 473.5
+        width: 144
+        height: 157.5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a55f94e4b46686440800000000000000
+      internalID: 4929302265779058010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snow 2D Game Tileset Pixel Art - CraftPix_net_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 316.5
+        width: 144
+        height: 157.5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06e48468b6da6d980800000000000000
+      internalID: -8514427368171352480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snow 2D Game Tileset Pixel Art - CraftPix_net_31
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 316.5
+        width: 144
+        height: 157.5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a8a467132fc98470800000000000000
+      internalID: 8397470729832278179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snow 2D Game Tileset Pixel Art - CraftPix_net_32
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 316.5
+        width: 144
+        height: 157.5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 286b8e19be25250f0800000000000000
+      internalID: -1129749384797833598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snow 2D Game Tileset Pixel Art - CraftPix_net_33
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 316.5
+        width: 144
+        height: 157.5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 326d76f8ea30efea0800000000000000
+      internalID: -5837224018760444381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snow 2D Game Tileset Pixel Art - CraftPix_net_34
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 316.5
+        width: 144
+        height: 157.5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d49d8bf46390a950800000000000000
+      internalID: 6458323927575663827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snow 2D Game Tileset Pixel Art - CraftPix_net_35
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 316.5
+        width: 144
+        height: 157.5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2cc13e17fb77c2d50800000000000000
+      internalID: 6713872808635735234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snow 2D Game Tileset Pixel Art - CraftPix_net_36
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 316.5
+        width: 144
+        height: 157.5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5d43bf1410adb140800000000000000
+      internalID: 4737118391355264346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snow 2D Game Tileset Pixel Art - CraftPix_net_37
+      rect:
+        serializedVersion: 2
+        x: 1008
+        y: 316.5
+        width: 144
+        height: 157.5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9fdd664284f9fb30800000000000000
+      internalID: 4321754157803233182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snow 2D Game Tileset Pixel Art - CraftPix_net_38
+      rect:
+        serializedVersion: 2
+        x: 1158
+        y: 359
+        width: 144
+        height: 124
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 30, z: 0, w: 14}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e0b196e3a47f9060800000000000000
+      internalID: 6962411796234875109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snow 2D Game Tileset Pixel Art - CraftPix_net_39
+      rect:
+        serializedVersion: 2
+        x: 1296
+        y: 316.5
+        width: 144
+        height: 157.5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4743d263731bdb90800000000000000
+      internalID: -7216152591630907573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snow 2D Game Tileset Pixel Art - CraftPix_net_40
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 182
+        width: 144
+        height: 158
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2953076fe43dbacd0800000000000000
+      internalID: -2545708828252424814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snow 2D Game Tileset Pixel Art - CraftPix_net_41
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 178
+        width: 144
+        height: 158
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dba516262d75399c0800000000000000
+      internalID: -3921694289404273987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snow 2D Game Tileset Pixel Art - CraftPix_net_42
+      rect:
+        serializedVersion: 2
+        x: 284
+        y: 185
+        width: 144
+        height: 158
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d6db721c65d0c2f0800000000000000
+      internalID: -954528460859255086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snow 2D Game Tileset Pixel Art - CraftPix_net_43
+      rect:
+        serializedVersion: 2
+        x: 431
+        y: 175
+        width: 144
+        height: 158
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c549de26f32ea87b0800000000000000
+      internalID: -5221112056112114596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snow 2D Game Tileset Pixel Art - CraftPix_net_44
+      rect:
+        serializedVersion: 2
+        x: 574
+        y: 182
+        width: 144
+        height: 158
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66046a8ccf0967bc0800000000000000
+      internalID: -3785679021385826202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snow 2D Game Tileset Pixel Art - CraftPix_net_45
+      rect:
+        serializedVersion: 2
+        x: 718
+        y: 177
+        width: 144
+        height: 158
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65d0be5d8f6997800800000000000000
+      internalID: 610685219970420054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snow 2D Game Tileset Pixel Art - CraftPix_net_46
+      rect:
+        serializedVersion: 2
+        x: 866
+        y: 179
+        width: 144
+        height: 158
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c0eec58130a67c70800000000000000
+      internalID: 8968531842513690824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snow 2D Game Tileset Pixel Art - CraftPix_net_47
+      rect:
+        serializedVersion: 2
+        x: 1009
+        y: 179
+        width: 144
+        height: 158
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f375b36150d402480800000000000000
+      internalID: -8926049777205160129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snow 2D Game Tileset Pixel Art - CraftPix_net_48
+      rect:
+        serializedVersion: 2
+        x: 1143
+        y: 237
+        width: 148
+        height: 129
+      alignment: 9
+      pivot: {x: 0.7129525, y: 0.3975442}
+      border: {x: 52, y: 102, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03c8cb1f2b4751b20800000000000000
+      internalID: 3104515830050491440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snow 2D Game Tileset Pixel Art - CraftPix_net_49
+      rect:
+        serializedVersion: 2
+        x: 1296
+        y: 177
+        width: 144
+        height: 158
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f33455d1244ad6c0800000000000000
+      internalID: -4117903997173222416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snow 2D Game Tileset Pixel Art - CraftPix_net_50
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 36
+        width: 144
+        height: 158
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 240e2a181824a9910800000000000000
+      internalID: 1844860121354788930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snow 2D Game Tileset Pixel Art - CraftPix_net_51
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 35
+        width: 144
+        height: 158
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f05ca6bc002ed9d10800000000000000
+      internalID: 2134110291484132623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snow 2D Game Tileset Pixel Art - CraftPix_net_52
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 28
+        width: 144
+        height: 158
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1efba1c6361cdc1b0800000000000000
+      internalID: -5634634926011007007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snow 2D Game Tileset Pixel Art - CraftPix_net_53
+      rect:
+        serializedVersion: 2
+        x: 433
+        y: 23
+        width: 144
+        height: 158
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5fe0d0c25c786f470800000000000000
+      internalID: 8428073033587822325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snow 2D Game Tileset Pixel Art - CraftPix_net_54
+      rect:
+        serializedVersion: 2
+        x: 575
+        y: 26
+        width: 144
+        height: 158
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0239f8049cff63930800000000000000
+      internalID: 4122763748740928288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snow 2D Game Tileset Pixel Art - CraftPix_net_55
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 23
+        width: 144
+        height: 158
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79845bdba9bc7ad70800000000000000
+      internalID: 9054429441319848087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snow 2D Game Tileset Pixel Art - CraftPix_net_56
+      rect:
+        serializedVersion: 2
+        x: 865
+        y: 26
+        width: 144
+        height: 158
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d18ddd1ad66990d0800000000000000
+      internalID: -3415585755393850919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snow 2D Game Tileset Pixel Art - CraftPix_net_57
+      rect:
+        serializedVersion: 2
+        x: 1007
+        y: 27
+        width: 144
+        height: 158
+      alignment: 9
+      pivot: {x: 0.54388684, y: 0.49333403}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cefaa12bf5a81f7d0800000000000000
+      internalID: -2886373742553157652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snow 2D Game Tileset Pixel Art - CraftPix_net_58
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 101
+        width: 144
+        height: 87
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 46, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8e661322be1f9e10800000000000000
+      internalID: 2206516092876517005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snow 2D Game Tileset Pixel Art - CraftPix_net_59
+      rect:
+        serializedVersion: 2
+        x: 1296
+        y: 2.5
+        width: 144
+        height: 157.5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a6c517a965a4a7b0800000000000000
+      internalID: -5213860595394820443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
