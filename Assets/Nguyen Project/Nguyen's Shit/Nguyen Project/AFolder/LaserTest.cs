@@ -14,6 +14,9 @@ public class LaserTest : MonoBehaviour
     public GameObject endEf;
     private List<ParticleSystem> particles = new List<ParticleSystem>();
 
+    public float thrust;
+    public float knockTime; 
+
     // Start is called before the first frame update
     void Start()
     {
@@ -65,26 +68,36 @@ public class LaserTest : MonoBehaviour
         {
             lineRenderer.SetPosition(0, firePoint.position);
             lineRenderer.SetPosition(1, hit.point);
-            endEf.transform.position = lineRenderer.GetPosition(1);
-            Debug.Log(hit.collider.name);
+            //Debug.Log(hit.point);
+
+            if (hit.collider.tag == "Enemy")
+            {
+                Rigidbody2D enemy = hit.collider.GetComponent<Rigidbody2D>();
+                if(enemy != null)
+                {
+                    //enemy.isDynamic = false;
+                    Vector2 difference = enemy.transform.position - transform.position;
+                    difference = difference.normalized * thrust;
+                    enemy.AddForce(difference, ForceMode2D.Impulse);
+                    StartCoroutine(KnockCo(enemy));
+                }
+
+            }
+            
         }
 
-        //endEf.transform.position = lineRenderer.GetPosition(1);
-        //if(hit)
-        //{
-        //    lineRenderer.SetPosition(0, firePoint.position);
-        //    lineRenderer.SetPosition(1, hit.point);
-        //    Debug.Log("Hit" + hit);
-        //}
+        endEf.transform.position = lineRenderer.GetPosition(1);
+        Debug.Log(endEf.transform.position);
+    }
 
-        //else
-        //{
-        //    lineRenderer.SetPosition(0, firePoint.position);
-        //    lineRenderer.SetPosition(1, mousePos);
-
-        //}
-       
-
+    IEnumerator KnockCo(Rigidbody2D enemy)
+    {
+        if(enemy != null)
+        {
+            yield return new WaitForSeconds(knockTime);
+            enemy.velocity = Vector2.zero;
+            //enemy.isKinematic = true;
+        }
     }
 
     void DisableLaser()
@@ -93,14 +106,6 @@ public class LaserTest : MonoBehaviour
         for (int i = 0; i < particles.Count; i++)
             particles[i].Stop();
     }
-
-    //void RotateToMouse()
-    //{
-    //    Vector2 direction = cam.ScreenToWorldPoint(Input.mousePosition) - transform.position;
-    //    float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
-    //    rotation.eulerAngles = new Vector3(0, 0, angle);
-    //    transform.rotation = rotation; 
-    //}
 
     void FillLists()
     {
