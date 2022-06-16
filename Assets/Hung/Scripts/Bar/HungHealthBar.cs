@@ -8,7 +8,7 @@ public class HungHealthBar : MonoBehaviour
     public Slider slider;
     public Gradient gradient;
     public Image fill;
-    
+
     // Start is called before the first frame update
     void Start()
     {
@@ -18,7 +18,7 @@ public class HungHealthBar : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+       
     }
 
     public void SetMaxHealth(int health)
