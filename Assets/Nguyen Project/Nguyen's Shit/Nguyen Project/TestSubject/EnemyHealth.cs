@@ -1,26 +1,20 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 
 public class EnemyHealth : MonoBehaviour
 {
-    public float health;
-    public float maxHealth = 300f;
-    public HealthBarEnemy healthBar;
-    
+    public float health = 300;
+
     // Start is called before the first frame update
     void Start()
     {
-        health = maxHealth;
-        healthBar.SetMaxHealth(health);
-        
+       
     }
 
     public void TakeDamage(float dam)
     {
         health -= dam;
-        healthBar.SetHealth(health);
     }
 
     public void Die()

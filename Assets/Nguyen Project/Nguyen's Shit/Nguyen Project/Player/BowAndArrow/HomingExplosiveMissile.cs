@@ -10,7 +10,7 @@ public class HomingExplosiveMissile : MonoBehaviour
     public float speed = 2f;
     public int Timer;
 
-    public float damage = 50.0f;
+    public float damage = 50f;
 
     public float fieldofImpact;
     public float force;

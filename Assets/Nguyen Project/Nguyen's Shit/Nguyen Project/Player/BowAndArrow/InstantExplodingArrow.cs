@@ -6,7 +6,7 @@ public class InstantExplodingArrow : MonoBehaviour
 {
     Rigidbody2D rb;
     bool hasHit;
-    public float damage = 50f;
+    public float damage = 50.0f;
 
     public float fieldofImpact;
     public float force;
