@@ -2,9 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class HungGlue : MonoBehaviour
+public class Glue : MonoBehaviour
 {
-    private HungPlayer player;
+    private PlayerMovementScript player;
     public int damage;
     public float timeStop;
     private Rigidbody2D rb;
@@ -13,7 +13,7 @@ public class HungGlue : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        //player = GameObject.Find("Player").GetComponent<Player>();
+        player = GameObject.Find("Player").GetComponent<PlayerMovementScript>();
         rb = this.GetComponent<Rigidbody2D>();
         anim = this.GetComponent<Animator>();
     }
@@ -42,8 +42,8 @@ public class HungGlue : MonoBehaviour
 
     IEnumerator StopMoving()
     {
-        player.isMoving = false;
+        //player.isMoving = false;
         yield return new WaitForSeconds(timeStop);
-        player.isMoving = true;
+        //player.isMoving = true;
     }
 }
