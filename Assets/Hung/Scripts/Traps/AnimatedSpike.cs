@@ -33,12 +33,9 @@ public class AnimatedSpike : MonoBehaviour
     
     IEnumerator AnimationRoutine()
     {
-        while (true)
-        {
-            animator.SetTrigger("Normal");
-            yield return new WaitForSeconds(timeSeconds);
-            animator.SetTrigger("Reverse");
-            yield return new WaitForSeconds(timeSeconds);
-        }
+        animator.SetTrigger("Normal");
+        yield return new WaitForSeconds(timeSeconds);
+        animator.SetTrigger("Reverse");
+        yield return new WaitForSeconds(timeSeconds);
     }
 }
