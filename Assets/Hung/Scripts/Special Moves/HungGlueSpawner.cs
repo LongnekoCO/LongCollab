@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class GlueSpawner : MonoBehaviour
+public class HungGlueSpawner : MonoBehaviour
 {
     public Rigidbody2D glueRb;
     public float timeStart;
