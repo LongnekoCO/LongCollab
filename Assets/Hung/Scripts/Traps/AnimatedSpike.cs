@@ -15,12 +15,13 @@ public class AnimatedSpike : MonoBehaviour
         //collider = this.GetComponent<Collider2D>();
         player = GameObject.Find("Player").GetComponent<PlayerMovementScript>();
         animator = this.GetComponent<Animator>();
+        InvokeRepeating("AnimationStart", 1f, timeSeconds);
     }
 
     // Update is called once per frame
     void Update()
     {
-        StartCoroutine(AnimationRoutine());
+        
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -30,11 +31,18 @@ public class AnimatedSpike : MonoBehaviour
             player.TakeDamage(20);
         }
     }
+
+    void AnimationStart()
+    {
+        StartCoroutine(AnimationRoutine());
+    }
     
     IEnumerator AnimationRoutine()
     {
         animator.SetTrigger("Normal");
         yield return new WaitForSeconds(timeSeconds);
         animator.SetTrigger("Reverse");
+        yield return new WaitForSeconds(timeSeconds);
+        animator.SetTrigger("Normal");
     }
 }
