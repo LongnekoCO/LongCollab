@@ -21,8 +21,8 @@ public class FireBallShooter : MonoBehaviour
 
     void FireBallShoot()
     {
-        Rigidbody2D latestArrow = Instantiate(fireBall, this.transform.position, Quaternion.identity);
+        Rigidbody2D latestFireball = Instantiate(fireBall, this.transform.position, Quaternion.identity);
 
-        latestArrow.AddForce(new Vector2(500, 0) * speed);
+        latestFireball.AddForce(new Vector2(500, 0) * speed);
     }
 }

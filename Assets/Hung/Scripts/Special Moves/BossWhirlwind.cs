@@ -15,7 +15,7 @@ Change log:
 
 *******************************************************/
 
-public class HungWhirlwind : MonoBehaviour
+public class BossWhirlwind : MonoBehaviour
 {
     private HungBossPatrol bossScript; //a reference to BossPatrol script
     public Rigidbody2D rb2d;

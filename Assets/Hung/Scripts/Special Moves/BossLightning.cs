@@ -15,7 +15,7 @@ Change log:
 
 *******************************************************/
 
-public class HungLightning : MonoBehaviour
+public class BossLightning : MonoBehaviour
 {
     private HungBossPatrol bossScript;
     public GameObject lightning;

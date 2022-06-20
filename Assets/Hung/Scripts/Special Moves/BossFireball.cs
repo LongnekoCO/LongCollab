@@ -14,7 +14,7 @@ Change log:
 
 *******************************************************/
 
-public class HungFireball : MonoBehaviour
+public class BossFireball : MonoBehaviour
 {
     private HungBossPatrol bossScript;
     public Rigidbody2D rb2d;
