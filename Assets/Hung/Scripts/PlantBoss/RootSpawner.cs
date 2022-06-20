@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class HungRootSpawner : MonoBehaviour
+public class RootSpawner : MonoBehaviour
 {
     public GameObject root;
     public GameObject warningSign;

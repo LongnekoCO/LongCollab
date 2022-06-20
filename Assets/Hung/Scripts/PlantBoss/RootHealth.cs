@@ -2,29 +2,29 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class HungRootHealth : MonoBehaviour
+public class RootHealth : MonoBehaviour
 {
     public int health;
     private int maxHealth = 50;
-    private HungPlayer player;
-    public HungHealthBar healthBar;
-    private HungRootSpawner rootSpawner1;
-    private HungRootSpawner rootSpawner2;
-    private HungRootSpawner rootSpawner3;
-    private HungRootSpawner rootSpawner4;
-    private HungRootSpawner rootSpawner5;
-    private HungRootSpawner rootSpawner6;
+    private PlayerMovementScript player;
+    public HealthBar healthBar;
+    private RootSpawner rootSpawner1;
+    private RootSpawner rootSpawner2;
+    private RootSpawner rootSpawner3;
+    private RootSpawner rootSpawner4;
+    private RootSpawner rootSpawner5;
+    private RootSpawner rootSpawner6;
     public GameObject canvas;
     
     // Start is called before the first frame update
     void Start()
     {
-        rootSpawner1 = GameObject.Find("RootSpawner").GetComponent<HungRootSpawner>();
-        rootSpawner2 = GameObject.Find("RootSpawner (1)").GetComponent<HungRootSpawner>();
-        rootSpawner3 = GameObject.Find("RootSpawner (2)").GetComponent<HungRootSpawner>();
-        rootSpawner4 = GameObject.Find("RootSpawner (3)").GetComponent<HungRootSpawner>();
-        rootSpawner5 = GameObject.Find("RootSpawner (4)").GetComponent<HungRootSpawner>();
-        rootSpawner6 = GameObject.Find("RootSpawner (5)").GetComponent<HungRootSpawner>();
+        rootSpawner1 = GameObject.Find("RootSpawner").GetComponent<RootSpawner>();
+        rootSpawner2 = GameObject.Find("RootSpawner (1)").GetComponent<RootSpawner>();
+        rootSpawner3 = GameObject.Find("RootSpawner (2)").GetComponent<RootSpawner>();
+        rootSpawner4 = GameObject.Find("RootSpawner (3)").GetComponent<RootSpawner>();
+        rootSpawner5 = GameObject.Find("RootSpawner (4)").GetComponent<RootSpawner>();
+        rootSpawner6 = GameObject.Find("RootSpawner (5)").GetComponent<RootSpawner>();
         
         health = maxHealth;
         healthBar.SetMaxHealth(health);

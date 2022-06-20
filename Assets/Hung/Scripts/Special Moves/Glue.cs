@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class HungGlue : MonoBehaviour
+public class Glue : MonoBehaviour
 {
     private HungPlayer player;
     public int damage;

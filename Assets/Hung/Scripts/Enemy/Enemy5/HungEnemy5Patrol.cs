@@ -21,7 +21,7 @@ public class HungEnemy5Patrol : MonoBehaviour
     private Collider2D collide2D;
 
     public Transform player;
-    public HungHealthBar healthBar;
+    public HealthBar healthBar;
 
     public float enemyMoveSpeed;
     public float enemyRealMoveSpeed;

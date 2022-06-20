@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class HungPlantBossPatrol : MonoBehaviour
+public class PlantBossPatrol : MonoBehaviour
 {
     private Animator animator;
     private Collider2D collide2D;
@@ -10,7 +10,7 @@ public class HungPlantBossPatrol : MonoBehaviour
     private int bossMaxHealth = 1000;
     public GameObject glueSpawners;
     public GameObject rootSpawners;
-    public HungHealthBar healthBar;
+    public HealthBar healthBar;
     
     // Start is called before the first frame update
     void Start()

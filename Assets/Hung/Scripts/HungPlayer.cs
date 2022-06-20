@@ -22,7 +22,7 @@ public class HungPlayer : MonoBehaviour
     private HungWhirlwindHit whirlwindHit;
     public GameObject windPraticle;
     public GameObject lightningPraticle;
-    public HungHealthBar healthBar;
+    public HealthBar healthBar;
 
     // Start is called before the first frame update
     void Start()

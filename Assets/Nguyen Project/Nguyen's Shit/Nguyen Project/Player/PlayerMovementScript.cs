@@ -15,7 +15,7 @@ public class PlayerMovementScript : MonoBehaviour
     public int health = 100; //testing only
 
     public int currentHealth;
-    public HungHealthBar healthBar;
+    public HealthBar healthBar;
 
     public float jumpForce;
     public bool isGrounded;
