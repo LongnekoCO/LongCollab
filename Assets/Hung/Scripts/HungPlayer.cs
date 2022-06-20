@@ -19,7 +19,7 @@ public class HungPlayer : MonoBehaviour
     public int playerCurrentHealth;
     public float moveSpeed;
     public bool isMoving = true;
-    private HungWhirlwindHit whirlwindHit;
+    private WhirlwindHit whirlwindHit;
     public GameObject windPraticle;
     public GameObject lightningPraticle;
     public HealthBar healthBar;
