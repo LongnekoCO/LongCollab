@@ -17,7 +17,7 @@ public class Shield : MonoBehaviour
     public int health = 100; //testing only
 
     public int currentHealth;
-    public HungHealthBar shieldHealthBar;
+    public HealthBar shieldHealthBar;
 
     Sprite shieldImagee;
     public GameObject shieldImage;

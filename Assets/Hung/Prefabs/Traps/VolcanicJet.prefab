@@ -71,13 +71,13 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: -2413806693520163455, guid: ebe73ca9363db456bacf42c025bb4847, type: 3}
+  m_SortingOrder: -1
+  m_Sprite: {fileID: 21300000, guid: b1e2bb5a32fee96498075a860def4696, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 10.24, y: 10.24}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -95,4 +95,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 24ddb942e1d8c25458e0248c690f667f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lava: {fileID: 0}
+  lava: {fileID: 7548268402713793778, guid: 1ddf7270642f18b4db8d88f3eadc246b, type: 3}

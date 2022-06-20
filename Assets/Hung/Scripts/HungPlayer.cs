@@ -19,10 +19,10 @@ public class HungPlayer : MonoBehaviour
     public int playerCurrentHealth;
     public float moveSpeed;
     public bool isMoving = true;
-    private HungWhirlwindHit whirlwindHit;
+    private WhirlwindHit whirlwindHit;
     public GameObject windPraticle;
     public GameObject lightningPraticle;
-    public HungHealthBar healthBar;
+    public HealthBar healthBar;
 
     // Start is called before the first frame update
     void Start()

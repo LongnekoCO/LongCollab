@@ -21,8 +21,8 @@ public class HungBossPatrol : MonoBehaviour
     private Animator anim;
     private Rigidbody2D rb2d;
     private Collider2D collide2D;
-    private HungFireball fireballScript; //a reference to Fireball script
-    private HungIceball iceballScript; //a reference to Iceball script
+    private BossFireball fireballScript; //a reference to Fireball script
+    private BossIceball iceballScript; //a reference to Iceball script
 
     public float bossMoveSpeed;
     public Transform target;
@@ -48,8 +48,8 @@ public class HungBossPatrol : MonoBehaviour
         anim = this.GetComponent<Animator>(); //get access to the animation
         rb2d = this.GetComponent<Rigidbody2D>(); //get access to the Rigidbody2D
         collide2D = this.GetComponent<BoxCollider2D>(); //get access to the BoxCollider2D
-        fireballScript = GameObject.Find("BossAttackBox").GetComponent<HungFireball>(); //get access to Fireball script
-        iceballScript = GameObject.Find("BossAttackBox").GetComponent<HungIceball>(); //get access to Iceball script
+        fireballScript = GameObject.Find("BossAttackBox").GetComponent<BossFireball>(); //get access to Fireball script
+        iceballScript = GameObject.Find("BossAttackBox").GetComponent<BossIceball>(); //get access to Iceball script
 
         //boss health
         bossHP = bossCurrentHP;
