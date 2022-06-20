@@ -21,8 +21,8 @@ public class IceBallShooter : MonoBehaviour
 
     void IceBallShoot()
     {
-        Rigidbody2D latestArrow = Instantiate(iceBall, this.transform.position, Quaternion.identity);
+        Rigidbody2D latestIceball = Instantiate(iceBall, this.transform.position, Quaternion.identity);
 
-        latestArrow.AddForce(new Vector2(500, 0) * speed);
+        latestIceball.AddForce(new Vector2(500, 0) * speed);
     }
 }

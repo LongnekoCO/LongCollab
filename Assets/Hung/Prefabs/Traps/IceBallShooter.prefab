@@ -10,8 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 5722561551378469986}
   - component: {fileID: 5722561551378469987}
-  - component: {fileID: 5722561551378469984}
   - component: {fileID: 3119804611110568317}
+  - component: {fileID: 5722561551378469984}
   m_Layer: 0
   m_Name: IceBallShooter
   m_TagString: Untagged
@@ -72,7 +72,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 8f67756aecdd2f64b9a6b869d99a0532, type: 3}
   m_Color: {r: 0, g: 1, b: 0.9226117, a: 1}
   m_FlipX: 0
@@ -84,20 +84,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &5722561551378469984
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5722561551378469985}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 864fbe107b0af69488a627f7f9af8863, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  iceBall: {fileID: 1288026272844078083, guid: fcbb3a2d986584d4ab529a0ddedf92f9, type: 3}
-  speed: 2
 --- !u!61 &3119804611110568317
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -124,3 +110,17 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.46, y: 0.46}
   m_EdgeRadius: 0
+--- !u!114 &5722561551378469984
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5722561551378469985}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 864fbe107b0af69488a627f7f9af8863, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  iceBall: {fileID: 1288026272844078083, guid: fcbb3a2d986584d4ab529a0ddedf92f9, type: 3}
+  speed: 2

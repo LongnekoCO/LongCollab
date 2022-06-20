@@ -15,7 +15,7 @@ Change log:
 
 *******************************************************/
 
-public class HungIceball : MonoBehaviour
+public class BossIceball : MonoBehaviour
 {
     private HungBossPatrol bossScript;
     public Rigidbody2D rb2d;
