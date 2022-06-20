@@ -274,12 +274,12 @@ TextureImporter:
       name: Snow 2D Game Tileset Pixel Art - CraftPix_net_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 787.5
-        width: 144
-        height: 157.5
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 23
+        y: 794
+        width: 95
+        height: 95
+      alignment: 1
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -295,12 +295,12 @@ TextureImporter:
       name: Snow 2D Game Tileset Pixel Art - CraftPix_net_1
       rect:
         serializedVersion: 2
-        x: 144
-        y: 787.5
-        width: 144
-        height: 157.5
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 168
+        y: 794
+        width: 95
+        height: 95
+      alignment: 1
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -316,12 +316,12 @@ TextureImporter:
       name: Snow 2D Game Tileset Pixel Art - CraftPix_net_2
       rect:
         serializedVersion: 2
-        x: 288
-        y: 787.5
-        width: 144
-        height: 157.5
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 312
+        y: 794
+        width: 95
+        height: 95
+      alignment: 1
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -337,12 +337,12 @@ TextureImporter:
       name: Snow 2D Game Tileset Pixel Art - CraftPix_net_3
       rect:
         serializedVersion: 2
-        x: 432
-        y: 787.5
-        width: 144
-        height: 157.5
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 456
+        y: 794
+        width: 95
+        height: 95
+      alignment: 1
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -358,12 +358,12 @@ TextureImporter:
       name: Snow 2D Game Tileset Pixel Art - CraftPix_net_4
       rect:
         serializedVersion: 2
-        x: 576
-        y: 787.5
-        width: 144
-        height: 157.5
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 599
+        y: 793
+        width: 95
+        height: 95
+      alignment: 1
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -379,12 +379,12 @@ TextureImporter:
       name: Snow 2D Game Tileset Pixel Art - CraftPix_net_5
       rect:
         serializedVersion: 2
-        x: 720
-        y: 787.5
-        width: 144
-        height: 157.5
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 744
+        y: 793
+        width: 95
+        height: 95
+      alignment: 1
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -400,12 +400,12 @@ TextureImporter:
       name: Snow 2D Game Tileset Pixel Art - CraftPix_net_6
       rect:
         serializedVersion: 2
-        x: 864
-        y: 787.5
-        width: 144
-        height: 157.5
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 887
+        y: 794
+        width: 95
+        height: 95
+      alignment: 1
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -421,12 +421,12 @@ TextureImporter:
       name: Snow 2D Game Tileset Pixel Art - CraftPix_net_7
       rect:
         serializedVersion: 2
-        x: 1008
-        y: 787.5
-        width: 144
-        height: 157.5
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 1031
+        y: 794
+        width: 95
+        height: 95
+      alignment: 1
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -442,12 +442,12 @@ TextureImporter:
       name: Snow 2D Game Tileset Pixel Art - CraftPix_net_8
       rect:
         serializedVersion: 2
-        x: 1152
-        y: 787.5
-        width: 144
-        height: 157.5
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 1176
+        y: 794
+        width: 95
+        height: 95
+      alignment: 1
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -463,12 +463,12 @@ TextureImporter:
       name: Snow 2D Game Tileset Pixel Art - CraftPix_net_9
       rect:
         serializedVersion: 2
-        x: 1296
-        y: 787.5
-        width: 144
-        height: 157.5
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 1320
+        y: 794
+        width: 95
+        height: 95
+      alignment: 1
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -484,12 +484,12 @@ TextureImporter:
       name: Snow 2D Game Tileset Pixel Art - CraftPix_net_10
       rect:
         serializedVersion: 2
-        x: 0
-        y: 630.5
-        width: 144
-        height: 157.5
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 23
+        y: 649
+        width: 95
+        height: 95
+      alignment: 1
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -505,12 +505,12 @@ TextureImporter:
       name: Snow 2D Game Tileset Pixel Art - CraftPix_net_11
       rect:
         serializedVersion: 2
-        x: 144
-        y: 630.5
-        width: 144
-        height: 157.5
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 167
+        y: 649
+        width: 95
+        height: 95
+      alignment: 1
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -526,12 +526,12 @@ TextureImporter:
       name: Snow 2D Game Tileset Pixel Art - CraftPix_net_12
       rect:
         serializedVersion: 2
-        x: 288
-        y: 630.5
-        width: 144
-        height: 157.5
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 312
+        y: 650
+        width: 95
+        height: 95
+      alignment: 1
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -547,12 +547,12 @@ TextureImporter:
       name: Snow 2D Game Tileset Pixel Art - CraftPix_net_13
       rect:
         serializedVersion: 2
-        x: 432
-        y: 630.5
-        width: 144
-        height: 157.5
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 456
+        y: 649
+        width: 95
+        height: 95
+      alignment: 1
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -568,12 +568,12 @@ TextureImporter:
       name: Snow 2D Game Tileset Pixel Art - CraftPix_net_14
       rect:
         serializedVersion: 2
-        x: 576
-        y: 630.5
-        width: 144
-        height: 157.5
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 600
+        y: 650
+        width: 95
+        height: 95
+      alignment: 1
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -589,12 +589,12 @@ TextureImporter:
       name: Snow 2D Game Tileset Pixel Art - CraftPix_net_15
       rect:
         serializedVersion: 2
-        x: 720
-        y: 630.5
-        width: 144
-        height: 157.5
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 743
+        y: 650
+        width: 95
+        height: 95
+      alignment: 1
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -610,12 +610,12 @@ TextureImporter:
       name: Snow 2D Game Tileset Pixel Art - CraftPix_net_16
       rect:
         serializedVersion: 2
-        x: 864
-        y: 630.5
-        width: 144
-        height: 157.5
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 888
+        y: 649
+        width: 95
+        height: 95
+      alignment: 1
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -631,12 +631,12 @@ TextureImporter:
       name: Snow 2D Game Tileset Pixel Art - CraftPix_net_17
       rect:
         serializedVersion: 2
-        x: 1008
-        y: 630.5
-        width: 144
-        height: 157.5
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 1032
+        y: 649
+        width: 95
+        height: 95
+      alignment: 1
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -652,12 +652,12 @@ TextureImporter:
       name: Snow 2D Game Tileset Pixel Art - CraftPix_net_18
       rect:
         serializedVersion: 2
-        x: 1152
-        y: 630.5
-        width: 144
-        height: 157.5
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 1176
+        y: 649
+        width: 95
+        height: 95
+      alignment: 1
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -673,12 +673,12 @@ TextureImporter:
       name: Snow 2D Game Tileset Pixel Art - CraftPix_net_19
       rect:
         serializedVersion: 2
-        x: 1296
-        y: 630.5
-        width: 144
-        height: 157.5
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 1319
+        y: 650
+        width: 95
+        height: 95
+      alignment: 1
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -694,12 +694,12 @@ TextureImporter:
       name: Snow 2D Game Tileset Pixel Art - CraftPix_net_20
       rect:
         serializedVersion: 2
-        x: 0
-        y: 473.5
-        width: 144
-        height: 157.5
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 23
+        y: 505
+        width: 95
+        height: 95
+      alignment: 1
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -715,12 +715,12 @@ TextureImporter:
       name: Snow 2D Game Tileset Pixel Art - CraftPix_net_21
       rect:
         serializedVersion: 2
-        x: 144
-        y: 473.5
-        width: 144
-        height: 157.5
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 167
+        y: 505
+        width: 95
+        height: 95
+      alignment: 1
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -736,12 +736,12 @@ TextureImporter:
       name: Snow 2D Game Tileset Pixel Art - CraftPix_net_22
       rect:
         serializedVersion: 2
-        x: 288
-        y: 473.5
-        width: 144
-        height: 157.5
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 312
+        y: 505
+        width: 95
+        height: 95
+      alignment: 1
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -757,12 +757,12 @@ TextureImporter:
       name: Snow 2D Game Tileset Pixel Art - CraftPix_net_23
       rect:
         serializedVersion: 2
-        x: 432
-        y: 473.5
-        width: 144
-        height: 157.5
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 456
+        y: 505
+        width: 95
+        height: 95
+      alignment: 1
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -778,12 +778,12 @@ TextureImporter:
       name: Snow 2D Game Tileset Pixel Art - CraftPix_net_24
       rect:
         serializedVersion: 2
-        x: 576
-        y: 473.5
-        width: 144
-        height: 157.5
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 600
+        y: 505
+        width: 95
+        height: 95
+      alignment: 1
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -799,12 +799,12 @@ TextureImporter:
       name: Snow 2D Game Tileset Pixel Art - CraftPix_net_25
       rect:
         serializedVersion: 2
-        x: 720
-        y: 473.5
-        width: 144
-        height: 157.5
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 744
+        y: 505
+        width: 95
+        height: 95
+      alignment: 1
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -820,12 +820,12 @@ TextureImporter:
       name: Snow 2D Game Tileset Pixel Art - CraftPix_net_26
       rect:
         serializedVersion: 2
-        x: 864
-        y: 473.5
-        width: 144
-        height: 157.5
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 888
+        y: 505
+        width: 95
+        height: 95
+      alignment: 1
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -841,12 +841,12 @@ TextureImporter:
       name: Snow 2D Game Tileset Pixel Art - CraftPix_net_27
       rect:
         serializedVersion: 2
-        x: 1008
-        y: 473.5
-        width: 144
-        height: 157.5
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 1032
+        y: 505
+        width: 95
+        height: 95
+      alignment: 1
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -862,12 +862,12 @@ TextureImporter:
       name: Snow 2D Game Tileset Pixel Art - CraftPix_net_28
       rect:
         serializedVersion: 2
-        x: 1152
-        y: 473.5
-        width: 144
-        height: 157.5
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 1176
+        y: 505
+        width: 95
+        height: 95
+      alignment: 1
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -883,12 +883,12 @@ TextureImporter:
       name: Snow 2D Game Tileset Pixel Art - CraftPix_net_29
       rect:
         serializedVersion: 2
-        x: 1296
-        y: 473.5
-        width: 144
-        height: 157.5
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 1319
+        y: 506
+        width: 95
+        height: 95
+      alignment: 1
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -904,12 +904,12 @@ TextureImporter:
       name: Snow 2D Game Tileset Pixel Art - CraftPix_net_30
       rect:
         serializedVersion: 2
-        x: 0
-        y: 316.5
-        width: 144
-        height: 157.5
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 23
+        y: 361
+        width: 96
+        height: 96
+      alignment: 1
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -925,12 +925,12 @@ TextureImporter:
       name: Snow 2D Game Tileset Pixel Art - CraftPix_net_31
       rect:
         serializedVersion: 2
-        x: 144
-        y: 316.5
-        width: 144
-        height: 157.5
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 167
+        y: 361
+        width: 95
+        height: 96
+      alignment: 1
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -946,12 +946,12 @@ TextureImporter:
       name: Snow 2D Game Tileset Pixel Art - CraftPix_net_32
       rect:
         serializedVersion: 2
-        x: 288
-        y: 316.5
-        width: 144
-        height: 157.5
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 311
+        y: 361
+        width: 95
+        height: 96
+      alignment: 1
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -967,12 +967,12 @@ TextureImporter:
       name: Snow 2D Game Tileset Pixel Art - CraftPix_net_33
       rect:
         serializedVersion: 2
-        x: 432
-        y: 316.5
-        width: 144
-        height: 157.5
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 456
+        y: 361
+        width: 95
+        height: 96
+      alignment: 1
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -988,12 +988,12 @@ TextureImporter:
       name: Snow 2D Game Tileset Pixel Art - CraftPix_net_34
       rect:
         serializedVersion: 2
-        x: 576
-        y: 316.5
-        width: 144
-        height: 157.5
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 599
+        y: 362
+        width: 95
+        height: 95
+      alignment: 1
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1009,12 +1009,12 @@ TextureImporter:
       name: Snow 2D Game Tileset Pixel Art - CraftPix_net_35
       rect:
         serializedVersion: 2
-        x: 720
-        y: 316.5
-        width: 144
-        height: 157.5
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 743
+        y: 362
+        width: 95
+        height: 95
+      alignment: 1
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1030,12 +1030,12 @@ TextureImporter:
       name: Snow 2D Game Tileset Pixel Art - CraftPix_net_36
       rect:
         serializedVersion: 2
-        x: 864
-        y: 316.5
-        width: 144
-        height: 157.5
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 887
+        y: 362
+        width: 95
+        height: 95
+      alignment: 1
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1051,12 +1051,12 @@ TextureImporter:
       name: Snow 2D Game Tileset Pixel Art - CraftPix_net_37
       rect:
         serializedVersion: 2
-        x: 1008
-        y: 316.5
-        width: 144
-        height: 157.5
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 1031
+        y: 362
+        width: 95
+        height: 95
+      alignment: 1
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1072,13 +1072,13 @@ TextureImporter:
       name: Snow 2D Game Tileset Pixel Art - CraftPix_net_38
       rect:
         serializedVersion: 2
-        x: 1158
-        y: 359
-        width: 144
-        height: 124
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 30, z: 0, w: 14}
+        x: 1175
+        y: 362
+        width: 95
+        height: 95
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -1093,12 +1093,12 @@ TextureImporter:
       name: Snow 2D Game Tileset Pixel Art - CraftPix_net_39
       rect:
         serializedVersion: 2
-        x: 1296
-        y: 316.5
-        width: 144
-        height: 157.5
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 1319
+        y: 362
+        width: 95
+        height: 95
+      alignment: 1
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1114,12 +1114,12 @@ TextureImporter:
       name: Snow 2D Game Tileset Pixel Art - CraftPix_net_40
       rect:
         serializedVersion: 2
-        x: 0
-        y: 182
-        width: 144
-        height: 158
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 23
+        y: 218
+        width: 95
+        height: 95
+      alignment: 1
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1135,12 +1135,12 @@ TextureImporter:
       name: Snow 2D Game Tileset Pixel Art - CraftPix_net_41
       rect:
         serializedVersion: 2
-        x: 145
-        y: 178
-        width: 144
-        height: 158
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 167
+        y: 218
+        width: 95
+        height: 95
+      alignment: 1
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1156,12 +1156,12 @@ TextureImporter:
       name: Snow 2D Game Tileset Pixel Art - CraftPix_net_42
       rect:
         serializedVersion: 2
-        x: 284
-        y: 185
-        width: 144
-        height: 158
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 311
+        y: 218
+        width: 95
+        height: 95
+      alignment: 1
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1177,12 +1177,12 @@ TextureImporter:
       name: Snow 2D Game Tileset Pixel Art - CraftPix_net_43
       rect:
         serializedVersion: 2
-        x: 431
-        y: 175
-        width: 144
-        height: 158
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 456
+        y: 217
+        width: 95
+        height: 95
+      alignment: 1
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1198,12 +1198,12 @@ TextureImporter:
       name: Snow 2D Game Tileset Pixel Art - CraftPix_net_44
       rect:
         serializedVersion: 2
-        x: 574
-        y: 182
-        width: 144
-        height: 158
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 600
+        y: 218
+        width: 95
+        height: 95
+      alignment: 1
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1219,12 +1219,12 @@ TextureImporter:
       name: Snow 2D Game Tileset Pixel Art - CraftPix_net_45
       rect:
         serializedVersion: 2
-        x: 718
-        y: 177
-        width: 144
-        height: 158
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 744
+        y: 217
+        width: 95
+        height: 95
+      alignment: 1
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1240,12 +1240,12 @@ TextureImporter:
       name: Snow 2D Game Tileset Pixel Art - CraftPix_net_46
       rect:
         serializedVersion: 2
-        x: 866
-        y: 179
-        width: 144
-        height: 158
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 887
+        y: 217
+        width: 96
+        height: 96
+      alignment: 1
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1261,12 +1261,12 @@ TextureImporter:
       name: Snow 2D Game Tileset Pixel Art - CraftPix_net_47
       rect:
         serializedVersion: 2
-        x: 1009
-        y: 179
-        width: 144
-        height: 158
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 1031
+        y: 217
+        width: 96
+        height: 96
+      alignment: 1
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1282,13 +1282,13 @@ TextureImporter:
       name: Snow 2D Game Tileset Pixel Art - CraftPix_net_48
       rect:
         serializedVersion: 2
-        x: 1143
-        y: 237
-        width: 148
-        height: 129
-      alignment: 9
-      pivot: {x: 0.7129525, y: 0.3975442}
-      border: {x: 52, y: 102, z: 0, w: 0}
+        x: 1175
+        y: 218
+        width: 95
+        height: 95
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -1303,12 +1303,12 @@ TextureImporter:
       name: Snow 2D Game Tileset Pixel Art - CraftPix_net_49
       rect:
         serializedVersion: 2
-        x: 1296
-        y: 177
-        width: 144
-        height: 158
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 1319
+        y: 218
+        width: 95
+        height: 95
+      alignment: 1
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1324,12 +1324,12 @@ TextureImporter:
       name: Snow 2D Game Tileset Pixel Art - CraftPix_net_50
       rect:
         serializedVersion: 2
-        x: 2
-        y: 36
-        width: 144
-        height: 158
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 23
+        y: 73
+        width: 95
+        height: 95
+      alignment: 1
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1345,12 +1345,12 @@ TextureImporter:
       name: Snow 2D Game Tileset Pixel Art - CraftPix_net_51
       rect:
         serializedVersion: 2
-        x: 146
-        y: 35
-        width: 144
-        height: 158
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 168
+        y: 73
+        width: 95
+        height: 95
+      alignment: 1
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1366,12 +1366,12 @@ TextureImporter:
       name: Snow 2D Game Tileset Pixel Art - CraftPix_net_52
       rect:
         serializedVersion: 2
-        x: 288
-        y: 28
-        width: 144
-        height: 158
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 311
+        y: 73
+        width: 95
+        height: 95
+      alignment: 1
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1387,12 +1387,12 @@ TextureImporter:
       name: Snow 2D Game Tileset Pixel Art - CraftPix_net_53
       rect:
         serializedVersion: 2
-        x: 433
-        y: 23
-        width: 144
-        height: 158
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 455
+        y: 73
+        width: 96
+        height: 96
+      alignment: 1
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1408,12 +1408,12 @@ TextureImporter:
       name: Snow 2D Game Tileset Pixel Art - CraftPix_net_54
       rect:
         serializedVersion: 2
-        x: 575
-        y: 26
-        width: 144
-        height: 158
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 599
+        y: 74
+        width: 96
+        height: 95
+      alignment: 1
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1429,12 +1429,12 @@ TextureImporter:
       name: Snow 2D Game Tileset Pixel Art - CraftPix_net_55
       rect:
         serializedVersion: 2
-        x: 720
-        y: 23
-        width: 144
-        height: 158
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 743
+        y: 73
+        width: 96
+        height: 96
+      alignment: 1
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1450,12 +1450,12 @@ TextureImporter:
       name: Snow 2D Game Tileset Pixel Art - CraftPix_net_56
       rect:
         serializedVersion: 2
-        x: 865
-        y: 26
-        width: 144
-        height: 158
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 888
+        y: 74
+        width: 95
+        height: 95
+      alignment: 1
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1471,12 +1471,12 @@ TextureImporter:
       name: Snow 2D Game Tileset Pixel Art - CraftPix_net_57
       rect:
         serializedVersion: 2
-        x: 1007
-        y: 27
-        width: 144
-        height: 158
-      alignment: 9
-      pivot: {x: 0.54388684, y: 0.49333403}
+        x: 1032
+        y: 73
+        width: 95
+        height: 95
+      alignment: 1
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1492,13 +1492,13 @@ TextureImporter:
       name: Snow 2D Game Tileset Pixel Art - CraftPix_net_58
       rect:
         serializedVersion: 2
-        x: 1152
-        y: 101
-        width: 144
-        height: 87
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 46, w: 0}
+        x: 1176
+        y: 74
+        width: 95
+        height: 95
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -1513,12 +1513,12 @@ TextureImporter:
       name: Snow 2D Game Tileset Pixel Art - CraftPix_net_59
       rect:
         serializedVersion: 2
-        x: 1296
-        y: 2.5
-        width: 144
-        height: 157.5
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 1319
+        y: 74
+        width: 95
+        height: 95
+      alignment: 1
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
