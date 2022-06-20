@@ -28,7 +28,7 @@ public class AnimatedSpike : MonoBehaviour
     {
         if (collision.gameObject.tag == "Player")
         {
-            player.TakeDamage(20);
+            player.TakeDamage(10);
         }
     }
 
