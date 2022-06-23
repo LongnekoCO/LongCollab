@@ -5,7 +5,6 @@ using UnityEngine.SceneManagement;
 
 public class HungRestartLevel : MonoBehaviour
 {
-    public Scene forestScene;
     private PlayerMovementScript player;
 
     // Start is called before the first frame update
@@ -19,12 +18,12 @@ public class HungRestartLevel : MonoBehaviour
     {
         if (player.currentHealth <= 0)
         {
-            Invoke("ReloadForestLevel", 2f);
+            Invoke("ReloadLevel", 0.5f);
         }
     }
 
-    void ReloadForestLevel()
+    void ReloadLevel()
     {
-        SceneManager.LoadScene("ForestScene");
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 }
