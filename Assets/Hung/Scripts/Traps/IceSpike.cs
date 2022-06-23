@@ -21,7 +21,23 @@ public class IceSpike : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        Physics2D.queriesStartInColliders = false;
+
+        if (isFalling == false)
+        {
+            RaycastHit2D hit = Physics2D.Raycast(this.transform.position, Vector2.down, distance);
+
+            Debug.DrawRay(this.transform.position, Vector2.down * distance, Color.red);
+
+            if (hit.transform != null)
+            {
+                if (hit.transform.tag == "Player")
+                {
+                    Invoke("IceSpikeFalling", 0.5f);
+                    
+                }
+            }
+        }
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -35,5 +51,11 @@ public class IceSpike : MonoBehaviour
         {
             Destroy(this.gameObject);
         }
+    }
+
+    void IceSpikeFalling()
+    {
+        rigidbody2d.gravityScale = 5;
+        isFalling = true;
     }
 }

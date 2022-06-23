@@ -30,7 +30,7 @@ public class IceballHit : MonoBehaviour
             Destroy(this.gameObject);
             StartCoroutine(TimeFreeze());
         }
-        else if (collision.gameObject.tag == "Wall")
+        else if (collision.gameObject.tag == "Ground")
         {
             Instantiate(praticleHit, this.transform.position, Quaternion.identity);
             Destroy(this.gameObject);
