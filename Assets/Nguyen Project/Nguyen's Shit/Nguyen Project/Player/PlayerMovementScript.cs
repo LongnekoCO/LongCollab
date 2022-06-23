@@ -8,7 +8,7 @@ public class PlayerMovementScript : MonoBehaviour
     public bool facingRight = true;
     //Animator anim;
     public Rigidbody2D playerRigidbody;
-
+   
 
     //public int health = 20; //testing only
 
@@ -313,6 +313,9 @@ public class PlayerMovementScript : MonoBehaviour
             
     }
 
+
+    
+
     //void Movement()
     //{
     //    Vector3 playerPosition = this.transform.position;
@@ -330,7 +333,7 @@ public class PlayerMovementScript : MonoBehaviour
     //                Flip();
     //                //bow1.Flip();
     //            }
-                
+
     //            if (Input.GetKeyDown(KeyCode.RightShift) && canDash == true)
     //            {
     //                Vector3 temp = new Vector3(this.transform.position.x, this.transform.position.y, this.transform.position.z);
@@ -362,7 +365,7 @@ public class PlayerMovementScript : MonoBehaviour
     //                    powerScript.UseEnergy(20);
     //                    StartCoroutine(Dash());
     //                }
-                    
+
     //            }
     //        }
     //        else
@@ -424,6 +427,8 @@ public class PlayerMovementScript : MonoBehaviour
             }
 
         }
+
+        
     }
 
     public void TakeDamage(int damage)

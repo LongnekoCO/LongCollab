@@ -1084,6 +1084,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 862465728}
+  - component: {fileID: 862465729}
   m_Layer: 0
   m_Name: ------Door-------
   m_TagString: Untagged
@@ -1110,6 +1111,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &862465729
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 862465727}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37a793dd3c95cfe4a92df58e94e92c80, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &940425398
 GameObject:
   m_ObjectHideFlags: 0
@@ -2542,6 +2555,7 @@ GameObject:
   - component: {fileID: 1697675651}
   - component: {fileID: 1697675653}
   - component: {fileID: 1697675652}
+  - component: {fileID: 1697675654}
   m_Layer: 0
   m_Name: Doors_Tutorial
   m_TagString: Untagged
@@ -2659,6 +2673,18 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.67, y: 4.1916947}
   m_EdgeRadius: 0
+--- !u!114 &1697675654
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1697675649}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 27670f6ef587d6642adbdae59b2cb2db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1730565272
 GameObject:
   m_ObjectHideFlags: 0
@@ -2706,6 +2732,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 74420e01bd51254459dcadbd88e7dc88, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1773341332
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1773341321}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 27670f6ef587d6642adbdae59b2cb2db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1851770872
