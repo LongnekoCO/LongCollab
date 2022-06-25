@@ -6,13 +6,11 @@ public class FireBallShooter : MonoBehaviour
 {
     public Rigidbody2D fireBall;
     public float speed;
-    private bool facingRight;
     
     // Start is called before the first frame update
     void Start()
     {
         InvokeRepeating("FireBallShoot", 1f, 5f);
-        facingRight = true;
     }
 
     // Update is called once per frame
@@ -29,7 +27,11 @@ public class FireBallShooter : MonoBehaviour
 
             latestFireball.AddForce(new Vector2(500, 0) * speed);
 
-            FireballFlip();
+            Vector2 ballFlip = fireBall.transform.localScale;
+
+            ballFlip.x = ballFlip.x * 1;
+
+            fireBall.transform.localScale = ballFlip;
         }
         else if (this.transform.localScale.x <= -1)
         {
@@ -37,16 +39,11 @@ public class FireBallShooter : MonoBehaviour
 
             latestFireball.AddForce(new Vector2(-500, 0) * speed);
 
-            FireballFlip();
-        }
-    }
+            Vector2 ballFlip = fireBall.transform.localScale;
 
-    public void FireballFlip()
-    {
-        //Debug.Log("flip");
-        Vector2 ballFlip = fireBall.transform.localScale;
-        ballFlip.x = ballFlip.x * -1;
-        fireBall.transform.localScale = ballFlip;
-        facingRight = !facingRight;
+            ballFlip.x = ballFlip.x * -1;
+
+            fireBall.transform.localScale = ballFlip;
+        }
     }
 }

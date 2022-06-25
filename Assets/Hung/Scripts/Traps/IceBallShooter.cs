@@ -6,13 +6,11 @@ public class IceBallShooter : MonoBehaviour
 {
     public Rigidbody2D iceBall;
     public float speed;
-    private bool facingRight;
 
     // Start is called before the first frame update
     void Start()
     {
         InvokeRepeating("IceBallShoot", 1f, 5f);
-        facingRight = true;
     }
 
     // Update is called once per frame
@@ -29,7 +27,13 @@ public class IceBallShooter : MonoBehaviour
 
             latestIceBall.AddForce(new Vector2(500, 0) * speed);
 
-            IceballFlip();
+            Vector2 ballFlip = iceBall.transform.localScale;
+
+            ballFlip.x = ballFlip.x * 1;
+
+            iceBall.transform.transform.localScale = ballFlip;
+
+            Debug.Log(iceBall.transform.localScale);
         }
         else if (this.transform.localScale.x <= -1)
         {
@@ -37,16 +41,13 @@ public class IceBallShooter : MonoBehaviour
 
             latestIceBall.AddForce(new Vector2(-500, 0) * speed);
 
-            IceballFlip();
-        }
-    }
+            Vector2 ballFlip = iceBall.transform.localScale;
 
-    public void IceballFlip()
-    {
-        //Debug.Log("flip");
-        Vector2 ballFlip = iceBall.transform.localScale;
-        ballFlip.x = ballFlip.x * -1;
-        iceBall.transform.localScale = ballFlip;
-        facingRight = !facingRight;
+            ballFlip.x = ballFlip.x * -1;
+
+            iceBall.transform.transform.localScale = ballFlip;
+
+            Debug.Log(iceBall.transform.localScale);
+        }
     }
 }

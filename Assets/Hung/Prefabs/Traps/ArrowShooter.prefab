@@ -122,5 +122,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 48b3d8a463edad34c8dccac37dd286ad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  arrow: {fileID: -2769489143497173177, guid: 2344f51b4bf8c80499be6565a0f36951, type: 3}
-  arrowSpeed: 2
+  arrow: {fileID: 7788966119033297627, guid: 8517f76126f16d647a704ecbf0ae7cf5, type: 3}
+  speed: 2
