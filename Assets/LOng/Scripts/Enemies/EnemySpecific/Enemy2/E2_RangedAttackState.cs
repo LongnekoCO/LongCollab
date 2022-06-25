@@ -5,7 +5,7 @@ using UnityEngine;
 public class E2_RangedAttackState : RangedAttackState
 {
     private Enemy2 enemy;
-
+    private PlayerMovementScript player;
     public E2_RangedAttackState(Entity etity, FiniteStateMachine stateMachine, string animBoolName, Transform attackPosition, D_RangedAttackState stateData, Enemy2 enemy) : base(etity, stateMachine, animBoolName, attackPosition, stateData)
     {
         this.enemy = enemy;
@@ -55,7 +55,10 @@ public class E2_RangedAttackState : RangedAttackState
 
     public override void TriggerAttack()
     {
+        
+        player = GameObject.FindWithTag("Player").GetComponent<PlayerMovementScript>();
         base.TriggerAttack();
+        //player.TakeDamage(20);
     }
 }
     

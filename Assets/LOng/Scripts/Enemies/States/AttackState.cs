@@ -5,7 +5,7 @@ using UnityEngine;
 public class AttackState : State
 {
     protected Transform attackPosition;
-
+    
     protected bool isAnimationFinished;
     protected bool isPlayerInMinAgroRange;
 

@@ -9,7 +9,7 @@ public class LongProjectile : MonoBehaviour
     private float speed;
     private float travelDistance;
     private float xStartPos;
-
+    public PlayerMovementScript player;
     [SerializeField]
     private float gravity;
     [SerializeField]
@@ -29,6 +29,7 @@ public class LongProjectile : MonoBehaviour
 
     private void Start()
     {
+        player = GameObject.FindWithTag("Player").GetComponent<PlayerMovementScript>();
         rb = GetComponent<Rigidbody2D>();
 
         rb.gravityScale = 0.0f;
@@ -62,6 +63,7 @@ public class LongProjectile : MonoBehaviour
 
             if (damageHit)
             {
+                player.TakeDamage(20);
                 //damageHit.transform.SendMessage("Damage", attackDetails);
                 Destroy(gameObject);
             }

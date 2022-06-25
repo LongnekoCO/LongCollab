@@ -44,13 +44,14 @@ public class MeleeAttackState : AttackState
     public override void TriggerAttack()
     {
         base.TriggerAttack();
-
+    
         Collider2D[] detectedObjects = Physics2D.OverlapCircleAll(attackPosition.position, stateData.attackRadius, stateData.whatIsPlayer);
 
         foreach (Collider2D collider in detectedObjects)
         {
             IDamageable damageable = collider.GetComponent<IDamageable>();
-
+            //Debug.Log(detectedObjects);
+            PlayerMovementScript player;
             if(damageable != null)
             {
                 damageable.Damage(stateData.attackDamage);
