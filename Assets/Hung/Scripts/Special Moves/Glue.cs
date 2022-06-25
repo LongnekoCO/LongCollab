@@ -4,8 +4,7 @@ using UnityEngine;
 
 public class Glue : MonoBehaviour
 {
-    private HungPlayer player;
-    public int damage;
+    private PlayerMovementScript player;
     public float timeStop;
     private Rigidbody2D rb;
     private Animator anim;
@@ -13,7 +12,7 @@ public class Glue : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        //player = GameObject.Find("Player").GetComponent<Player>();
+        player = GameObject.Find("Player").GetComponent<PlayerMovementScript>();
         rb = this.GetComponent<Rigidbody2D>();
         anim = this.GetComponent<Animator>();
     }
@@ -34,7 +33,7 @@ public class Glue : MonoBehaviour
         }
         else if (collision.gameObject.tag == "Player")
         {
-            player.TakeDamage(damage);
+            player.TakeDamage(10);
             Destroy(this.gameObject);
             //StartCoroutine(StopMoving());
         }
@@ -42,8 +41,8 @@ public class Glue : MonoBehaviour
 
     IEnumerator StopMoving()
     {
-        player.isMoving = false;
+        //player.isMoving = false;
         yield return new WaitForSeconds(timeStop);
-        player.isMoving = true;
+        //player.isMoving = true;
     }
 }

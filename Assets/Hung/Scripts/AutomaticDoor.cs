@@ -28,25 +28,9 @@ public class AutomaticDoor : MonoBehaviour
         }
     }
 
-    private void OnCollisionExit2D(Collision2D collision)
-    {
-        if (collision.gameObject.tag == "Player")
-        {
-            animator.SetTrigger("Close");
-            
-            StartCoroutine(CloseDoorRoutine());
-        }
-    }
-
     private IEnumerator OpenDoorRoutine()
     {
         yield return new WaitForSeconds(1f);
         this.GetComponent<BoxCollider2D>().enabled = false;
-    }
-
-    private IEnumerator CloseDoorRoutine()
-    {
-        yield return new WaitForSeconds(1f);
-        this.GetComponent<BoxCollider2D>().enabled = true;
     }
 }
