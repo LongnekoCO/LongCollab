@@ -8,7 +8,7 @@ public class LongBoss2 : MonoBehaviour {
     public int health;
     public int damage;
     private float timeBtwDamage = 1.5f;
-
+    public PlayerMovementScript player;
 
     public Animator camAnim;
     public Slider healthBar;
@@ -17,12 +17,13 @@ public class LongBoss2 : MonoBehaviour {
 
     private void Start()
     {
+        
         anim = GetComponent<Animator>();
     }
 
     private void Update()
     {
-
+        player = GameObject.FindWithTag("Player").GetComponent<PlayerMovementScript>();
         if (health <= 25) {
             anim.SetTrigger("stageTwo");
         }
@@ -45,7 +46,9 @@ public class LongBoss2 : MonoBehaviour {
         if (other.CompareTag("Player") && isDead == false) {
             if (timeBtwDamage <= 0) {
                 camAnim.SetTrigger("shake");
-                other.GetComponent<Player>().health -= damage;
+                //deal damage to player
+                player.TakeDamage(20);
+                
             }
         } 
     }

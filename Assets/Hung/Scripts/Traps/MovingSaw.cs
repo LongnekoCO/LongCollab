@@ -49,7 +49,7 @@ public class MovingSaw : MonoBehaviour
     {
         if (collision.gameObject.tag == "Player")
         {
-            Debug.Log("collide");
+            //Debug.Log("collide");
             player.TakeDamage(10);
         }
     }

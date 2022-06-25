@@ -6,7 +6,7 @@ public class BossHealth : MonoBehaviour
 {
 
 	public int health = 500;
-
+	public int maxhealth =500;
 	public GameObject deathEffect;
 
 	public bool isInvulnerable = false;
