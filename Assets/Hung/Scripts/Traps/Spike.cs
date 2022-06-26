@@ -4,13 +4,11 @@ using UnityEngine;
 
 public class Spike : MonoBehaviour
 {
-    //private Collider2D collider;
     private PlayerMovementScript player;
 
     // Start is called before the first frame update
     void Start()
     {
-        //collider = this.GetComponent<Collider2D>();
         player = GameObject.Find("Player").GetComponent<PlayerMovementScript>();
     }
 
