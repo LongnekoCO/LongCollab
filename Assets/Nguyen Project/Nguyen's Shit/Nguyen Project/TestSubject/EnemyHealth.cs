@@ -6,15 +6,23 @@ public class EnemyHealth : MonoBehaviour
 {
     public float health = 300;
 
+    //public float health;
+    public float maxHealth = 300f;
+    public EnemyHealthBar healthBar;
+
     // Start is called before the first frame update
     void Start()
     {
-       
+
+        health = maxHealth;
+        healthBar.SetMaxHealth(health);
+
     }
 
     public void TakeDamage(float dam)
     {
         health -= dam;
+        healthBar.SetHealth(health);
     }
 
     public void Die()
