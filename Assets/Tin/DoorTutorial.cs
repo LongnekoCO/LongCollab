@@ -16,7 +16,7 @@ public class DoorTutorial : MonoBehaviour
     IEnumerator Tutorial()
     {
         yield return new WaitForSeconds(1f);
-        SceneManager.LoadScene("TutorialScene");
+        SceneManager.LoadScene("FinalTutorialScene");
     }
 
 }

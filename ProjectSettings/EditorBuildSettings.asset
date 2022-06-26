@@ -6,20 +6,20 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Tin/Splash Screen.unity
+    path: Assets/Tin/Vertical Slide/Splash Screen.unity
     guid: 1945b8b1241ccd34084314c1b8fecda9
   - enabled: 1
-    path: Assets/Tin/Team Name.unity
+    path: Assets/Tin/Vertical Slide/Team Name.unity
     guid: 88782d6c5cb14c449b71406e2ba831fa
   - enabled: 1
-    path: Assets/Tin/Menu.unity
+    path: Assets/Tin/Vertical Slide/Menu.unity
     guid: 6f6fa7d66762eaf4899139c12d7cc2c7
   - enabled: 1
-    path: Assets/Tin/Choosing Level Scene.unity
+    path: Assets/Tin/Vertical Slide/Choosing Level Scene.unity
     guid: 8d01a7d01c6c0404d9defd5a9250fe5b
   - enabled: 1
-    path: Assets/Hung/Scenes/TutorialScene.unity
-    guid: 6b616feb8f1ab0d4282f56237a5f1d0c
+    path: Assets/Tin/Vertical Slide/FinalTutorialScene.unity
+    guid: 85357eb5e469c074f8dcb862f455aef9
   - enabled: 1
     path: Assets/Hung/Scenes/ForestScene.unity
     guid: 22a826c860cdbe94193bd94fce471037
