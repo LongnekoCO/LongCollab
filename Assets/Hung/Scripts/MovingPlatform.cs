@@ -6,8 +6,8 @@ public class MovingPlatform : MonoBehaviour
 {
     public float moveSpeed;
     public List<Transform> target = new List<Transform>();
-    public bool isMovingForward;
-    public bool isMovingBackward;
+    public bool isMovingUp;
+    public bool isMovingDown;
 
     // Start is called before the first frame update
     void Start()
@@ -20,11 +20,11 @@ public class MovingPlatform : MonoBehaviour
     {
         float move = moveSpeed * Time.deltaTime;
 
-        if (isMovingForward == true)
+        if (isMovingUp == true)
         {
             this.transform.position = Vector3.MoveTowards(this.transform.position, target[0].position, move);
         }
-        else if(isMovingBackward == true)
+        else if (isMovingDown == true)
         {
             this.transform.position = Vector3.MoveTowards(this.transform.position, target[1].position, move);
         }
@@ -34,17 +34,17 @@ public class MovingPlatform : MonoBehaviour
     {
         if (collision.gameObject.tag == "Waypoint")
         {
-            isMovingForward = true;
-            isMovingBackward = false;
+            isMovingUp = true;
+            isMovingDown = false;
         }
         else if (collision.gameObject.tag == "WaypointBack")
         {
-            isMovingForward = false;
-            isMovingBackward = true;
+            isMovingUp = false;
+            isMovingDown = true;
         }
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    /*private void OnCollisionEnter2D(Collision2D collision)
     {
         if(collision.gameObject.tag == "Player")
         {
@@ -58,5 +58,5 @@ public class MovingPlatform : MonoBehaviour
         {
             collision.transform.SetParent(null);
         }
-    }
+    }*/
 }

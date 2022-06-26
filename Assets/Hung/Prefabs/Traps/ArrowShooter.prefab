@@ -123,4 +123,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   arrow: {fileID: 7788966119033297627, guid: 8517f76126f16d647a704ecbf0ae7cf5, type: 3}
+  arrowReverse: {fileID: 7788966119033297627, guid: d48ed05d52667224db5a7d9dc30e36f3, type: 3}
   speed: 2

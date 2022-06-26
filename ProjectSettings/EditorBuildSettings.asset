@@ -21,15 +21,15 @@ EditorBuildSettings:
     path: Assets/Tin/Vertical Slide/FinalTutorialScene.unity
     guid: 85357eb5e469c074f8dcb862f455aef9
   - enabled: 1
-    path: Assets/Hung/Scenes/ForestScene.unity
-    guid: 22a826c860cdbe94193bd94fce471037
+    path: Assets/Tin/Vertical Slide/FinalForestScene.unity
+    guid: b0234cd7265121e4ebd64b52f7f6d320
   - enabled: 1
-    path: Assets/Hung/Scenes/IceScene.unity
-    guid: f0761093d366dd84884f86f1719ed051
+    path: Assets/Tin/Vertical Slide/FinalIceScene.unity
+    guid: 708f8972707341442b3dc71349acf7ed
   - enabled: 1
-    path: Assets/Hung/Scenes/FutureScene.unity
-    guid: 7a3dc42f48fa1c84a9759e4f60f89bc8
+    path: Assets/Tin/Vertical Slide/FinalFutureScene.unity
+    guid: 537d6bbe5199fa74997f213bdbf8a52b
   - enabled: 1
-    path: Assets/Hung/Scenes/DungeonScene.unity
-    guid: d6418014b1c469a439451d327e119bf3
+    path: Assets/Tin/Vertical Slide/FinalDungeonScene.unity
+    guid: d912d4482a7f31541bf8ebe8fc20da5a
   m_configObjects: {}

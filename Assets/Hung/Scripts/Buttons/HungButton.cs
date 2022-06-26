@@ -28,6 +28,12 @@ public class HungButton : MonoBehaviour
             Destroy(this.gameObject);
             OpenDoor();
         }
+        else if (collision.gameObject.tag == "MovableObject")
+        {
+            Debug.Log("key press");
+            Destroy(this.gameObject);
+            OpenDoor();
+        }
     }
 
     public void OpenDoor()
