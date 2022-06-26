@@ -403,6 +403,10 @@ public class PlayerBowAndPowers : MonoBehaviour
                 shieldHealthBar.SetActive(true);
                 mHammer.SetActive(true);
             }
+            if(bow.activeSelf)
+            {
+                bow.SetActive(false);
+            }
         }
     }
 

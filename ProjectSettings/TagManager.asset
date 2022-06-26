@@ -41,6 +41,7 @@ TagManager:
   - MetalSpikeDetection
   - MetalSpike
   - Boss
+  - IceBall
   layers:
   - Default
   - TransparentFX
@@ -58,7 +59,7 @@ TagManager:
   - Mjolnir
   - Laser
   - DetectionAndTrigger
-  - 
+  - Iceball
   - 
   - 
   - 

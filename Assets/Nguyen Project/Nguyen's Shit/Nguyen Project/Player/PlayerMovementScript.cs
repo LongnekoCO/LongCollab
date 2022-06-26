@@ -65,7 +65,8 @@ public class PlayerMovementScript : MonoBehaviour
     public float yWallForce;
     public float wallJumpTime;
 
-
+    public GameObject rightFoot, head;
+    public List<GameObject> bodyParts = new List<GameObject>(); 
 
     // Start is called before the first frame update
     void Start()
@@ -427,8 +428,14 @@ public class PlayerMovementScript : MonoBehaviour
             }
 
         }
+        else if (col.gameObject.tag == "IceBall")
+        {
 
-        
+            StartCoroutine(IceBallHit());
+
+        }
+
+
     }
 
     public void TakeDamage(int damage)
@@ -448,5 +455,25 @@ public class PlayerMovementScript : MonoBehaviour
         enterPool = false;
         yield return new WaitForSecondsRealtime(1f);
         enterPool = true;
+    }
+
+    
+    IEnumerator IceBallHit()
+    {
+        //head.GetComponent<SpriteRenderer>().color = new Color(0, 1, 1, 1);
+        //rightFoot.GetComponent<SpriteRenderer>().color = new Color(0, 1, 1, 1);
+        for(int i = 0; i < bodyParts.Count; i++)
+        {
+            bodyParts[i].GetComponent<SpriteRenderer>().color = new Color(0, 1, 1, 1);
+        }        
+        walkingSpeed = 3f;
+        yield return new WaitForSeconds(4f);
+        //head.GetComponent<SpriteRenderer>().color = new Color(0, 0, 0, 0);
+        //rightFoot.GetComponent<SpriteRenderer>().color = new Color(0, 0, 0, 0);
+        for (int i = 0; i < bodyParts.Count; i++)
+        {
+            bodyParts[i].GetComponent<SpriteRenderer>().color = new Color(1, 1, 1, 1);
+        }
+        walkingSpeed = 10f;
     }
 }

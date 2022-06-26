@@ -3444,7 +3444,7 @@ SpriteRenderer:
   m_SortingLayer: 2
   m_SortingOrder: 5
   m_Sprite: {fileID: 0}
-  m_Color: {r: 0.09560263, g: 0.9141003, b: 0.74108267, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -9372,6 +9372,7 @@ GameObject:
   - component: {fileID: 5082884941260095839}
   - component: {fileID: 8525042638081685679}
   - component: {fileID: 1133096871}
+  - component: {fileID: 913362157}
   m_Layer: 11
   m_Name: Player
   m_TagString: Player
@@ -9560,7 +9561,7 @@ MonoBehaviour:
   currentHealth: 0
   healthBar: {fileID: 3815855075541900533}
   jumpForce: 8
-  isGrounded: 0
+  isGrounded: 1
   groundCheck: {fileID: 3723602576631928366}
   groundlayer:
     serializedVersion: 2
@@ -9588,6 +9589,22 @@ MonoBehaviour:
   xWallForce: 5
   yWallForce: 10
   wallJumpTime: 0.05
+  rightFoot: {fileID: 0}
+  head: {fileID: 0}
+  bodyParts:
+  - {fileID: 894291516685781318}
+  - {fileID: 1596802773296602710}
+  - {fileID: 2934623749949442815}
+  - {fileID: 623564281203147710}
+  - {fileID: 7975935589244595257}
+  - {fileID: 8072174620841469468}
+  - {fileID: 6402704762002575891}
+  - {fileID: 1230644830016815541}
+  - {fileID: 6450229331452008958}
+  - {fileID: 4755802906067141711}
+  - {fileID: 3741352994165959593}
+  - {fileID: 9173496944403513491}
+  - {fileID: 2303291351376890868}
 --- !u!114 &8525042638081685679
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9601,6 +9618,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &1133096871
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9050662662320063334}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3fae289eb7de72a4fb4547fd0b682741, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &913362157
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
