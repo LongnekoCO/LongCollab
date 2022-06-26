@@ -22,7 +22,7 @@ public class Piston : MonoBehaviour
     {
         if (collision.gameObject.tag == "Player")
         {
-            player.TakeDamage(10);
+            player.TakeDamage(30);
         }
     }
 }

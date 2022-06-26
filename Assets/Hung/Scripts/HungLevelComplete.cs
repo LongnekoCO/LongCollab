@@ -29,6 +29,6 @@ public class HungLevelComplete : MonoBehaviour
 
     void Completed()
     {
-        SceneManager.LoadScene("Chossing Level Scene");
+        SceneManager.LoadScene("Choosing Level Scene");
     }
 }

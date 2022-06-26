@@ -34,7 +34,6 @@ public class IceSpike : MonoBehaviour
                 if (hit.transform.tag == "Player")
                 {
                     Invoke("IceSpikeFalling", 0.5f);
-                    
                 }
             }
         }
@@ -55,7 +54,7 @@ public class IceSpike : MonoBehaviour
 
     void IceSpikeFalling()
     {
-        rigidbody2d.gravityScale = 5;
+        rigidbody2d.gravityScale = 3;
         isFalling = true;
     }
 }
