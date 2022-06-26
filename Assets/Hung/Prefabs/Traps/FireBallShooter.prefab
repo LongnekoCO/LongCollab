@@ -123,4 +123,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fireBall: {fileID: 2942241333773345153, guid: c0456cf34910de545b5e7645ee753b46, type: 3}
+  fireBallReverse: {fileID: 2942241333773345153, guid: 9a91134a7574e2c4ca91000c02ebbd05, type: 3}
   speed: 2

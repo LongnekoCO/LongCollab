@@ -123,4 +123,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   iceBall: {fileID: 1288026272844078083, guid: fcbb3a2d986584d4ab529a0ddedf92f9, type: 3}
+  iceBallReverse: {fileID: 1288026272844078083, guid: b8b01bb6ae223ce4fbac2e34e0670b2e, type: 3}
   speed: 2

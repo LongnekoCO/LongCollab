@@ -5,6 +5,7 @@ using UnityEngine;
 public class IceBallShooter : MonoBehaviour
 {
     public Rigidbody2D iceBall;
+    public Rigidbody2D iceBallReverse;
     public float speed;
 
     // Start is called before the first frame update
@@ -26,28 +27,12 @@ public class IceBallShooter : MonoBehaviour
             Rigidbody2D latestIceBall = Instantiate(iceBall, this.transform.position, Quaternion.identity);
 
             latestIceBall.AddForce(new Vector2(500, 0) * speed);
-
-            Vector2 ballFlip = iceBall.transform.localScale;
-
-            ballFlip.x = ballFlip.x * 1;
-
-            iceBall.transform.transform.localScale = ballFlip;
-
-            Debug.Log(iceBall.transform.localScale);
         }
         else if (this.transform.localScale.x <= -1)
         {
-            Rigidbody2D latestIceBall = Instantiate(iceBall, this.transform.position, Quaternion.identity);
+            Rigidbody2D latestIceBall = Instantiate(iceBallReverse, this.transform.position, Quaternion.identity);
 
             latestIceBall.AddForce(new Vector2(-500, 0) * speed);
-
-            Vector2 ballFlip = iceBall.transform.localScale;
-
-            ballFlip.x = ballFlip.x * -1;
-
-            iceBall.transform.transform.localScale = ballFlip;
-
-            Debug.Log(iceBall.transform.localScale);
         }
     }
 }
