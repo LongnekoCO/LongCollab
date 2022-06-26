@@ -27,6 +27,7 @@ public class Arrow : MonoBehaviour
     void OnCollisionEnter2D(Collision2D collision)
     {
         hasHit = true;
+        //Debug.Log("hit" + collision.gameObject.name);
         rb.velocity = Vector2.zero;
         rb.isKinematic = true;
         Destroy(gameObject, 1);
