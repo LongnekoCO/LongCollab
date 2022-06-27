@@ -13,9 +13,9 @@ GameObject:
   - component: {fileID: 8524905654646241722}
   - component: {fileID: 1539440046974510209}
   - component: {fileID: -6238459709718499521}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: Boulder
-  m_TagString: Boulder
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
