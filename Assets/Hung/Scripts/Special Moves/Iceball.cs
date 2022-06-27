@@ -30,7 +30,7 @@ public class Iceball : MonoBehaviour
             Destroy(this.gameObject);
             StartCoroutine(TimeFreeze());
         }
-        else if (collision.gameObject.tag == "Ground")
+        else if (collision.gameObject.tag == "Ground" || collision.gameObject.tag == "Door")
         {
             Instantiate(praticleHit, this.transform.position, Quaternion.identity);
             Destroy(this.gameObject);
