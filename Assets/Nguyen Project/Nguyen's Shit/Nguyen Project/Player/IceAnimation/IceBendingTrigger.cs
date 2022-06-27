@@ -26,6 +26,11 @@ public class IceBendingTrigger : MonoBehaviour
             playerScript.inRange = true;
             enemiesInRange.Add(collision.gameObject);
         }
+        else if (collision.gameObject.tag == "Boss")
+        {
+            playerScript.inRange = true;
+            enemiesInRange.Add(collision.gameObject);
+        }
     }
 
 
@@ -35,6 +40,15 @@ public class IceBendingTrigger : MonoBehaviour
         {
             playerScript.inRange = false;
             if(enemiesInRange.Contains(collision.gameObject))
+            {
+                enemiesInRange.Remove(collision.gameObject);
+            }
+        }
+
+        else if (collision.gameObject.tag == "Boss")
+        {
+            playerScript.inRange = false;
+            if (enemiesInRange.Contains(collision.gameObject))
             {
                 enemiesInRange.Remove(collision.gameObject);
             }
