@@ -159,8 +159,8 @@ public class PlayerMovementScript : MonoBehaviour
         WallSliding();
         WallJumping();
 
-           
 
+        healthBar.SetHealth(currentHealth);
     }
 
     void FixedUpdate()
@@ -424,7 +424,7 @@ public class PlayerMovementScript : MonoBehaviour
             if(enterPool == true)
             {
                 StartCoroutine(PoisonPool());
-                health -= 1;
+                currentHealth -= 5;
             }
 
         }
@@ -441,13 +441,13 @@ public class PlayerMovementScript : MonoBehaviour
     public void TakeDamage(int damage)
     {
         currentHealth -= damage;
-        healthBar.SetHealth(currentHealth);
+        //healthBar.SetHealth(currentHealth);
     }
 
     public void GetHealth(int health1)
     {
         currentHealth += health1;
-        healthBar.SetHealth(currentHealth);
+        //healthBar.SetHealth(currentHealth);
     }
 
     IEnumerator PoisonPool()

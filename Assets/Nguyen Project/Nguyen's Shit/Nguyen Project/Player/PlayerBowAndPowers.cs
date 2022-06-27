@@ -143,8 +143,16 @@ public class PlayerBowAndPowers : MonoBehaviour
 
                 foreach (Collider2D enemy in hitEnemies)
                 {
-                    enemy.GetComponent<EnemyHealth>().TakeDamage(15);
-                    Debug.Log("we hit" + enemy.name);
+                    if (enemy.gameObject.tag == "Enemy")
+                    {
+                        enemy.GetComponent<EnemyHealth>().TakeDamage(20);
+                        Debug.Log("we hit" + enemy.name);
+                    }
+                    else if (enemy.gameObject.tag == "Boss")
+                    {
+                        enemy.GetComponent<LongBoss2>().TakeDamage(20);
+                        Debug.Log("we hit" + enemy.name);
+                    }
                 }
                 StartCoroutine(MeleeCooldown());
             }
@@ -170,8 +178,17 @@ public class PlayerBowAndPowers : MonoBehaviour
 
                 foreach (Collider2D enemy in hitEnemies)
                 {
-                    enemy.GetComponent<EnemyHealth>().TakeDamage(20);
-                    Debug.Log("we hit" + enemy.name);
+                    if(enemy.gameObject.tag == "Enemy")
+                    {
+                        enemy.GetComponent<EnemyHealth>().TakeDamage(20);
+                        Debug.Log("we hit" + enemy.name);
+                    }
+                    else if(enemy.gameObject.tag == "Boss")
+                    {
+                        enemy.GetComponent<LongBoss2>().TakeDamage(20);
+                        Debug.Log("we hit" + enemy.name);
+                    }
+                    
                 }
                 StartCoroutine(MeleeCooldown());
             }
