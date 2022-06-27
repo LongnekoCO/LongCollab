@@ -29,7 +29,7 @@ public class Fireball : MonoBehaviour
             Destroy(this.gameObject);
 
         }
-        else if (collision.gameObject.tag == "Ground" || collision.gameObject.tag == "Door")
+        else if (collision.gameObject.tag == "Ground")
         {
             Instantiate(praticleHit, this.transform.position, Quaternion.identity);
             Destroy(this.gameObject);
