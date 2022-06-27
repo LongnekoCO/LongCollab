@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 4033326488700616044}
   - component: {fileID: 6183292328539509030}
   - component: {fileID: 682206848668951763}
-  - component: {fileID: 290859478109538586}
+  - component: {fileID: -3285424094425824277}
   m_Layer: 0
   m_Name: SpikeAttack
   m_TagString: Untagged
@@ -152,7 +152,7 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &290859478109538586
+--- !u!114 &-3285424094425824277
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -161,6 +161,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 682206848668951760}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 02b3f9146eaaee446be9735c3869f30c, type: 3}
+  m_Script: {fileID: 11500000, guid: 7fd1c5f8be6751b48b3c6fc275ec00fe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
