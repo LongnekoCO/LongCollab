@@ -11,7 +11,7 @@ public class IceBallShooter : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        InvokeRepeating("IceBallShoot", 1f, 5f);
+        InvokeRepeating("SpikeShoot", 1f, 5f);
     }
 
     // Update is called once per frame
