@@ -35,8 +35,6 @@ public class Iceball : MonoBehaviour
             Instantiate(praticleHit, this.transform.position, Quaternion.identity);
             Destroy(this.gameObject);
         }
-
-        
     }
 
     //Time frezze to make target is not moving
