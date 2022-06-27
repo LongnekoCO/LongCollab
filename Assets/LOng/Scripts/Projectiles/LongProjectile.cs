@@ -95,4 +95,19 @@ public class LongProjectile : MonoBehaviour
     {
         Gizmos.DrawWireSphere(damagePosition.position, damageRadius);
     }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag == "Player")
+        {
+            player.TakeDamage(20);
+            Destroy(this.gameObject);
+        }
+        else
+        {
+            Destroy(this.gameObject);
+        }
+            
+        
+    }
 }
