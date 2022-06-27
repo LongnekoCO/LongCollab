@@ -30,6 +30,7 @@ public class LongBoss2 : MonoBehaviour {
 
         if (health <= 0) {
             anim.SetTrigger("death");
+            Destroy(this.gameObject, 3f);
         }
 
         // give the player some time to recover before taking more damage !
@@ -51,5 +52,10 @@ public class LongBoss2 : MonoBehaviour {
                 
             }
         } 
+    }
+
+    public void TakeDamage(int dam)
+    {
+        health -= dam;        
     }
 }
