@@ -9467,8 +9467,8 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.01737976, y: 0.36958617}
-  m_Size: {x: 0.46524048, y: 0.7724377}
+  m_Offset: {x: 0.018115997, y: 0.3542038}
+  m_Size: {x: 0.4758377, y: 0.8321503}
   m_Direction: 0
 --- !u!231 &4347213374392420207
 SpringJoint2D:
@@ -9566,7 +9566,7 @@ MonoBehaviour:
   groundCheck: {fileID: 3723602576631928366}
   groundlayer:
     serializedVersion: 2
-    m_Bits: 64
+    m_Bits: 524352
   canMovee: 1
   log: {fileID: 8667203317808492838, guid: 543c5e71a9c30d44ba210134b498464e, type: 3}
   smokeParticle: {fileID: 4150527375996928861, guid: 45c09eff41146c5438f5a914e92011b5, type: 3}

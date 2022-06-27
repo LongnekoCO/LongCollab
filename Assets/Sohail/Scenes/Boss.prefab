@@ -593,7 +593,7 @@ GameObject:
   - component: {fileID: 487493701986614791}
   - component: {fileID: 487493701986614786}
   - component: {fileID: 6274851282002202081}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Boss
   m_TagString: Boss
   m_Icon: {fileID: 0}
@@ -649,11 +649,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9c7ca7dee03aee6409806d7f871945b4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 50
+  health: 1000
   damage: 5
   player: {fileID: 0}
   camAnim: {fileID: 0}
-  healthBar: {fileID: 0}
+  healthBar: {fileID: 5067791637162176425}
   isDead: 0
 --- !u!58 &487493701986614790
 CircleCollider2D:
@@ -665,7 +665,7 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0.26, y: 0.59}
@@ -683,10 +683,10 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
+  m_Mass: 50
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 0
+  m_GravityScale: 1
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
@@ -1209,9 +1209,9 @@ MonoBehaviour:
   m_HandleRect: {fileID: 0}
   m_Direction: 0
   m_MinValue: 0
-  m_MaxValue: 50
+  m_MaxValue: 1000
   m_WholeNumbers: 0
-  m_Value: 50
+  m_Value: 1000
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
