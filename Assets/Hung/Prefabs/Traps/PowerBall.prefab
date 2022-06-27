@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 4018554620371747037}
   - component: {fileID: 8085379530973311377}
   - component: {fileID: 8107849704006135100}
+  - component: {fileID: -7400903615491626009}
   m_Layer: 0
   m_Name: PowerBall
   m_TagString: Untagged
@@ -28,7 +29,7 @@ Transform:
   m_GameObject: {fileID: 6419945586294669814}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 5.494678, y: -2.298623, z: 0}
-  m_LocalScale: {x: 4, y: 4, z: 1}
+  m_LocalScale: {x: 8, y: 8, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -119,3 +120,15 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.09685755
+--- !u!114 &-7400903615491626009
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6419945586294669814}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02b3f9146eaaee446be9735c3869f30c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
