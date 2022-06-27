@@ -2,16 +2,15 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class HungLaser : MonoBehaviour
+public class Lightning : MonoBehaviour
 {
-    private Rigidbody2D rb2D;
-    private PlayerMovementScript player;
-    
+    private PlayerMovementScript playerScript; //a reference to player script
+    public int damage; //a damage deal to the target
+
     // Start is called before the first frame update
     void Start()
     {
-        rb2D = this.GetComponent<Rigidbody2D>();
-        player = GameObject.Find("Player").GetComponent<PlayerMovementScript>();
+        playerScript = GameObject.Find("Player").GetComponent<PlayerMovementScript>(); //access the player script
     }
 
     // Update is called once per frame
@@ -24,12 +23,7 @@ public class HungLaser : MonoBehaviour
     {
         if (collision.gameObject.tag == "Player")
         {
-            player.TakeDamage(20);
-            Destroy(this.gameObject);
-        }
-
-        else if (collision.gameObject.tag == "Ground")
-        {
+            playerScript.TakeDamage(damage);
             Destroy(this.gameObject);
         }
     }

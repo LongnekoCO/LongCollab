@@ -2,9 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class WhirlwindHit : MonoBehaviour
+public class Whirlwind : MonoBehaviour
 {
-    //private HungBossPatrol bossScript; //a reference to BossPatrol script
     private PlayerMovementScript playerScript; //a reference to player script
     public int damage; //a damage deal to the target
     public float timeToDestroy; //time to destroy this target
@@ -14,7 +13,6 @@ public class WhirlwindHit : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        //bossScript = GameObject.Find("Boss1").GetComponent<HungBossPatrol>(); //access the BossPatrol script
         playerScript = GameObject.Find("Player").GetComponent<PlayerMovementScript>(); //access the player script
     }
 
@@ -29,7 +27,6 @@ public class WhirlwindHit : MonoBehaviour
         if (collision.gameObject.tag == "Player")
         {
             playerScript.TakeDamage(damage);
-            //StartCoroutine(BossMoveSpeedCoroutine());
             StartCoroutine(PlayerMoveSpeedCoroutine());
             Instantiate(praticleHit, this.transform.position, Quaternion.identity);
             Destroy(this.gameObject, timeToDestroy);
@@ -43,12 +40,4 @@ public class WhirlwindHit : MonoBehaviour
         yield return new WaitForSeconds(timeLimited);
         playerScript.walkingSpeed += 10;
     }
-
-    //Called in OnTriggerEnter2D()
-    /*IEnumerator BossMoveSpeedCoroutine()
-    {
-        bossScript.bossMoveSpeed += 10;
-        yield return new WaitForSeconds(timeLimited);
-        bossScript.bossMoveSpeed -= 10;
-    }*/
 }
