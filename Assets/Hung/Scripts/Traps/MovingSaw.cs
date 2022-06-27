@@ -14,6 +14,8 @@ public class MovingSaw : MonoBehaviour
     void Start()
     {
         player = GameObject.Find("Player").GetComponent<PlayerMovementScript>();
+
+        //Physics2D.IgnoreCollision(player.GetComponent<Collider2D>(), this.GetComponent<Collider2D>());
     }
 
     // Update is called once per frame
