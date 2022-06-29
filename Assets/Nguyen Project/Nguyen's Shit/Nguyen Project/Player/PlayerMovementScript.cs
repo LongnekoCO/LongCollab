@@ -8,6 +8,7 @@ public class PlayerMovementScript : MonoBehaviour
     public bool facingRight = true;
     //Animator anim;
     public Rigidbody2D playerRigidbody;
+    public AudioSource jumpSound;
    
 
     //public int health = 20; //testing only
@@ -112,6 +113,7 @@ public class PlayerMovementScript : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Space) && extraJumps > 0)
         {
+            jumpSound.Play();
             Jump();
             extraJumps--;
         }
