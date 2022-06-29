@@ -7,6 +7,7 @@ public class GameMenuManager : MonoBehaviour
     public GameObject quitConfirm;
     public GameObject opionMenu;
     public GameObject mainMenuButtons;
+    public GameObject howMenu;
 
     public void ChoosingScreenMenu()
     {
@@ -34,6 +35,14 @@ public class GameMenuManager : MonoBehaviour
     {
         mainMenuButtons.SetActive(true);
         opionMenu.SetActive(false);
+    }
+    public void How()
+    {
+        howMenu.SetActive(true);
+    }
+    public void HowNo()
+    {
+        howMenu.SetActive(false);
     }
 
 
