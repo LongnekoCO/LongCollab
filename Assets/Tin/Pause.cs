@@ -7,6 +7,12 @@ public class Pause : MonoBehaviour
     public static bool GameIsPaused = false;
 
     public GameObject PauseMenu;
+
+    public GameObject restartConfirm;
+
+    public GameObject quitConfirm;
+
+    Scene curScene;
     void Start()
     {
         
@@ -45,6 +51,31 @@ public class Pause : MonoBehaviour
     public void BackToMenu()
     {
         SceneManager.LoadScene("Menu");
+    }
+
+    public void RestartLevel()
+    {
+        curScene = SceneManager.GetActiveScene();
+        SceneManager.LoadScene(curScene.buildIndex);
+        PauseMenu.SetActive(false);
+        Time.timeScale = 1f;
+    }
+
+    public void ConfirmRestartLevel()
+    {
+        restartConfirm.SetActive(true);
+    }
+    public void NotConfirmRestartLevel()
+    {
+        restartConfirm.SetActive(false);
+    }
+    public void ConfirmQuit()
+    {
+        quitConfirm.SetActive(true);
+    }
+    public void NotConfirmQuit()
+    {
+        quitConfirm.SetActive(false);
     }
 
     public void Out()
