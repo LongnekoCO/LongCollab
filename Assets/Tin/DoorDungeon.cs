@@ -1,18 +1,18 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class DoorDungeon : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public void OpenDungeonDoor()
     {
-        
+        StartCoroutine(Dungeon());
     }
 
-    // Update is called once per frame
-    void Update()
+    IEnumerator Dungeon()
     {
-        
+        yield return new WaitForSeconds(1f);
+        SceneManager.LoadScene("FinalDungeonScene");
     }
 }

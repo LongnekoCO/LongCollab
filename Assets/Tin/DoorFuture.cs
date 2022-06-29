@@ -1,18 +1,18 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class DoorFuture : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public void OpenFutureDoor()
     {
-        
+        StartCoroutine(Future());
     }
 
-    // Update is called once per frame
-    void Update()
+    IEnumerator Future()
     {
-        
+        yield return new WaitForSeconds(1f);
+        SceneManager.LoadScene("FinalFutureScene");
     }
 }

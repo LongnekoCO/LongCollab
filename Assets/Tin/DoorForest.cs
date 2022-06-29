@@ -1,18 +1,18 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class DoorForest : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public void OpenForestDoor()
     {
-        
+        StartCoroutine(Forest());
     }
 
-    // Update is called once per frame
-    void Update()
+    IEnumerator Forest()
     {
-        
+        yield return new WaitForSeconds(1f);
+        SceneManager.LoadScene("FinalForestScene");
     }
 }
